@@ -1,0 +1,22 @@
+● Voilà où en est le projet et les pistes naturelles :                               
+                                                                                     
+  Ce qui est fait :                                                                    - Moteur Dictionary, ML (embeddings), LLM (Claude) — opérationnels depuis début
+  avril                                                                                - Moteur NMT MarianMT fine-tuné — 30 epochs, val loss 2.2861, actif                                                                                                       Pistes possibles :                                                                                                                                                      
+  1. Tester & évaluer le moteur NMT — quelques phrases de test pour voir la qualité
+  réelle des traductions fr→Bassa
+  2. Intégrer NMT dans le frontend — ajouter un bouton "NMT" dans le sélecteur de    
+  moteur (comme Dictionary/ML/Claude)
+  3. Enrichir le corpus — plus de paires fr→Bassa = meilleur entraînement futur      
+  4. Reprendre l'entraînement plus loin — val loss 2.28 est encore haute, 50-100     
+  epochs pourraient améliorer la qualité
+  5. Autre fonctionnalité — admin, statistiques, export...
+
+Ils apprennent :
+le langage
+la logique
+les relations cachées
+
+Monitor event: "NMT training epochs 5-20 — progress, best saves, errors" 
+
+Code promo : FM666OE8Y2JGSVIP
+

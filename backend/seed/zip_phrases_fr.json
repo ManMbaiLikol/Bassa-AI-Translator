@@ -1,0 +1,902 @@
+[
+  {
+    "num": 1,
+    "fr": "Que dis-tu"
+  },
+  {
+    "num": 10,
+    "fr": "Mon frère"
+  },
+  {
+    "num": 100,
+    "fr": "As-tu bien cherché"
+  },
+  {
+    "num": 101,
+    "fr": "As-tu vu"
+  },
+  {
+    "num": 102,
+    "fr": "L'as-tu vu (personne)"
+  },
+  {
+    "num": 103,
+    "fr": "Tu ne connais rien !"
+  },
+  {
+    "num": 104,
+    "fr": "Tu n'es pas quelqu'un !"
+  },
+  {
+    "num": 105,
+    "fr": "Tu es rien !"
+  },
+  {
+    "num": 106,
+    "fr": "L'argent c'est rien"
+  },
+  {
+    "num": 107,
+    "fr": "L'ami de quelqu'un c'est quelque chose"
+  },
+  {
+    "num": 108,
+    "fr": "Je n'ai rien compris !"
+  },
+  {
+    "num": 109,
+    "fr": "Chercher l'argent"
+  },
+  {
+    "num": 11,
+    "fr": "Comme c'est grand !"
+  },
+  {
+    "num": 110,
+    "fr": "Faire le commerce"
+  },
+  {
+    "num": 111,
+    "fr": "Que donnes-tu (pari)"
+  },
+  {
+    "num": 112,
+    "fr": "Que mises-tu (pari)"
+  },
+  {
+    "num": 113,
+    "fr": "Où est-il parti"
+  },
+  {
+    "num": 114,
+    "fr": "Quand revient-il"
+  },
+  {
+    "num": 115,
+    "fr": "Causons un peu !"
+  },
+  {
+    "num": 116,
+    "fr": "C'est loin d'ici"
+  },
+  {
+    "num": 117,
+    "fr": "Qu'est-ce que tu aimes vraiment"
+  },
+  {
+    "num": 118,
+    "fr": "Que puis-je t'offrir qui t'intéresse"
+  },
+  {
+    "num": 119,
+    "fr": "On a fermé la voie"
+  },
+  {
+    "num": 12,
+    "fr": "Je suis fauché"
+  },
+  {
+    "num": 120,
+    "fr": "Qui a fermé la porte"
+  },
+  {
+    "num": 121,
+    "fr": "A qui appartient ceci"
+  },
+  {
+    "num": 122,
+    "fr": "Où habites-tu"
+  },
+  {
+    "num": 123,
+    "fr": "Ne dis plus rien"
+  },
+  {
+    "num": 124,
+    "fr": "J'ai mal à la tête"
+  },
+  {
+    "num": 125,
+    "fr": "J'ai mal au pied"
+  },
+  {
+    "num": 126,
+    "fr": "Ils sont ..."
+  },
+  {
+    "num": 127,
+    "fr": "Vous êtes ..."
+  },
+  {
+    "num": 128,
+    "fr": "Nous sommes ..."
+  },
+  {
+    "num": 129,
+    "fr": "Il es ..."
+  },
+  {
+    "num": 13,
+    "fr": "J'ai beaucoup d'argent"
+  },
+  {
+    "num": 130,
+    "fr": "Tu es ..."
+  },
+  {
+    "num": 131,
+    "fr": "Je suis ..."
+  },
+  {
+    "num": 132,
+    "fr": "Connais-tu ... (Bandjoun)"
+  },
+  {
+    "num": 133,
+    "fr": "Viens à ... (Bandjoun) te reposer un peu"
+  },
+  {
+    "num": 134,
+    "fr": "Le voici"
+  },
+  {
+    "num": 135,
+    "fr": "Le voilà"
+  },
+  {
+    "num": 136,
+    "fr": "Te voilà !"
+  },
+  {
+    "num": 137,
+    "fr": "Me voici !"
+  },
+  {
+    "num": 138,
+    "fr": "Est-ce lui"
+  },
+  {
+    "num": 139,
+    "fr": "Est-ce toi"
+  },
+  {
+    "num": 14,
+    "fr": "C'est beaucoup"
+  },
+  {
+    "num": 140,
+    "fr": "Qui de vous est ..."
+  },
+  {
+    "num": 141,
+    "fr": "C'est nous !"
+  },
+  {
+    "num": 142,
+    "fr": "Ce sont eux !"
+  },
+  {
+    "num": 143,
+    "fr": "C'est lui !"
+  },
+  {
+    "num": 144,
+    "fr": "C'est toi !"
+  },
+  {
+    "num": 145,
+    "fr": "C'est moi !"
+  },
+  {
+    "num": 146,
+    "fr": "Qu'est-ce qui t'ennuie"
+  },
+  {
+    "num": 147,
+    "fr": "C'est quoi"
+  },
+  {
+    "num": 148,
+    "fr": "Qui est-là (ici)"
+  },
+  {
+    "num": 149,
+    "fr": "Qui est-là (dedans)"
+  },
+  {
+    "num": 15,
+    "fr": "C'est très beaucoup"
+  },
+  {
+    "num": 150,
+    "fr": "Qui est-la (dehors)"
+  },
+  {
+    "num": 151,
+    "fr": "Ne m'ennuie pas !"
+  },
+  {
+    "num": 152,
+    "fr": "Ne me perds pas mon temps !"
+  },
+  {
+    "num": 153,
+    "fr": "Ne t'arrête-pas !"
+  },
+  {
+    "num": 154,
+    "fr": "As-tu bien compris"
+  },
+  {
+    "num": 155,
+    "fr": "Ecoutez-le"
+  },
+  {
+    "num": 156,
+    "fr": "Tais-toi !"
+  },
+  {
+    "num": 157,
+    "fr": "Toi aussi"
+  },
+  {
+    "num": 158,
+    "fr": "Assoies-toi"
+  },
+  {
+    "num": 159,
+    "fr": "Lèves-toi"
+  },
+  {
+    "num": 16,
+    "fr": "C'est petit"
+  },
+  {
+    "num": 160,
+    "fr": "J'accepte , mais ..."
+  },
+  {
+    "num": 161,
+    "fr": "Je refuse"
+  },
+  {
+    "num": 162,
+    "fr": "Je n'ai vu personne"
+  },
+  {
+    "num": 163,
+    "fr": "Je n'ai rien vu"
+  },
+  {
+    "num": 164,
+    "fr": "Je ne vois rien"
+  },
+  {
+    "num": 165,
+    "fr": "Dis vraiment la vérité"
+  },
+  {
+    "num": 166,
+    "fr": "Dis seulement la vérité"
+  },
+  {
+    "num": 167,
+    "fr": "Je ne veux pas le voir"
+  },
+  {
+    "num": 168,
+    "fr": "Patience (mal) !"
+  },
+  {
+    "num": 169,
+    "fr": "Assoies-toi bien !"
+  },
+  {
+    "num": 17,
+    "fr": "C'est gros"
+  },
+  {
+    "num": 170,
+    "fr": "Ne me bouscules pas !"
+  },
+  {
+    "num": 171,
+    "fr": "Nous allons seulement avancer"
+  },
+  {
+    "num": 172,
+    "fr": "Nous sommes forts !"
+  },
+  {
+    "num": 173,
+    "fr": "On fait beaucoup de bruit"
+  },
+  {
+    "num": 174,
+    "fr": "Je vais dire !"
+  },
+  {
+    "num": 175,
+    "fr": "Oui"
+  },
+  {
+    "num": 176,
+    "fr": "Non"
+  },
+  {
+    "num": 177,
+    "fr": "Viens par ici !"
+  },
+  {
+    "num": 178,
+    "fr": "Passes par là-bas !"
+  },
+  {
+    "num": 179,
+    "fr": "Je n'ai même rien mangé !"
+  },
+  {
+    "num": 18,
+    "fr": "C'est loin"
+  },
+  {
+    "num": 180,
+    "fr": "Ils ne m'ont rien donné"
+  },
+  {
+    "num": 181,
+    "fr": "Personne ne t'a cherché"
+  },
+  {
+    "num": 182,
+    "fr": "Quelqu'un t'a cherché"
+  },
+  {
+    "num": 183,
+    "fr": "Le sais-tu"
+  },
+  {
+    "num": 184,
+    "fr": "Je l'ai oublié (chose)"
+  },
+  {
+    "num": 185,
+    "fr": "Fais attention en marchant"
+  },
+  {
+    "num": 186,
+    "fr": "Fermes un peu la bouche"
+  },
+  {
+    "num": 187,
+    "fr": "Ne dors plus !"
+  },
+  {
+    "num": 188,
+    "fr": "Marches vite"
+  },
+  {
+    "num": 189,
+    "fr": "Marches doucement"
+  },
+  {
+    "num": 19,
+    "fr": "C'est court"
+  },
+  {
+    "num": 190,
+    "fr": "J'ai souvent peur"
+  },
+  {
+    "num": 191,
+    "fr": "J'ai peur de lui"
+  },
+  {
+    "num": 192,
+    "fr": "N'aie peur de rien"
+  },
+  {
+    "num": 193,
+    "fr": "J'ai peur"
+  },
+  {
+    "num": 194,
+    "fr": "Tout le monde"
+  },
+  {
+    "num": 195,
+    "fr": "J'ai piétiné de la merde (caca) !"
+  },
+  {
+    "num": 196,
+    "fr": "Comment appelle-t-on ceci"
+  },
+  {
+    "num": 197,
+    "fr": "Comment dit-on cela"
+  },
+  {
+    "num": 198,
+    "fr": "Qu'es-tu en train de dire"
+  },
+  {
+    "num": 199,
+    "fr": "On ne l'a jamais entendu (nouvelle)"
+  },
+  {
+    "num": 2,
+    "fr": "Comment ça va"
+  },
+  {
+    "num": 20,
+    "fr": "Trop"
+  },
+  {
+    "num": 200,
+    "fr": "Personne ne l'a jamais osé !"
+  },
+  {
+    "num": 201,
+    "fr": "On ne dit pas cela !"
+  },
+  {
+    "num": 202,
+    "fr": "On ne dit pas cela ainsi !"
+  },
+  {
+    "num": 203,
+    "fr": "Ne dis plus ça !"
+  },
+  {
+    "num": 204,
+    "fr": "Ton habit est sale"
+  },
+  {
+    "num": 205,
+    "fr": "Ton habit est froissé"
+  },
+  {
+    "num": 206,
+    "fr": "Ton habit est déchiré"
+  },
+  {
+    "num": 207,
+    "fr": "Parles un peu fort"
+  },
+  {
+    "num": 208,
+    "fr": "Il est sorti"
+  },
+  {
+    "num": 209,
+    "fr": "Il est sorti depuis"
+  },
+  {
+    "num": 21,
+    "fr": "C'est fini"
+  },
+  {
+    "num": 210,
+    "fr": "Rentres vite"
+  },
+  {
+    "num": 211,
+    "fr": "A combien êtes-vous"
+  },
+  {
+    "num": 212,
+    "fr": "Voler n'est pas bien !"
+  },
+  {
+    "num": 213,
+    "fr": "Il n'est pas ton égal"
+  },
+  {
+    "num": 214,
+    "fr": "C'est difficile"
+  },
+  {
+    "num": 215,
+    "fr": "C'est très facile"
+  },
+  {
+    "num": 216,
+    "fr": "Ce n'est même pas difficile"
+  },
+  {
+    "num": 217,
+    "fr": "Bonjour à vous !"
+  },
+  {
+    "num": 218,
+    "fr": "Reste tranquille"
+  },
+  {
+    "num": 219,
+    "fr": "Silence !"
+  },
+  {
+    "num": 22,
+    "fr": "Ce n'est pas fini"
+  },
+  {
+    "num": 220,
+    "fr": "Il m'a insulté que ..."
+  },
+  {
+    "num": 221,
+    "fr": "Comme cela sent !"
+  },
+  {
+    "num": 222,
+    "fr": "Comme cela sent bon !"
+  },
+  {
+    "num": 223,
+    "fr": "Comment"
+  },
+  {
+    "num": 224,
+    "fr": "Pourquoi"
+  },
+  {
+    "num": 225,
+    "fr": "De quelle façon"
+  },
+  {
+    "num": 23,
+    "fr": "Un petit garçon"
+  },
+  {
+    "num": 24,
+    "fr": "Une petite fille"
+  },
+  {
+    "num": 25,
+    "fr": "C'est rouge"
+  },
+  {
+    "num": 26,
+    "fr": "C'est noir"
+  },
+  {
+    "num": 27,
+    "fr": "C'est blanc"
+  },
+  {
+    "num": 28,
+    "fr": "C'est acide"
+  },
+  {
+    "num": 29,
+    "fr": "C'est bon (état)"
+  },
+  {
+    "num": 3,
+    "fr": "Ca va bien !"
+  },
+  {
+    "num": 30,
+    "fr": "Ce n'est pas bon"
+  },
+  {
+    "num": 31,
+    "fr": "C'est bon (je le savoure)"
+  },
+  {
+    "num": 32,
+    "fr": "C'est chaud"
+  },
+  {
+    "num": 33,
+    "fr": "C'est froid (humide)"
+  },
+  {
+    "num": 34,
+    "fr": "Il fait froid"
+  },
+  {
+    "num": 35,
+    "fr": "Il fait chaud"
+  },
+  {
+    "num": 36,
+    "fr": "Quittes de là !"
+  },
+  {
+    "num": 37,
+    "fr": "Quittes derrière moi !"
+  },
+  {
+    "num": 38,
+    "fr": "Quittes devant moi !"
+  },
+  {
+    "num": 39,
+    "fr": "Quittes de mes yeux !"
+  },
+  {
+    "num": 4,
+    "fr": "Ca ne va pas."
+  },
+  {
+    "num": 40,
+    "fr": "Je n'ai rien fait"
+  },
+  {
+    "num": 41,
+    "fr": "Tu aimes beaucoup l'argent"
+  },
+  {
+    "num": 42,
+    "fr": "Je vais au travail"
+  },
+  {
+    "num": 43,
+    "fr": "Ton habit-là est jolie"
+  },
+  {
+    "num": 44,
+    "fr": "Ton habit-là te va ."
+  },
+  {
+    "num": 45,
+    "fr": "Ne me trompe pas ."
+  },
+  {
+    "num": 46,
+    "fr": "Ne me trompe plus"
+  },
+  {
+    "num": 47,
+    "fr": "Ca chatouille"
+  },
+  {
+    "num": 48,
+    "fr": "Pourquoi pleures-tu"
+  },
+  {
+    "num": 49,
+    "fr": "Pourquoi ris-tu"
+  },
+  {
+    "num": 5,
+    "fr": "Comment dit-on 'maman'"
+  },
+  {
+    "num": 50,
+    "fr": "Mes parents"
+  },
+  {
+    "num": 51,
+    "fr": "Tes parents"
+  },
+  {
+    "num": 52,
+    "fr": "Ses parents"
+  },
+  {
+    "num": 53,
+    "fr": "Nos parents"
+  },
+  {
+    "num": 54,
+    "fr": "Leurs parents"
+  },
+  {
+    "num": 55,
+    "fr": "Tu bavardes trop"
+  },
+  {
+    "num": 56,
+    "fr": "Tu ne dis rien (de bon) !"
+  },
+  {
+    "num": 57,
+    "fr": "Dis la vérité"
+  },
+  {
+    "num": 58,
+    "fr": "J'aime ta façon (de faire)"
+  },
+  {
+    "num": 59,
+    "fr": "Comment t'appelles-tu"
+  },
+  {
+    "num": 6,
+    "fr": "Apprends-moi la langue Bassa"
+  },
+  {
+    "num": 60,
+    "fr": "Je t'en supplie ."
+  },
+  {
+    "num": 61,
+    "fr": "Viens m'aider ."
+  },
+  {
+    "num": 62,
+    "fr": "S'il te plaît"
+  },
+  {
+    "num": 63,
+    "fr": "Ne pleures plus"
+  },
+  {
+    "num": 64,
+    "fr": "Qui attends-tu ici"
+  },
+  {
+    "num": 65,
+    "fr": "Qu'attends-tu"
+  },
+  {
+    "num": 66,
+    "fr": "Qu'attends-tu maintenant"
+  },
+  {
+    "num": 67,
+    "fr": "Je n'ai pas d'argent"
+  },
+  {
+    "num": 68,
+    "fr": "Je n'ai même pas un 'rond' (argent)"
+  },
+  {
+    "num": 69,
+    "fr": "Tu ne vaux rien"
+  },
+  {
+    "num": 7,
+    "fr": "Je suis originaire de Makak"
+  },
+  {
+    "num": 70,
+    "fr": "Laisses comme cela ."
+  },
+  {
+    "num": 71,
+    "fr": "Ne touches à rien"
+  },
+  {
+    "num": 72,
+    "fr": "Viens que je te dise !"
+  },
+  {
+    "num": 73,
+    "fr": "Ne me finis pas !"
+  },
+  {
+    "num": 74,
+    "fr": "Les originaires d'ici (Famille ohhh)"
+  },
+  {
+    "num": 75,
+    "fr": "Qui a à dire"
+  },
+  {
+    "num": 76,
+    "fr": "Sois le bienvenu !"
+  },
+  {
+    "num": 77,
+    "fr": "Les Camerounais sont de grands travailleurs !"
+  },
+  {
+    "num": 78,
+    "fr": "Cela sent mauvais"
+  },
+  {
+    "num": 79,
+    "fr": "Que c'est mauvais !"
+  },
+  {
+    "num": 8,
+    "fr": "Je ne sais pas bien parler"
+  },
+  {
+    "num": 80,
+    "fr": "Qui cherches tu"
+  },
+  {
+    "num": 81,
+    "fr": "Que cherches-tu"
+  },
+  {
+    "num": 82,
+    "fr": "Les enfants d'aujourd’hui (midi)!"
+  },
+  {
+    "num": 83,
+    "fr": "Je n'en ai pas !"
+  },
+  {
+    "num": 84,
+    "fr": "Tu ne me dépasses en rien"
+  },
+  {
+    "num": 85,
+    "fr": "Cela me dépasse"
+  },
+  {
+    "num": 86,
+    "fr": "Rien ne peut me dépasser"
+  },
+  {
+    "num": 87,
+    "fr": "Que lui réclamez-vous"
+  },
+  {
+    "num": 88,
+    "fr": "Que me réclamez-vous"
+  },
+  {
+    "num": 89,
+    "fr": "Que dis-tu comme ça"
+  },
+  {
+    "num": 9,
+    "fr": "Mon ami"
+  },
+  {
+    "num": 90,
+    "fr": "Qu'oses-tu ainsi"
+  },
+  {
+    "num": 91,
+    "fr": "N'as-tu pas honte"
+  },
+  {
+    "num": 92,
+    "fr": "Retrouves-moi au lieu de service"
+  },
+  {
+    "num": 93,
+    "fr": "Retrouves-moi dehors"
+  },
+  {
+    "num": 94,
+    "fr": "Retrouves-moi dedans"
+  },
+  {
+    "num": 95,
+    "fr": "Retourne derrière"
+  },
+  {
+    "num": 96,
+    "fr": "Viens devant"
+  },
+  {
+    "num": 97,
+    "fr": "Recules-toi"
+  },
+  {
+    "num": 98,
+    "fr": "Donne-moi la voie"
+  },
+  {
+    "num": 99,
+    "fr": "Rejoins-moi à ...(Bandjoun)"
+  }
+]

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - BassaAI Translator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <nav class="bassa-nav">
+        <a href="/" class="brand">BassaAI Translator</a>
+        <div class="nav-links" x-data="{ user: getUser() }">
+            <a href="/">Traduction</a>
+            <a href="/contribute.html">Contribuer</a>
+            <a href="/admin.html" class="active">Admin</a>
+            <template x-if="user">
+                <span style="display:flex;align-items:center;gap:0.8rem;">
+                    <span style="color:#ccc;font-size:0.85rem;" x-text="user.username"></span>
+                    <a href="#" class="auth-btn" @click.prevent="logout()">Quitter</a>
+                </span>
+            </template>
+        </div>
+    </nav>
+
+    <div class="container" x-data="adminPage()" x-init="init()">
+        <template x-if="!authorized">
+            <div class="card" style="text-align:center;margin-top:3rem;">
+                <h2>Accès restreint</h2>
+                <p>Vous devez être admin ou reviewer pour accéder à cette page.</p>
+                <a href="/login.html" class="btn btn-primary">Se connecter</a>
+            </div>
+        </template>
+
+        <template x-if="authorized">
+            <div>
+                <div class="hero">
+                    <h1>Tableau de bord</h1>
+                </div>
+
+                <!-- Stats cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="number" x-text="stats.dictionary_entries || 0"></div>
+                        <div class="stat-label">Entrées dictionnaire</div>
+                        <div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.25rem;" x-text="(stats.dictionary_verified || 0) + ' vérifiées'"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number" x-text="stats.corpus_pairs || 0"></div>
+                        <div class="stat-label">Paires corpus</div>
+                        <div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.25rem;" x-text="(stats.corpus_verified || 0) + ' vérifiées'"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number" x-text="stats.contributions_pending || 0"></div>
+                        <div class="stat-label">Contributions en attente</div>
+                        <div style="font-size:0.75rem;color:var(--text-muted);margin-top:0.25rem;" x-text="(stats.contributions_total || 0) + ' au total'"></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number" x-text="stats.users || 0"></div>
+                        <div class="stat-label">Utilisateurs</div>
+                    </div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="tabs">
+                    <button class="tab" :class="{ active: tab === 'review' }" @click="tab = 'review'; loadPending()">Contributions à réviser</button>
+                    <button class="tab" :class="{ active: tab === 'dictionary' }" @click="tab = 'dictionary'; loadDictionary()">Dictionnaire</button>
+                    <button class="tab" :class="{ active: tab === 'corpus' }" @click="tab = 'corpus'; loadCorpus()">Corpus</button>
+                    <template x-if="user && user.role === 'admin'">
+                        <button class="tab" :class="{ active: tab === 'users' }" @click="tab = 'users'; loadUsers()">Utilisateurs</button>
+                    </template>
+                    <template x-if="user && user.role === 'admin'">
+                        <button class="tab" :class="{ active: tab === 'activity' }" @click="tab = 'activity'; loadActivity()">Activité</button>
+                    </template>
+                </div>
+
+                <!-- Review Queue -->
+                <div x-show="tab === 'review'" class="card">
+                    <template x-if="pending.length === 0">
+                        <p style="color:#888;">Aucune contribution en attente.</p>
+                    </template>
+                    <template x-for="c in pending" :key="c.id">
+                        <div style="border:1px solid #eee;border-radius:8px;padding:1rem;margin-bottom:0.8rem;">
+                            <div style="display:flex;justify-content:space-between;align-items:center;">
+                                <div>
+                                    <span class="badge" :class="'badge-' + c.type" x-text="c.type" style="background:#eee;color:#333;"></span>
+                                    <strong x-text="c.source_text" style="margin-left:0.5rem;"></strong>
+                                    <span style="color:#888;"> &rarr; </span>
+                                    <strong x-text="c.bassa_text" style="color:var(--bassa-primary);"></strong>
+                                    <span x-show="c.category" style="color:#888;font-size:0.85rem;" x-text="'(' + c.category + ')'"></span>
+                                </div>
+                                <div style="display:flex;gap:0.4rem;">
+                                    <button class="btn btn-success btn-sm" @click="reviewAction(c.id, 'approved')">Approuver</button>
+                                    <button class="btn btn-danger btn-sm" @click="reviewAction(c.id, 'rejected')">Rejeter</button>
+                                </div>
+                            </div>
+                            <p x-show="c.notes" style="font-size:0.85rem;color:#666;margin:0.4rem 0 0;" x-text="c.notes"></p>
+                        </div>
+                    </template>
+                </div>
+
+                <!-- Dictionary -->
+                <div x-show="tab === 'dictionary'" class="card">
+                    <div style="display:flex;gap:0.5rem;margin-bottom:1rem;flex-wrap:wrap;">
+                        <input type="text" x-model="dictSearch" placeholder="Rechercher..." style="flex:1;min-width:150px;padding:0.4rem 0.8rem;border:1px solid #ddd;border-radius:6px;" @keyup.enter="dictPage=1; loadDictionary()">
+                        <button class="btn btn-primary btn-sm" @click="dictPage=1; loadDictionary()">Chercher</button>
+                        <button class="btn btn-success btn-sm" @click="newEntry()">+ Entrée</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Langue</th>
+                                <th>Mot source</th>
+                                <th>Bassa</th>
+                                <th>Catégorie</th>
+                                <th>Vérifié</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="e in dictEntries" :key="e.id">
+                                <tr>
+                                    <td x-text="e.source_language.toUpperCase()"></td>
+                                    <td x-text="e.source_word"></td>
+                                    <td class="col-bassa" x-text="e.bassa_word"></td>
+                                    <td x-text="e.category || '-'"></td>
+                                    <td x-text="e.is_verified ? 'Oui' : 'Non'"></td>
+                                    <td style="white-space:nowrap;">
+                                        <button class="btn btn-sm" style="padding:0.2rem 0.5rem;font-size:0.8rem;" @click="editEntry(e)" title="Modifier">&#9998;</button>
+                                        <button class="btn btn-danger btn-sm" style="padding:0.2rem 0.5rem;font-size:0.8rem;" @click="deleteEntry(e.id)" title="Supprimer">&#128465;</button>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                    <div class="pagination" x-show="dictPages > 1">
+                        <button :disabled="dictPage <= 1" @click="dictPage--; loadDictionary()">Préc.</button>
+                        <span style="padding:0.4rem;font-size:0.85rem;" x-text="dictPage + ' / ' + dictPages"></span>
+                        <button :disabled="dictPage >= dictPages" @click="dictPage++; loadDictionary()">Suiv.</button>
+                    </div>
+                </div>
+
+                <!-- Corpus -->
+                <div x-show="tab === 'corpus'" class="card">
+                    <div style="display:flex;gap:0.5rem;margin-bottom:1rem;flex-wrap:wrap;">
+                        <input type="text" x-model="corpusSearch" placeholder="Rechercher..." style="flex:1;min-width:150px;padding:0.4rem 0.8rem;border:1px solid #ddd;border-radius:6px;" @keyup.enter="corpusPage=1; loadCorpus()">
+                        <button class="btn btn-primary btn-sm" @click="corpusPage=1; loadCorpus()">Chercher</button>
+                        <button class="btn btn-success btn-sm" @click="newCorpusPair()">+ Paire</button>
+                        <a href="/api/corpus/export" class="btn btn-secondary btn-sm" target="_blank">Exporter CSV</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Langue</th>
+                                <th>Texte source</th>
+                                <th>Bassa</th>
+                                <th>Domaine</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="p in corpusPairs" :key="p.id">
+                                <tr>
+                                    <td x-text="p.source_language.toUpperCase()"></td>
+                                    <td x-text="p.source_text"></td>
+                                    <td class="col-bassa" x-text="p.bassa_text"></td>
+                                    <td x-text="p.domain || '-'"></td>
+                                    <td>
+                                        <button class="btn btn-danger btn-sm" style="padding:0.2rem 0.5rem;font-size:0.8rem;" @click="deleteCorpusPair(p.id)" title="Supprimer">&#128465;</button>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                    <template x-if="corpusPairs.length === 0">
+                        <p style="color:#888;margin-top:0.5rem;">Aucune paire dans le corpus.</p>
+                    </template>
+                    <div class="pagination" x-show="corpusPages > 1">
+                        <button :disabled="corpusPage <= 1" @click="corpusPage--; loadCorpus()">Préc.</button>
+                        <span style="padding:0.4rem;font-size:0.85rem;" x-text="corpusPage + ' / ' + corpusPages"></span>
+                        <button :disabled="corpusPage >= corpusPages" @click="corpusPage++; loadCorpus()">Suiv.</button>
+                    </div>
+                </div>
+
+                <!-- Users (admin only) -->
+                <div x-show="tab === 'users'" class="card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nom d'utilisateur</th>
+                                <th>Email</th>
+                                <th>Auth</th>
+                                <th>Rôle</th>
+                                <th>Inscrit le</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="u in users" :key="u.id">
+                                <tr>
+                                    <td x-text="u.id" style="color:#888;font-size:0.85rem;"></td>
+                                    <td x-text="u.username"></td>
+                                    <td x-text="u.email" style="font-size:0.85rem;"></td>
+                                    <td>
+                                        <span x-show="u.google_id" style="display:inline-flex;align-items:center;gap:0.25rem;background:#e8f0fe;border:1px solid #4285f4;border-radius:4px;padding:0.1rem 0.45rem;font-size:0.75rem;font-weight:600;color:#1a73e8;">G Google</span>
+                                        <span x-show="!u.google_id" style="font-size:0.75rem;color:#888;">Mot de passe</span>
+                                    </td>
+                                    <td>
+                                        <span class="badge" :class="'badge-' + u.role" x-text="u.role"></span>
+                                    </td>
+                                    <td style="font-size:0.8rem;color:#888;" x-text="u.created_at ? new Date(u.created_at).toLocaleDateString('fr-FR') : '-'"></td>
+                                    <td style="display:flex;gap:0.3rem;align-items:center;flex-wrap:wrap;">
+                                        <select @change="changeRole(u.id, $event.target.value); $event.target.value=''" style="font-size:0.8rem;padding:0.2rem 0.4rem;border:1px solid #ddd;border-radius:4px;">
+                                            <option value="" selected disabled>Rôle...</option>
+                                            <option value="contributor">Contributor</option>
+                                            <option value="reviewer">Reviewer</option>
+                                            <option value="admin">Admin</option>
+                                        </select>
+                                        <button
+                                            class="btn btn-danger btn-sm"
+                                            style="padding:0.2rem 0.45rem;font-size:0.8rem;"
+                                            @click="deleteUser(u.id, u.username)"
+                                            :disabled="u.id === user.id"
+                                            title="Supprimer cet utilisateur">&#128465;</button>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Activity (admin only) -->
+                <div x-show="tab === 'activity'" class="card">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.25rem;flex-wrap:wrap;gap:0.5rem;">
+                        <h3 style="margin:0;font-size:1rem;">Traductions par jour</h3>
+                        <select x-model="activityDays" @change="loadActivity()" style="font-size:0.85rem;padding:0.3rem 0.6rem;border:1px solid #ddd;border-radius:6px;">
+                            <option value="7">7 jours</option>
+                            <option value="14">14 jours</option>
+                            <option value="30">30 jours</option>
+                        </select>
+                    </div>
+                    <div style="position:relative;max-height:280px;">
+                        <canvas id="activityChart"></canvas>
+                    </div>
+                    <div x-show="activityEngines.length > 0" style="margin-top:1.5rem;">
+                        <p style="font-size:0.85rem;font-weight:600;color:var(--text-muted);margin-bottom:0.75rem;">Répartition par moteur</p>
+                        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+                            <template x-for="e in activityEngines" :key="e.engine">
+                                <div style="background:#f8f9fa;border:1px solid #e9ecef;border-radius:8px;padding:0.6rem 1.1rem;text-align:center;min-width:90px;">
+                                    <div style="font-size:1.15rem;font-weight:700;color:var(--primary);" x-text="e.count"></div>
+                                    <div style="font-size:0.78rem;color:#888;margin-top:0.1rem;" x-text="e.engine"></div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <div x-show="activityEngines.length === 0" style="color:#888;text-align:center;padding:2rem 0;">
+                        Aucune traduction sur cette période.
+                    </div>
+                </div>
+
+                <!-- Modal dictionnaire (création + édition) -->
+                <div x-show="editModal" style="position:fixed;inset:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:1000;" @click.self="closeModal()">
+                    <div style="background:#fff;border-radius:12px;padding:2rem;width:100%;max-width:500px;max-height:90vh;overflow-y:auto;" @click.stop>
+                        <h3 style="margin-top:0;" x-text="isCreating ? 'Nouvelle entrée' : 'Modifier l\'entrée'"></h3>
+                        <div style="display:flex;flex-direction:column;gap:0.8rem;">
+                            <label>
+                                <span style="font-size:0.85rem;font-weight:600;">Langue source</span>
+                                <select x-model="editForm.source_language" :disabled="!isCreating" style="width:100%;padding:0.4rem 0.8rem;border:1px solid #ddd;border-radius:6px;margin-top:0.2rem;">
+                                    <option value="fr">Français (FR)</option>
+                                    <option value="en">Anglais (EN)</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span style="font-size:0.85rem;font-weight:600;">Mot source</span>
+                                <input type="text" x-model="editForm.source_word" style="width:100%;padding:0.4rem 0.8rem;border:1px solid #ddd;border-radius:6px;margin-top:0.2rem;">
+                            </label>
+                            <label>
+                                <span style="font-size:0.85rem;font-weight:600;">Mot Bassa</span>
+                                <input type="text" x-model="editForm.bassa_word" style="width:100%;padding:0.4rem 0.8rem;border:1px solid #ddd;border-radius:6px;margin-top:0.2rem;">
+                            </label>
+                            <label>
+                                <span style="font-size:0.85rem;font-weight:600;">Catégorie</span>
+                                <select x-model="editForm.category" style="width:100%;padding:0.4rem 0.8rem;border:1px solid #ddd;border-radius:6px;margin-top:0.2rem;">
+                                    <option value="">-- Aucune --</option>
+                                    <option value="noun">noun</option>
+                                    <option value="verb">verb</option>
+                                    <option value="adjective">adjective</option>
+                                    <option value="adverb">adverb</option>
+                                    <option value="pronoun">pronoun</option>
+                                    <option value="preposition">preposition</option>
+                                    <option value="conjunction">conjunction</option>
+                                    <option value="interjection">interjection</option>
+                                    <option value="numeral">numeral</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span style="font-size:0.85rem;font-weight:600;">Phonétique</span>
+                                <input type="text" x-model="editForm.phonetic" placeholder="Optionnel" style="width:100%;padding:0.4rem 0.8rem;border:1px solid #ddd;border-radius:6px;margin-top:0.2rem;">
+                            </label>
+                            <label>
+                                <span style="font-size:0.85rem;font-weight:600;">Notes</span>
+                                <textarea x-model="editForm.notes" placeholder="Optionnel" rows="3" style="width:100%;padding:0.4rem 0.8rem;border:1px solid #ddd;border-radius:6px;margin-top:0.2rem;resize:vertical;"></textarea>
+                            </label>
+                            <label style="display:flex;align-items:center;gap:0.5rem;">
+                                <input type="checkbox" x-model="editForm.is_verified">
+                                <span style="font-size:0.85rem;font-weight:600;">Vérifié</span>
+                            </label>
+                        </div>
+                        <div style="display:flex;justify-content:flex-end;gap:0.5rem;margin-top:1.2rem;">
+                            <button class="btn btn-secondary btn-sm" @click="closeModal()">Annuler</button>
+                            <button class="btn btn-primary btn-sm" @click="saveEntry()" :disabled="saving">
+                                <span x-show="!saving" x-text="isCreating ? 'Créer' : 'Sauvegarder'"></span>
+                                <span x-show="saving">Enregistrement...</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal corpus (création) -->
+                <div x-show="corpusModal" style="position:fixed;inset:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:1000;" @click.self="closeCorpusModal()">
+                    <div style="background:#fff;border-radius:12px;padding:2rem;width:100%;max-width:500px;max-height:90vh;overflow-y:auto;" @click.stop>
+                        <h3 style="margin-top:0;">Nouvelle paire corpus</h3>
+                        <div style="display:flex;flex-direction:column;gap:0.8rem;">
+                            <label>
+                                <span style="font-size:0.85rem;font-weight:600;">Langue source</span>
+                                <select x-model="corpusForm.source_language" style="width:100%;padding:0.4rem 0.8rem;border:1px solid #ddd;border-radius:6px;margin-top:0.2rem;">
+                                    <option value="fr">Français (FR)</option>
+                                    <option value="en">Anglais (EN)</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span style="font-size:0.85rem;font-weight:600;">Texte source</span>
+                                <textarea x-model="corpusForm.source_text" rows="3" style="width:100%;padding:0.4rem 0.8rem;border:1px solid #ddd;border-radius:6px;margin-top:0.2rem;resize:vertical;"></textarea>
+                            </label>
+                            <label>
+                                <span style="font-size:0.85rem;font-weight:600;">Texte Bassa</span>
+                                <textarea x-model="corpusForm.bassa_text" rows="3" style="width:100%;padding:0.4rem 0.8rem;border:1px solid #ddd;border-radius:6px;margin-top:0.2rem;resize:vertical;font-family:var(--font-bassa, serif);"></textarea>
+                            </label>
+                            <label>
+                                <span style="font-size:0.85rem;font-weight:600;">Domaine</span>
+                                <input type="text" x-model="corpusForm.domain" placeholder="Ex: bible, quotidien, droit..." style="width:100%;padding:0.4rem 0.8rem;border:1px solid #ddd;border-radius:6px;margin-top:0.2rem;">
+                            </label>
+                            <label style="display:flex;align-items:center;gap:0.5rem;">
+                                <input type="checkbox" x-model="corpusForm.is_verified">
+                                <span style="font-size:0.85rem;font-weight:600;">Vérifié</span>
+                            </label>
+                        </div>
+                        <div style="display:flex;justify-content:flex-end;gap:0.5rem;margin-top:1.2rem;">
+                            <button class="btn btn-secondary btn-sm" @click="closeCorpusModal()">Annuler</button>
+                            <button class="btn btn-primary btn-sm" @click="saveCorpusPair()" :disabled="corpusSaving">
+                                <span x-show="!corpusSaving">Ajouter</span>
+                                <span x-show="corpusSaving">Enregistrement...</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </template>
+    </div>
+
+    <script>
+    function adminPage() {
+        return {
+            user: null,
+            authorized: false,
+            tab: 'review',
+            stats: {},
+            pending: [],
+
+            // Dictionary
+            dictEntries: [],
+            dictPage: 1,
+            dictPages: 1,
+            dictSearch: '',
+
+            // Corpus
+            corpusPairs: [],
+            corpusPage: 1,
+            corpusPages: 1,
+            corpusSearch: '',
+
+            // Users
+            users: [],
+
+            // Dict modal
+            editModal: false,
+            editForm: {},
+            editId: null,
+            isCreating: false,
+            saving: false,
+
+            // Corpus modal
+            corpusModal: false,
+            corpusForm: {},
+            corpusSaving: false,
+
+            // Activity
+            activityDays: '7',
+            activityEngines: [],
+
+            async init() {
+                this.user = await checkAuth();
+                if (this.user && (this.user.role === 'admin' || this.user.role === 'reviewer')) {
+                    this.authorized = true;
+                    await this.loadStats();
+                    await this.loadPending();
+                }
+            },
+
+            async loadStats() {
+                try {
+                    const resp = await apiFetch('/api/admin/stats');
+                    if (resp.ok) this.stats = await resp.json();
+                } catch {}
+            },
+
+            async loadPending() {
+                try {
+                    const resp = await apiFetch('/api/contributions?status=submitted&size=50');
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        this.pending = data.items;
+                    }
+                } catch {}
+            },
+
+            async reviewAction(id, status) {
+                const comment = status === 'rejected' ? prompt('Raison du rejet (optionnel):') : null;
+                try {
+                    const resp = await apiFetch(`/api/contributions/${id}/review`, {
+                        method: 'PUT',
+                        body: JSON.stringify({ status, reviewer_comment: comment })
+                    });
+                    if (resp.ok) {
+                        showToast(status === 'approved' ? 'Contribution approuv\u00e9e\u00a0!' : 'Contribution rejet\u00e9e.');
+                        this.pending = this.pending.filter(c => c.id !== id);
+                        this.loadStats();
+                    } else {
+                        const err = await resp.json();
+                        showToast(err.detail || 'Erreur', 'error');
+                    }
+                } catch {
+                    showToast('Erreur de connexion', 'error');
+                }
+            },
+
+            // ── Dictionary ──────────────────────────────────────
+            async loadDictionary() {
+                try {
+                    const params = new URLSearchParams({ page: this.dictPage, size: 20 });
+                    if (this.dictSearch) params.set('search', this.dictSearch);
+                    const resp = await apiFetch(`/api/dictionary?${params}`);
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        this.dictEntries = data.items;
+                        this.dictPages = data.pages;
+                    }
+                } catch {}
+            },
+
+            newEntry() {
+                this.editId = null;
+                this.isCreating = true;
+                this.editForm = { source_language: 'fr', source_word: '', bassa_word: '', category: '', phonetic: '', notes: '', is_verified: false };
+                this.editModal = true;
+            },
+
+            editEntry(entry) {
+                this.editId = entry.id;
+                this.isCreating = false;
+                this.editForm = {
+                    source_language: entry.source_language,
+                    source_word: entry.source_word,
+                    bassa_word: entry.bassa_word,
+                    category: entry.category || '',
+                    phonetic: entry.phonetic || '',
+                    notes: entry.notes || '',
+                    is_verified: entry.is_verified,
+                };
+                this.editModal = true;
+            },
+
+            closeModal() {
+                this.editModal = false;
+                this.editId = null;
+                this.editForm = {};
+                this.isCreating = false;
+            },
+
+            async saveEntry() {
+                this.saving = true;
+                try {
+                    let url, method, body;
+                    if (this.isCreating) {
+                        url = '/api/dictionary';
+                        method = 'POST';
+                        body = {
+                            source_language: this.editForm.source_language,
+                            source_word: this.editForm.source_word,
+                            bassa_word: this.editForm.bassa_word,
+                            category: this.editForm.category || null,
+                            phonetic: this.editForm.phonetic || null,
+                            notes: this.editForm.notes || null,
+                            is_verified: this.editForm.is_verified,
+                            examples: [],
+                        };
+                    } else {
+                        url = `/api/dictionary/${this.editId}`;
+                        method = 'PUT';
+                        body = {
+                            source_word: this.editForm.source_word,
+                            bassa_word: this.editForm.bassa_word,
+                            category: this.editForm.category || null,
+                            phonetic: this.editForm.phonetic || null,
+                            notes: this.editForm.notes || null,
+                            is_verified: this.editForm.is_verified,
+                        };
+                    }
+                    const resp = await apiFetch(url, { method, body: JSON.stringify(body) });
+                    if (resp.ok) {
+                        await apiFetch('/api/translate/reload', { method: 'POST' });
+                        showToast(this.isCreating ? 'Entr\u00e9e cr\u00e9\u00e9e' : 'Entr\u00e9e mise \u00e0 jour');
+                        this.closeModal();
+                        this.loadDictionary();
+                        this.loadStats();
+                    } else {
+                        const err = await resp.json();
+                        showToast(err.detail || 'Erreur lors de la sauvegarde', 'error');
+                    }
+                } catch {
+                    showToast('Erreur de connexion', 'error');
+                } finally {
+                    this.saving = false;
+                }
+            },
+
+            async deleteEntry(id) {
+                if (!confirm('Supprimer cette entr\u00e9e du dictionnaire\u00a0?')) return;
+                try {
+                    const resp = await apiFetch(`/api/dictionary/${id}`, { method: 'DELETE' });
+                    if (resp.ok) {
+                        await apiFetch('/api/translate/reload', { method: 'POST' });
+                        showToast('Entr\u00e9e supprim\u00e9e');
+                        this.loadDictionary();
+                        this.loadStats();
+                    } else {
+                        const err = await resp.json();
+                        showToast(err.detail || 'Erreur lors de la suppression', 'error');
+                    }
+                } catch {
+                    showToast('Erreur de connexion', 'error');
+                }
+            },
+
+            // ── Corpus ───────────────────────────────────────────
+            async loadCorpus() {
+                try {
+                    const params = new URLSearchParams({ page: this.corpusPage, size: 20 });
+                    if (this.corpusSearch) params.set('search', this.corpusSearch);
+                    const resp = await apiFetch(`/api/corpus?${params}`);
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        this.corpusPairs = data.items;
+                        this.corpusPages = data.pages;
+                    }
+                } catch {}
+            },
+
+            newCorpusPair() {
+                this.corpusForm = { source_language: 'fr', source_text: '', bassa_text: '', domain: '', is_verified: false };
+                this.corpusModal = true;
+            },
+
+            closeCorpusModal() {
+                this.corpusModal = false;
+                this.corpusForm = {};
+            },
+
+            async saveCorpusPair() {
+                this.corpusSaving = true;
+                try {
+                    const body = {
+                        source_language: this.corpusForm.source_language,
+                        source_text: this.corpusForm.source_text,
+                        bassa_text: this.corpusForm.bassa_text,
+                        domain: this.corpusForm.domain || null,
+                        is_verified: this.corpusForm.is_verified,
+                    };
+                    const resp = await apiFetch('/api/corpus', { method: 'POST', body: JSON.stringify(body) });
+                    if (resp.ok) {
+                        showToast('Paire ajout\u00e9e');
+                        this.closeCorpusModal();
+                        this.loadCorpus();
+                        this.loadStats();
+                    } else {
+                        const err = await resp.json();
+                        showToast(err.detail || 'Erreur', 'error');
+                    }
+                } catch {
+                    showToast('Erreur de connexion', 'error');
+                } finally {
+                    this.corpusSaving = false;
+                }
+            },
+
+            async deleteCorpusPair(id) {
+                if (!confirm('Supprimer cette paire du corpus\u00a0?')) return;
+                try {
+                    const resp = await apiFetch(`/api/corpus/${id}`, { method: 'DELETE' });
+                    if (resp.ok) {
+                        showToast('Paire supprim\u00e9e');
+                        this.loadCorpus();
+                        this.loadStats();
+                    } else {
+                        const err = await resp.json();
+                        showToast(err.detail || 'Erreur', 'error');
+                    }
+                } catch {
+                    showToast('Erreur de connexion', 'error');
+                }
+            },
+
+            // ── Users ────────────────────────────────────────────
+            async loadUsers() {
+                try {
+                    const resp = await apiFetch('/api/admin/users');
+                    if (resp.ok) this.users = await resp.json();
+                } catch {}
+            },
+
+            async changeRole(userId, newRole) {
+                if (!newRole) return;
+                try {
+                    const resp = await apiFetch(`/api/admin/users/${userId}/role?role=${newRole}`, { method: 'PUT' });
+                    if (resp.ok) {
+                        showToast('R\u00f4le mis \u00e0 jour');
+                        this.loadUsers();
+                    } else {
+                        showToast('Erreur', 'error');
+                    }
+                } catch {
+                    showToast('Erreur de connexion', 'error');
+                }
+            },
+
+            async deleteUser(userId, username) {
+                if (!confirm(`Supprimer l\u2019utilisateur \u00ab\u00a0${username}\u00a0\u00bb\u00a0? Cette action est irr\u00e9versible.`)) return;
+                try {
+                    const resp = await apiFetch(`/api/admin/users/${userId}`, { method: 'DELETE' });
+                    if (resp.ok) {
+                        showToast('Utilisateur supprim\u00e9');
+                        this.loadUsers();
+                        this.loadStats();
+                    } else {
+                        const err = await resp.json();
+                        showToast(err.detail || 'Erreur', 'error');
+                    }
+                } catch {
+                    showToast('Erreur de connexion', 'error');
+                }
+            },
+
+            // ── Activity chart ───────────────────────────────────
+            async loadActivity() {
+                try {
+                    const resp = await apiFetch(`/api/stats/activity?days=${this.activityDays}`);
+                    if (!resp.ok) return;
+                    const data = await resp.json();
+                    this.activityEngines = data.top_engines || [];
+                    await this.$nextTick();
+                    this._renderChart(data.translations_per_day || []);
+                } catch {}
+            },
+
+            _renderChart(rows) {
+                const canvas = document.getElementById('activityChart');
+                if (!canvas) return;
+                if (window._activityChart) {
+                    window._activityChart.destroy();
+                    window._activityChart = null;
+                }
+                window._activityChart = new Chart(canvas, {
+                    type: 'bar',
+                    data: {
+                        labels: rows.map(r => r.date),
+                        datasets: [{
+                            label: 'Traductions',
+                            data: rows.map(r => r.count),
+                            backgroundColor: 'rgba(45,106,79,0.75)',
+                            borderColor: 'rgba(45,106,79,1)',
+                            borderWidth: 1,
+                            borderRadius: 5,
+                        }],
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: { beginAtZero: true, ticks: { stepSize: 1, precision: 0 } },
+                            x: { ticks: { font: { size: 11 } } },
+                        },
+                    },
+                });
+            },
+        };
+    }
+    </script>
+</body>
+</html>

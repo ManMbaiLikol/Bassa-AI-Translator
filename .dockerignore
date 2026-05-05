@@ -1,0 +1,33 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.git/
+.gitignore
+venv/
+.venv/
+.env
+*.db
+
+# Tests (non embarqués en prod)
+tests/
+
+# Modèles NMT locaux (montés via volume docker)
+backend/models_cache/
+
+# Scripts de développement/scraping
+scripts/
+
+# Données de seed (déjà importées en base)
+backend/seed/
+
+# Docs internes
+Docs/
+*.txt
+*.md
+
+# Fichiers temporaires
+tmp_*.html
+extracted_text_output.txt
+extract_bible*.py
+extract_pdf_text.py

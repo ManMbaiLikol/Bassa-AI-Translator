@@ -1,0 +1,978 @@
+[
+  {
+    "source_language": "fr",
+    "source_word": "israélites",
+    "bassa_word": "ova",
+    "is_verified": false,
+    "count": 98,
+    "score": 7.26
+  },
+  {
+    "source_language": "fr",
+    "source_word": "sacri",
+    "bassa_word": "mu",
+    "is_verified": false,
+    "count": 60,
+    "score": 7.71
+  },
+  {
+    "source_language": "fr",
+    "source_word": "père",
+    "bassa_word": "yak",
+    "is_verified": false,
+    "count": 57,
+    "score": 6.34
+  },
+  {
+    "source_language": "fr",
+    "source_word": "tente",
+    "bassa_word": "li",
+    "is_verified": false,
+    "count": 53,
+    "score": 6.01
+  },
+  {
+    "source_language": "fr",
+    "source_word": "celui",
+    "bassa_word": "ga",
+    "is_verified": false,
+    "count": 50,
+    "score": 5.9
+  },
+  {
+    "source_language": "fr",
+    "source_word": "jacob",
+    "bassa_word": "ob",
+    "is_verified": false,
+    "count": 46,
+    "score": 17.33
+  },
+  {
+    "source_language": "fr",
+    "source_word": "feu",
+    "bassa_word": "ndi",
+    "is_verified": false,
+    "count": 45,
+    "score": 6.11
+  },
+  {
+    "source_language": "fr",
+    "source_word": "prêtre",
+    "bassa_word": "ibale",
+    "is_verified": false,
+    "count": 44,
+    "score": 10.39
+  },
+  {
+    "source_language": "fr",
+    "source_word": "devra",
+    "bassa_word": "ok",
+    "is_verified": false,
+    "count": 44,
+    "score": 5.82
+  },
+  {
+    "source_language": "fr",
+    "source_word": "rande",
+    "bassa_word": "nlama",
+    "is_verified": false,
+    "count": 41,
+    "score": 7.33
+  },
+  {
+    "source_language": "fr",
+    "source_word": "répondit",
+    "bassa_word": "me",
+    "is_verified": false,
+    "count": 39,
+    "score": 7.57
+  },
+  {
+    "source_language": "fr",
+    "source_word": "joseph",
+    "bassa_word": "osep",
+    "is_verified": false,
+    "count": 38,
+    "score": 26.68
+  },
+  {
+    "source_language": "fr",
+    "source_word": "communauté",
+    "bassa_word": "eh",
+    "is_verified": false,
+    "count": 36,
+    "score": 5.7
+  },
+  {
+    "source_language": "fr",
+    "source_word": "jusqu",
+    "bassa_word": "hi",
+    "is_verified": false,
+    "count": 32,
+    "score": 5.93
+  },
+  {
+    "source_language": "fr",
+    "source_word": "autel",
+    "bassa_word": "nu",
+    "is_verified": false,
+    "count": 31,
+    "score": 5.36
+  },
+  {
+    "source_language": "fr",
+    "source_word": "entrée",
+    "bassa_word": "inyu",
+    "is_verified": false,
+    "count": 31,
+    "score": 5.5
+  },
+  {
+    "source_language": "fr",
+    "source_word": "sortir",
+    "bassa_word": "el",
+    "is_verified": false,
+    "count": 31,
+    "score": 5.46
+  },
+  {
+    "source_language": "fr",
+    "source_word": "lle",
+    "bassa_word": "nye",
+    "is_verified": false,
+    "count": 30,
+    "score": 6.78
+  },
+  {
+    "source_language": "fr",
+    "source_word": "donna",
+    "bassa_word": "kal",
+    "is_verified": false,
+    "count": 30,
+    "score": 6.05
+  },
+  {
+    "source_language": "fr",
+    "source_word": "main",
+    "bassa_word": "on",
+    "is_verified": false,
+    "count": 29,
+    "score": 5.56
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abraham",
+    "bassa_word": "abraham",
+    "is_verified": false,
+    "count": 29,
+    "score": 35.7
+  },
+  {
+    "source_language": "fr",
+    "source_word": "chose",
+    "bassa_word": "ki",
+    "is_verified": false,
+    "count": 29,
+    "score": 5.36
+  },
+  {
+    "source_language": "fr",
+    "source_word": "dois",
+    "bassa_word": "ona",
+    "is_verified": false,
+    "count": 27,
+    "score": 5.64
+  },
+  {
+    "source_language": "fr",
+    "source_word": "feras",
+    "bassa_word": "en",
+    "is_verified": false,
+    "count": 27,
+    "score": 7.51
+  },
+  {
+    "source_language": "fr",
+    "source_word": "contre",
+    "bassa_word": "ot",
+    "is_verified": false,
+    "count": 26,
+    "score": 5.13
+  },
+  {
+    "source_language": "fr",
+    "source_word": "manger",
+    "bassa_word": "om",
+    "is_verified": false,
+    "count": 26,
+    "score": 5.21
+  },
+  {
+    "source_language": "fr",
+    "source_word": "selon",
+    "bassa_word": "bon",
+    "is_verified": false,
+    "count": 25,
+    "score": 4.9
+  },
+  {
+    "source_language": "fr",
+    "source_word": "eut",
+    "bassa_word": "ng",
+    "is_verified": false,
+    "count": 25,
+    "score": 5.47
+  },
+  {
+    "source_language": "fr",
+    "source_word": "famille",
+    "bassa_word": "wo",
+    "is_verified": false,
+    "count": 24,
+    "score": 8.26
+  },
+  {
+    "source_language": "fr",
+    "source_word": "jos",
+    "bassa_word": "ti",
+    "is_verified": false,
+    "count": 23,
+    "score": 6.28
+  },
+  {
+    "source_language": "fr",
+    "source_word": "tabernacle",
+    "bassa_word": "osi",
+    "is_verified": false,
+    "count": 23,
+    "score": 7.55
+  },
+  {
+    "source_language": "fr",
+    "source_word": "étranger",
+    "bassa_word": "bo",
+    "is_verified": false,
+    "count": 22,
+    "score": 5.0
+  },
+  {
+    "source_language": "fr",
+    "source_word": "vit",
+    "bassa_word": "nyambe",
+    "is_verified": false,
+    "count": 21,
+    "score": 6.52
+  },
+  {
+    "source_language": "fr",
+    "source_word": "lles",
+    "bassa_word": "eda",
+    "is_verified": false,
+    "count": 21,
+    "score": 6.01
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ville",
+    "bassa_word": "ol",
+    "is_verified": false,
+    "count": 21,
+    "score": 4.74
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appela",
+    "bassa_word": "bib",
+    "is_verified": false,
+    "count": 20,
+    "score": 7.41
+  },
+  {
+    "source_language": "fr",
+    "source_word": "camp",
+    "bassa_word": "gw",
+    "is_verified": false,
+    "count": 20,
+    "score": 5.77
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abram",
+    "bassa_word": "abram",
+    "is_verified": false,
+    "count": 20,
+    "score": 126.76
+  },
+  {
+    "source_language": "fr",
+    "source_word": "furent",
+    "bassa_word": "hala",
+    "is_verified": false,
+    "count": 19,
+    "score": 4.65
+  },
+  {
+    "source_language": "fr",
+    "source_word": "désert",
+    "bassa_word": "yo",
+    "is_verified": false,
+    "count": 19,
+    "score": 5.11
+  },
+  {
+    "source_language": "fr",
+    "source_word": "chef",
+    "bassa_word": "lo",
+    "is_verified": false,
+    "count": 18,
+    "score": 5.21
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aucun",
+    "bassa_word": "man",
+    "is_verified": false,
+    "count": 18,
+    "score": 5.37
+  },
+  {
+    "source_language": "fr",
+    "source_word": "enregistrés",
+    "bassa_word": "israel",
+    "is_verified": false,
+    "count": 17,
+    "score": 7.36
+  },
+  {
+    "source_language": "fr",
+    "source_word": "plaît",
+    "bassa_word": "we",
+    "is_verified": false,
+    "count": 16,
+    "score": 6.49
+  },
+  {
+    "source_language": "fr",
+    "source_word": "pain",
+    "bassa_word": "os",
+    "is_verified": false,
+    "count": 16,
+    "score": 5.43
+  },
+  {
+    "source_language": "fr",
+    "source_word": "bois",
+    "bassa_word": "mb",
+    "is_verified": false,
+    "count": 16,
+    "score": 7.75
+  },
+  {
+    "source_language": "fr",
+    "source_word": "arche",
+    "bassa_word": "oa",
+    "is_verified": false,
+    "count": 16,
+    "score": 17.11
+  },
+  {
+    "source_language": "fr",
+    "source_word": "loi",
+    "bassa_word": "nyen",
+    "is_verified": false,
+    "count": 15,
+    "score": 4.36
+  },
+  {
+    "source_language": "fr",
+    "source_word": "fois",
+    "bassa_word": "et",
+    "is_verified": false,
+    "count": 14,
+    "score": 4.35
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ésaü",
+    "bassa_word": "mbus",
+    "is_verified": false,
+    "count": 13,
+    "score": 4.39
+  },
+  {
+    "source_language": "fr",
+    "source_word": "vécut",
+    "bassa_word": "gwal",
+    "is_verified": false,
+    "count": 13,
+    "score": 27.41
+  },
+  {
+    "source_language": "fr",
+    "source_word": "peau",
+    "bassa_word": "nwii",
+    "is_verified": false,
+    "count": 13,
+    "score": 13.05
+  },
+  {
+    "source_language": "fr",
+    "source_word": "enfants",
+    "bassa_word": "kiki",
+    "is_verified": false,
+    "count": 12,
+    "score": 4.31
+  },
+  {
+    "source_language": "fr",
+    "source_word": "descendants",
+    "bassa_word": "ndap",
+    "is_verified": false,
+    "count": 12,
+    "score": 9.07
+  },
+  {
+    "source_language": "fr",
+    "source_word": "lévites",
+    "bassa_word": "hop",
+    "is_verified": false,
+    "count": 12,
+    "score": 9.69
+  },
+  {
+    "source_language": "fr",
+    "source_word": "app",
+    "bassa_word": "mut",
+    "is_verified": false,
+    "count": 12,
+    "score": 5.47
+  },
+  {
+    "source_language": "fr",
+    "source_word": "parler",
+    "bassa_word": "tj",
+    "is_verified": false,
+    "count": 11,
+    "score": 7.52
+  },
+  {
+    "source_language": "fr",
+    "source_word": "travail",
+    "bassa_word": "ngii",
+    "is_verified": false,
+    "count": 11,
+    "score": 8.66
+  },
+  {
+    "source_language": "fr",
+    "source_word": "toiles",
+    "bassa_word": "lit",
+    "is_verified": false,
+    "count": 11,
+    "score": 8.55
+  },
+  {
+    "source_language": "fr",
+    "source_word": "fumer",
+    "bassa_word": "yom",
+    "is_verified": false,
+    "count": 10,
+    "score": 13.92
+  },
+  {
+    "source_language": "fr",
+    "source_word": "champ",
+    "bassa_word": "es",
+    "is_verified": false,
+    "count": 10,
+    "score": 6.19
+  },
+  {
+    "source_language": "fr",
+    "source_word": "noé",
+    "bassa_word": "nkuu",
+    "is_verified": false,
+    "count": 9,
+    "score": 42.03
+  },
+  {
+    "source_language": "fr",
+    "source_word": "présentera",
+    "bassa_word": "nyega",
+    "is_verified": false,
+    "count": 9,
+    "score": 26.13
+  },
+  {
+    "source_language": "fr",
+    "source_word": "lèpre",
+    "bassa_word": "to",
+    "is_verified": false,
+    "count": 9,
+    "score": 10.29
+  },
+  {
+    "source_language": "fr",
+    "source_word": "cadres",
+    "bassa_word": "sesema",
+    "is_verified": false,
+    "count": 9,
+    "score": 22.56
+  },
+  {
+    "source_language": "fr",
+    "source_word": "juda",
+    "bassa_word": "em",
+    "is_verified": false,
+    "count": 8,
+    "score": 5.33
+  },
+  {
+    "source_language": "fr",
+    "source_word": "permanente",
+    "bassa_word": "nt",
+    "is_verified": false,
+    "count": 8,
+    "score": 7.55
+  },
+  {
+    "source_language": "fr",
+    "source_word": "seigneur",
+    "bassa_word": "ke",
+    "is_verified": false,
+    "count": 8,
+    "score": 7.56
+  },
+  {
+    "source_language": "fr",
+    "source_word": "montagne",
+    "bassa_word": "pes",
+    "is_verified": false,
+    "count": 8,
+    "score": 5.94
+  },
+  {
+    "source_language": "fr",
+    "source_word": "nés",
+    "bassa_word": "ep",
+    "is_verified": false,
+    "count": 8,
+    "score": 8.13
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ajouta",
+    "bassa_word": "od",
+    "is_verified": false,
+    "count": 8,
+    "score": 6.14
+  },
+  {
+    "source_language": "fr",
+    "source_word": "cadavre",
+    "bassa_word": "hiki",
+    "is_verified": false,
+    "count": 8,
+    "score": 15.37
+  },
+  {
+    "source_language": "fr",
+    "source_word": "laine",
+    "bassa_word": "bisu",
+    "is_verified": false,
+    "count": 7,
+    "score": 5.07
+  },
+  {
+    "source_language": "fr",
+    "source_word": "temps",
+    "bassa_word": "homa",
+    "is_verified": false,
+    "count": 7,
+    "score": 9.17
+  },
+  {
+    "source_language": "fr",
+    "source_word": "déclarera",
+    "bassa_word": "hisi",
+    "is_verified": false,
+    "count": 7,
+    "score": 37.25
+  },
+  {
+    "source_language": "fr",
+    "source_word": "semblable",
+    "bassa_word": "libad",
+    "is_verified": false,
+    "count": 7,
+    "score": 20.35
+  },
+  {
+    "source_language": "fr",
+    "source_word": "demanda",
+    "bassa_word": "inyule",
+    "is_verified": false,
+    "count": 6,
+    "score": 4.83
+  },
+  {
+    "source_language": "fr",
+    "source_word": "moment",
+    "bassa_word": "nl",
+    "is_verified": false,
+    "count": 6,
+    "score": 5.93
+  },
+  {
+    "source_language": "fr",
+    "source_word": "laver",
+    "bassa_word": "ny",
+    "is_verified": false,
+    "count": 6,
+    "score": 6.84
+  },
+  {
+    "source_language": "fr",
+    "source_word": "impure",
+    "bassa_word": "ns",
+    "is_verified": false,
+    "count": 6,
+    "score": 12.6
+  },
+  {
+    "source_language": "fr",
+    "source_word": "enceinte",
+    "bassa_word": "laban",
+    "is_verified": false,
+    "count": 6,
+    "score": 47.91
+  },
+  {
+    "source_language": "fr",
+    "source_word": "beau",
+    "bassa_word": "nyaga",
+    "is_verified": false,
+    "count": 6,
+    "score": 16.24
+  },
+  {
+    "source_language": "fr",
+    "source_word": "produits",
+    "bassa_word": "tole",
+    "is_verified": false,
+    "count": 6,
+    "score": 6.23
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abimélech",
+    "bassa_word": "isak",
+    "is_verified": false,
+    "count": 6,
+    "score": 33.7
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ailés",
+    "bassa_word": "isi",
+    "is_verified": false,
+    "count": 6,
+    "score": 15.49
+  },
+  {
+    "source_language": "fr",
+    "source_word": "trouve",
+    "bassa_word": "mal",
+    "is_verified": false,
+    "count": 6,
+    "score": 7.84
+  },
+  {
+    "source_language": "fr",
+    "source_word": "pure",
+    "bassa_word": "nla",
+    "is_verified": false,
+    "count": 6,
+    "score": 20.2
+  },
+  {
+    "source_language": "fr",
+    "source_word": "onction",
+    "bassa_word": "gwo",
+    "is_verified": false,
+    "count": 6,
+    "score": 16.3
+  },
+  {
+    "source_language": "fr",
+    "source_word": "propriétaire",
+    "bassa_word": "eb",
+    "is_verified": false,
+    "count": 6,
+    "score": 13.19
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mourut",
+    "bassa_word": "oda",
+    "is_verified": false,
+    "count": 5,
+    "score": 5.75
+  },
+  {
+    "source_language": "fr",
+    "source_word": "rébecca",
+    "bassa_word": "eka",
+    "is_verified": false,
+    "count": 5,
+    "score": 51.84
+  },
+  {
+    "source_language": "fr",
+    "source_word": "pleine",
+    "bassa_word": "mahaa",
+    "is_verified": false,
+    "count": 5,
+    "score": 19.55
+  },
+  {
+    "source_language": "fr",
+    "source_word": "vivant",
+    "bassa_word": "fara",
+    "is_verified": false,
+    "count": 5,
+    "score": 9.08
+  },
+  {
+    "source_language": "fr",
+    "source_word": "coupe",
+    "bassa_word": "bot",
+    "is_verified": false,
+    "count": 5,
+    "score": 66.69
+  },
+  {
+    "source_language": "fr",
+    "source_word": "dèle",
+    "bassa_word": "wem",
+    "is_verified": false,
+    "count": 5,
+    "score": 14.87
+  },
+  {
+    "source_language": "fr",
+    "source_word": "moins",
+    "bassa_word": "ino",
+    "is_verified": false,
+    "count": 5,
+    "score": 13.48
+  },
+  {
+    "source_language": "fr",
+    "source_word": "partirent",
+    "bassa_word": "nbt",
+    "is_verified": false,
+    "count": 5,
+    "score": 6.99
+  },
+  {
+    "source_language": "fr",
+    "source_word": "seule",
+    "bassa_word": "ev",
+    "is_verified": false,
+    "count": 5,
+    "score": 8.42
+  },
+  {
+    "source_language": "fr",
+    "source_word": "cuisse",
+    "bassa_word": "munl",
+    "is_verified": false,
+    "count": 5,
+    "score": 13.4
+  },
+  {
+    "source_language": "fr",
+    "source_word": "présenta",
+    "bassa_word": "nnaga",
+    "is_verified": false,
+    "count": 5,
+    "score": 15.5
+  },
+  {
+    "source_language": "fr",
+    "source_word": "tuera",
+    "bassa_word": "prisi",
+    "is_verified": false,
+    "count": 5,
+    "score": 10.93
+  },
+  {
+    "source_language": "fr",
+    "source_word": "cornes",
+    "bassa_word": "ek",
+    "is_verified": false,
+    "count": 5,
+    "score": 7.82
+  },
+  {
+    "source_language": "fr",
+    "source_word": "maisons",
+    "bassa_word": "egipt",
+    "is_verified": false,
+    "count": 5,
+    "score": 7.95
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amener",
+    "bassa_word": "bak",
+    "is_verified": false,
+    "count": 5,
+    "score": 10.1
+  },
+  {
+    "source_language": "fr",
+    "source_word": "résident",
+    "bassa_word": "op",
+    "is_verified": false,
+    "count": 5,
+    "score": 7.27
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agneau",
+    "bassa_word": "ngababum",
+    "is_verified": false,
+    "count": 5,
+    "score": 48.45
+  },
+  {
+    "source_language": "fr",
+    "source_word": "impureté",
+    "bassa_word": "ik",
+    "is_verified": false,
+    "count": 5,
+    "score": 6.24
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mange",
+    "bassa_word": "mat",
+    "is_verified": false,
+    "count": 5,
+    "score": 17.06
+  },
+  {
+    "source_language": "fr",
+    "source_word": "faisait",
+    "bassa_word": "nk",
+    "is_verified": false,
+    "count": 5,
+    "score": 11.39
+  },
+  {
+    "source_language": "fr",
+    "source_word": "immédiatement",
+    "bassa_word": "ar",
+    "is_verified": false,
+    "count": 5,
+    "score": 9.21
+  },
+  {
+    "source_language": "fr",
+    "source_word": "tache",
+    "bassa_word": "nan",
+    "is_verified": false,
+    "count": 5,
+    "score": 10.78
+  },
+  {
+    "source_language": "fr",
+    "source_word": "examinera",
+    "bassa_word": "kunde",
+    "is_verified": false,
+    "count": 5,
+    "score": 47.93
+  },
+  {
+    "source_language": "fr",
+    "source_word": "frappe",
+    "bassa_word": "lap",
+    "is_verified": false,
+    "count": 5,
+    "score": 30.26
+  },
+  {
+    "source_language": "fr",
+    "source_word": "rognons",
+    "bassa_word": "og",
+    "is_verified": false,
+    "count": 5,
+    "score": 12.36
+  },
+  {
+    "source_language": "fr",
+    "source_word": "caïn",
+    "bassa_word": "kain",
+    "is_verified": false,
+    "count": 5,
+    "score": 228.1
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mauvais",
+    "bassa_word": "bana",
+    "is_verified": false,
+    "count": 5,
+    "score": 13.91
+  },
+  {
+    "source_language": "fr",
+    "source_word": "lésion",
+    "bassa_word": "tiimba",
+    "is_verified": false,
+    "count": 5,
+    "score": 95.04
+  },
+  {
+    "source_language": "fr",
+    "source_word": "étant",
+    "bassa_word": "bobas",
+    "is_verified": false,
+    "count": 5,
+    "score": 16.62
+  },
+  {
+    "source_language": "fr",
+    "source_word": "annexe",
+    "bassa_word": "nge",
+    "is_verified": false,
+    "count": 5,
+    "score": 8.87
+  },
+  {
+    "source_language": "fr",
+    "source_word": "posa",
+    "bassa_word": "bisesema",
+    "is_verified": false,
+    "count": 5,
+    "score": 20.4
+  },
+  {
+    "source_language": "fr",
+    "source_word": "occuper",
+    "bassa_word": "balam",
+    "is_verified": false,
+    "count": 5,
+    "score": 91.52
+  },
+  {
+    "source_language": "fr",
+    "source_word": "arrière",
+    "bassa_word": "eba",
+    "is_verified": false,
+    "count": 5,
+    "score": 16.12
+  }
+]

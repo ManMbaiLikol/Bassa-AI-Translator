@@ -1,0 +1,42 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.db
+.pytest_cache/
+venv/
+.venv/
+
+# Fichiers temporaires de scraping
+tmp_*.html
+extracted_text_output.txt
+
+# Artefacts pip cassés
+=*
+
+# Modèles ML volumineux
+backend/engine/models/
+backend/models_cache/
+*.pt
+*.bin
+*.safetensors
+*.spm
+
+# Fichiers de credentials/secrets
+Docs/AUTH*
+Docs/*CLIENT*
+Docs/*SECRET*
+Docs/*credential*
+
+# Fichiers audio/vidéo lourds
+*.mp3
+*.wav
+*.ogg
+*.mp4
+Docs/Bible Audio Bassa/
+
+# Gros PDFs Bibles — à stocker hors git (Drive, LFS, etc.)
+Docs/Bible*.pdf
+Docs/Dictionnaire*.pdf
+Docs/LANGUES*.pdf
+Docs/PRELIMINAIRES*.pdf

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribuer - BassaAI Translator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/static/js/app.js"></script>
+</head>
+<body>
+    <nav class="bassa-nav">
+        <a href="/" class="brand">BassaAI Translator</a>
+        <div class="nav-links" x-data="{ user: getUser() }">
+            <a href="/">Traduction</a>
+            <a href="/contribute.html" class="active">Contribuer</a>
+            <template x-if="user && (user.role === 'admin' || user.role === 'reviewer')">
+                <a href="/admin.html">Admin</a>
+            </template>
+            <template x-if="user">
+                <span style="display:flex;align-items:center;gap:0.8rem;">
+                    <span style="color:#ccc;font-size:0.85rem;" x-text="user.username"></span>
+                    <a href="#" class="auth-btn" @click.prevent="logout()">Quitter</a>
+                </span>
+            </template>
+            <template x-if="!user">
+                <a href="/login.html" class="auth-btn">Connexion</a>
+            </template>
+        </div>
+    </nav>
+
+    <div class="container" x-data="contributePage()" x-init="init()">
+        <div class="hero">
+            <h1>Contribuer au dictionnaire</h1>
+            <p>Aidez-nous &agrave; enrichir le dictionnaire et le corpus Bassa</p>
+        </div>
+
+        <template x-if="!user">
+            <div class="card" style="text-align:center;">
+                <p>Vous devez &ecirc;tre connect&eacute; pour contribuer.</p>
+                <a href="/login.html" class="btn btn-primary">Se connecter</a>
+            </div>
+        </template>
+
+        <template x-if="user">
+            <div>
+                <div class="tabs">
+                    <button class="tab" :class="{ active: tab === 'submit' }" @click="tab = 'submit'">Soumettre</button>
+                    <button class="tab" :class="{ active: tab === 'history' }" @click="tab = 'history'; loadHistory()">Mes contributions</button>
+                </div>
+
+                <!-- Submit form -->
+                <div x-show="tab === 'submit'" class="card">
+                    <form @submit.prevent="submit()">
+                        <div class="form-group">
+                            <label>Type de contribution</label>
+                            <select x-model="form.type">
+                                <option value="dictionary">Mot / Expression (dictionnaire)</option>
+                                <option value="corpus">Phrase / Texte (corpus)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Langue source</label>
+                            <select x-model="form.source_language">
+                                <option value="fr">Fran&ccedil;ais</option>
+                                <option value="en">English</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label x-text="form.type === 'dictionary' ? 'Mot / Expression source' : 'Texte source'"></label>
+                            <input type="text" x-model="form.source_text" required
+                                :placeholder="form.type === 'dictionary' ? 'Ex: maison' : 'Ex: Je vais au march\u00e9'">
+                        </div>
+                        <div class="form-group">
+                            <label x-text="form.type === 'dictionary' ? 'Traduction Bassa' : 'Texte en Bassa'"></label>
+                            <input type="text" x-model="form.bassa_text" required
+                                :placeholder="form.type === 'dictionary' ? 'Ex: ndap' : 'Ex: Me ke i siga'">
+                        </div>
+                        <div class="form-group" x-show="form.type === 'dictionary'">
+                            <label>Cat&eacute;gorie (optionnel)</label>
+                            <select x-model="form.category">
+                                <option value="">-- Choisir --</option>
+                                <option value="noun">Nom</option>
+                                <option value="verb">Verbe</option>
+                                <option value="adjective">Adjectif</option>
+                                <option value="adverb">Adverbe</option>
+                                <option value="pronoun">Pronom</option>
+                                <option value="interjection">Interjection</option>
+                                <option value="preposition">Pr&eacute;position</option>
+                                <option value="conjunction">Conjonction</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Notes (optionnel)</label>
+                            <textarea x-model="form.notes" rows="2" placeholder="Contexte, r&eacute;f&eacute;rence, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" :disabled="submitting">
+                            <span x-show="!submitting">Soumettre</span>
+                            <span x-show="submitting">Envoi...</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- History -->
+                <div x-show="tab === 'history'" class="card">
+                    <template x-if="contributions.length === 0">
+                        <p style="color:#888;">Aucune contribution pour le moment.</p>
+                    </template>
+                    <table x-show="contributions.length > 0">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Source</th>
+                                <th>Bassa</th>
+                                <th>Statut</th>
+                                <th>Commentaire</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="c in contributions" :key="c.id">
+                                <tr>
+                                    <td x-text="c.type"></td>
+                                    <td x-text="c.source_text"></td>
+                                    <td class="col-bassa" x-text="c.bassa_text"></td>
+                                    <td>
+                                        <span class="badge"
+                                            :class="{
+                                                'badge-submitted': c.status === 'submitted',
+                                                'badge-approved': c.status === 'approved',
+                                                'badge-rejected': c.status === 'rejected'
+                                            }"
+                                            x-text="c.status"></span>
+                                    </td>
+                                    <td x-text="c.reviewer_comment || '-'"></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+    </div>
+
+    <script>
+    function contributePage() {
+        return {
+            user: null,
+            tab: 'submit',
+            form: {
+                type: 'dictionary',
+                source_language: 'fr',
+                source_text: '',
+                bassa_text: '',
+                category: '',
+                notes: ''
+            },
+            submitting: false,
+            contributions: [],
+            async init() {
+                this.user = await checkAuth();
+            },
+            async submit() {
+                this.submitting = true;
+                try {
+                    const resp = await apiFetch('/api/contributions', {
+                        method: 'POST',
+                        body: JSON.stringify(this.form)
+                    });
+                    if (resp.ok) {
+                        showToast('Contribution soumise avec succ\u00e8s !');
+                        this.form.source_text = '';
+                        this.form.bassa_text = '';
+                        this.form.notes = '';
+                    } else {
+                        const err = await resp.json();
+                        showToast(err.detail || 'Erreur', 'error');
+                    }
+                } catch {
+                    showToast('Erreur de connexion', 'error');
+                }
+                this.submitting = false;
+            },
+            async loadHistory() {
+                try {
+                    const resp = await apiFetch('/api/contributions?size=50');
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        this.contributions = data.items;
+                    }
+                } catch {}
+            }
+        };
+    }
+    </script>
+</body>
+</html>

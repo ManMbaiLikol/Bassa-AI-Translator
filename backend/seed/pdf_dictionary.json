@@ -1,0 +1,4349 @@
+[
+  {
+    "source_language": "fr",
+    "source_word": "ainsi",
+    "bassa_word": "comme cela hala undna",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "après",
+    "bassa_word": "ensuite imbus",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "avant",
+    "bassa_word": "ibisu bi ngéda",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "avant",
+    "bassa_word": "ilole",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "avec",
+    "bassa_word": "lôfini tole ni",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ce",
+    "bassa_word": "ii, Iii, nuu",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "cet",
+    "bassa_word": "cette nuu",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "combien",
+    "bassa_word": "bafien,gvvafien, ijafien bédél 'nsongi",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "comme",
+    "bassa_word": "kikii",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "comment",
+    "bassa_word": "adverbe lelaa",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "depuis",
+    "bassa_word": "ibôdôl",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "depuis",
+    "bassa_word": "longtemps kôba",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "donc",
+    "bassa_word": "Jon",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ensemble",
+    "bassa_word": "ntôfi",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "je",
+    "bassa_word": "me",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "l'",
+    "bassa_word": "le, la hio, jo, nye",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "lequel",
+    "bassa_word": "himbe, numbe, limbe",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "même",
+    "bassa_word": "to hala kikii",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mon",
+    "bassa_word": "wem, yem, hiem",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "où",
+    "bassa_word": "hee bédél ihoma",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "parce",
+    "bassa_word": "que inyule",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "parfois",
+    "bassa_word": "hok ngéda",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "pendant",
+    "bassa_word": "ingéda",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "pour",
+    "bassa_word": "Inyu",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "pourquoi",
+    "bassa_word": "inyu kii",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "pourtant",
+    "bassa_word": "ndi",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "sans",
+    "bassa_word": "sauf ibabé, u héa",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "sauf",
+    "bassa_word": "si u héa le",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ses",
+    "bassa_word": "mé, tjé",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "seulement",
+    "bassa_word": "ndik tole ndigi",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "si",
+    "bassa_word": "ibale",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "verbe",
+    "bassa_word": "ibofijam",
+    "category": "loc",
+    "notes": "PDF Dictionnaire FR-Bassa (appendix)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aposteriori",
+    "bassa_word": "imbus ngéda ngandak",
+    "category": "locadv",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abandonné",
+    "bassa_word": "(adj.) nyôyôk",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "yôi bagwal bé abeille",
+    "bassa_word": "nyôi",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abassourdir",
+    "bassa_word": "i suk ngim mut",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "imbambat insuk bonnge ba ndap 'suklu aberrant",
+    "bassa_word": "(adj.)ngimjam ii 'nônôl bé",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abassourdissant",
+    "bassa_word": "(adj.) ngim jam i i aberration (ni) ngi nôfiôl i njel",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abattage",
+    "bassa_word": "1-nkega ubie 2- likôlôl abêtir (Y.)i yilha ngim mut jôn",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abattoir",
+    "bassa_word": "linôlôl Iingim binuga bi homme a abêti toute une population",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abhorrer",
+    "bassa_word": "i 00 ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abîme",
+    "bassa_word": "ngim bee i i gwé bé dikala di ntôl munu Ion ini2- iba ipes i",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abîmer",
+    "bassa_word": "l-iôbôsngirnjam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abîmer (s')",
+    "bassa_word": "i ôbi",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abject",
+    "bassa_word": "(adj.) ngim jam i i yé ibe",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ngandak aboutir",
+    "bassa_word": "isôklofinge",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abjurer",
+    "bassa_word": "i tafiba ngim jam tole ngim nsôk loiinge",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aboutissement",
+    "bassa_word": "lisôgôk Ii nglrn",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ablutions",
+    "bassa_word": "lihiéIbahaga Ii ba jam insôk lofinge",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "malép aboyer",
+    "bassa_word": "iborn",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aboiement",
+    "bassa_word": "libomok Ii ngwo 1 abrégé (e) (adj.) ngirn jam i ba nhubus",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abolir",
+    "bassa_word": "i mélés ngim béba jam mélés abréger (v.)isékdikômbôl",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abominable",
+    "bassa_word": "ngim jam i i yé ibe abreuver (v.)inyus ngim mut tole ngim",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abominablement",
+    "bassa_word": "lôfini libak libe abreuver (s') (v.) i nyo malép",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abomination",
+    "bassa_word": "ngimjam iiyé ibe",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abréviation",
+    "bassa_word": "lihuphak Iiba nhubus",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abondamment",
+    "bassa_word": "lôfiningandak bôl nglmJam",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abri",
+    "bassa_word": "lisolbene",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "absous",
+    "bassa_word": "ngim mabe iinwéhlana",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abruti(e)",
+    "bassa_word": "indém himut",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abstenant",
+    "bassa_word": "(adj.) ngim jam i inhôla i",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abrutir",
+    "bassa_word": "ijunbaha ngim mut",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "sévèrement cet enfant-ci, de peur de abstenir (s')",
+    "bassa_word": "igweInyuu",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abrutissant",
+    "bassa_word": "ngim jam i i nyilhana",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abrutissement",
+    "bassa_word": "liyilhaga Ii ba bapémbaha makin",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abstention",
+    "bassa_word": "ngi top pohol ngim mut",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "absence",
+    "bassa_word": "matôl tole ngim bôt",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "absentéisme",
+    "bassa_word": "matôI ma nson abstentionniste (n.) ntjél pohoI bapémbaha",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "absenter (s')",
+    "bassa_word": "itôl ingim homa",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abstenu",
+    "bassa_word": "(adj.) ngim mut i i ngwel",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "absolu",
+    "bassa_word": "(adj.) 1- nyonok 2- (n.m.) nyuu",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "absolument",
+    "bassa_word": "1-ndigi",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abstraire (s')",
+    "bassa_word": "i bakba",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "absolution",
+    "bassa_word": "nwéhéI imabe habi",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "absolutisme",
+    "bassa_word": "ane 'mbanda",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "absolvant",
+    "bassa_word": "(adj.) ngim jam i i nIa sôl absurde (adj.) ngimjam ii 'nôôga bé",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "absorber",
+    "bassa_word": "1- i nyun ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "serpillère aabsorbé toute l'eau qui a été abus",
+    "bassa_word": "Iilook Ii ba nloo Iihéga",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abuser",
+    "bassa_word": "ipéé",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "nyo mook ma liumb accélération",
+    "bassa_word": "likôndge Iiba nkônde",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abuser (s')",
+    "bassa_word": "iyoba",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ihople me nyoba bé accélérer",
+    "bassa_word": "i kônde pala hoo Iiké",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abusif",
+    "bassa_word": "(adj.) ngim jam i i nloo kôndepala hoo liké",
+    "category": "ive",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accent",
+    "bassa_word": "1- ilémb hi ngim hop",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "abusivement",
+    "bassa_word": "lôfini lihéga Ii Ii yé a un accent du sud: agwé ilémb hi hop",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acabit",
+    "bassa_word": "nya",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ntén mut u accentuer",
+    "bassa_word": "ibédés ngimjam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "académicien",
+    "bassa_word": "(n.) mbombok nu lefroid :lisuni limbédés lihep ingii",
+    "category": "enne",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acceptable",
+    "bassa_word": "ngim jam i ba nIa",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "académie",
+    "bassa_word": "ndap 'mbok neebe",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "académique",
+    "bassa_word": "ngim jam i i nlôl i acceptable (adj.) ngim jam i bôt ba nIa",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acariâtre",
+    "bassa_word": "iagap himut acceptant (e) (n.) 'neebe",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accablant",
+    "bassa_word": "(adj.) 1-ngirnjam iimbofi acceptation (n./) lineebege Iiba 'neebe",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mut mbegee acceptation",
+    "bassa_word": "lineebege Iiba 'neebe",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accablement",
+    "bassa_word": "1- linôhnege Ii ba",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accabler",
+    "bassa_word": "i nôhne ngim mut kudul",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accès",
+    "bassa_word": "lijubul",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accéder",
+    "bassa_word": "1- i pam i ngim homa",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accident",
+    "bassa_word": "1-ngumla 2- mbabaa i i accord (n.m.) l-kunde",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accidenté",
+    "bassa_word": "(adj.) I-nkumlak2- mbabak ndap hana 2- manôklana",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accidentellement",
+    "bassa_word": "1-lônni ngurnIa",
+    "category": "ady.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acclamateur",
+    "bassa_word": "mbamb moo accorder (y.)itikunde",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acclamation",
+    "bassa_word": "indondom mut numensélél antimekunde inyudilo",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acclamer",
+    "bassa_word": "i len ilélé (iléla)",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accort",
+    "bassa_word": "(adj.) ngim mut i i yé Ionnge",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acclimatation",
+    "bassa_word": "lipaIga Ii ba mpaIa mut",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accostage",
+    "bassa_word": "Iitjagak Ii ba ntjak i",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acclimater",
+    "bassa_word": "ipala meia horna nuayé ngwan' lép lôfinimôftngô 'bikei",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accoster",
+    "bassa_word": "i tjak i ngwan 'Iép Iôfini",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accointance",
+    "bassa_word": "rnaIéiiIana môngô 'bikei",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accolade",
+    "bassa_word": "ngim masambIana",
+    "category": "n.f",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accouchée",
+    "bassa_word": "mudaa nuantip gwal",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accoler",
+    "bassa_word": "isambIangim mut",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accouchement",
+    "bassa_word": "gwaI",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accommodant",
+    "bassa_word": "(adj.) ngim mut i i",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accomodation",
+    "bassa_word": "Iinogok Ii ba 'nok BASOMOO angwal man mut nlôm",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accoucheur(euse)",
+    "bassa_word": "ngwéIés bôdaa",
+    "category": "n.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accompagnateur",
+    "bassa_word": "(n.) fiégabôt",
+    "category": "trice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accouder (s')",
+    "bassa_word": "i nikbene ilingénda Ii",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accompagnement",
+    "bassa_word": "Iiékga Ii ba woo",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accoudoir",
+    "bassa_word": "Iinikbene Iilingénda Ii",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accompli",
+    "bassa_word": "(adj.)nyonok woo",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accomplir",
+    "bassa_word": "iyônôs ngim ngôn accouplement (nom.)maôknana",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accomplissement",
+    "bassa_word": "Iiyônhak Ii ba accoupler (s') (v.)iôknana",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accourcissement",
+    "bassa_word": "lihuphak Ii ba accroire (Y.)i lôk bôt",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accoutrement",
+    "bassa_word": "biefingbibe accroître (Y.)1- i boft le ngim jam i ba",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accoutrer",
+    "bassa_word": "ibep enngep recettes del'état: nyunnga ikakaô imbon le",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accoutumance",
+    "bassa_word": "meia ngim jam si tunefais pas attention",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accoutumé(e)",
+    "bassa_word": "'meiga unkénbaha njôkhe yon",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accoutumée (à l')",
+    "bassa_word": "kikii lem accroupir (s') (y.)inyondop",
+    "category": "ady.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accroc",
+    "bassa_word": "liél",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accumulation",
+    "bassa_word": "ngunde",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accrocher (s')",
+    "bassa_word": "1-ipanngap",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "munu imbus yen yen accusateur",
+    "bassa_word": "(n.) nsoman",
+    "category": "trice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accusation",
+    "bassa_word": "soman acheter (v.) i somb ngim jam",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accusatoire",
+    "bassa_word": "ngim jam i i nhôla i marché: NGO MBELHIOL ansomb tjobi",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accusé",
+    "bassa_word": "(n.) mut nuba nsoman acheteur (euse) (n.)nsomb",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "accuser",
+    "bassa_word": "1- i soman ngim mut",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acéphale",
+    "bassa_word": "ngim ane i i yé kikii i ndapyem",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acerbe",
+    "bassa_word": "béiha pierres d'achoppement sur mon chemin",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acéré",
+    "bassa_word": "(adj.) ngim buk i i mbabana i injelyem",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acharné",
+    "bassa_word": "(adj.) 1-ngim mut i inyuha",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acharnement",
+    "bassa_word": "l-linyuhga Iibanyuha",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acolyte",
+    "bassa_word": "1-bot yon 2-nhôIa pada i",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acharner",
+    "bassa_word": "1- ngi nyus ngim mut ngéda nuambon mésa",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acompte",
+    "bassa_word": "libôtlak Ii ba mbôdôl",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "achat",
+    "bassa_word": "sômba",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acheminement",
+    "bassa_word": "lijuphak Ii ba",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acheminer",
+    "bassa_word": "ijubus ngim jam injeI",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "achetable",
+    "bassa_word": "ngimjam iba nIasomb kôs kunde ngisan?",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acquiescement",
+    "bassa_word": "ngémhe action (n./) libonok Iibambonngimjam",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acquiescer",
+    "bassa_word": "ikémhe",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "malgré lui la décision de déménager actionnaire",
+    "bassa_word": "ngim nsanga iimbem",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mabôô mé actionnement",
+    "bassa_word": "likihak Ii ba nkis",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acquis",
+    "bassa_word": "ngimjam ii 'mal kuha",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "actionner",
+    "bassa_word": "i kis ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acquisition",
+    "bassa_word": "likôhôk Iibankôs ngim nglmjam",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "activateur",
+    "bassa_word": "ngim jam i i ntôdôl",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acquitter",
+    "bassa_word": "1- i saa ngim piI",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "activation",
+    "bassa_word": "Iitôtlak IibantôdôIngim",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acrimonie",
+    "bassa_word": "iunhibe jam",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acrimonieux",
+    "bassa_word": "(adj.) ngim mut i i activement (adv.) Iônni mbimba ibabé i",
+    "category": "euse",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acrobate",
+    "bassa_word": "ngim mut i i mpi ngôlô",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acrobatie",
+    "bassa_word": "Iipik Ii ba mpi ngôlô",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acrobatique",
+    "bassa_word": "ngim jam i i nlôl i activer (s') (v.) i ligip",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acte",
+    "bassa_word": "ngim jam i u mbon",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acteur",
+    "bassa_word": "(n.) sôm sôm mbonjam actualité (nf) manwinmangimmangéda",
+    "category": "trice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "actif",
+    "bassa_word": "nsofingiungim gwom ungim ments: manwinmasôninimayé ngandak",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "actuel",
+    "bassa_word": "(adj.) jam Ii nano",
+    "category": "elle",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "actif",
+    "bassa_word": "(adj.) ngim mut iimbon ngim ngim ngéda",
+    "category": "ive",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "actuellement",
+    "bassa_word": "ilenini",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acuité",
+    "bassa_word": "mbimba",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adhérence",
+    "bassa_word": "liatbege Ii ngim jam i",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acul",
+    "bassa_word": "tjihe fiatbe",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "acyclique",
+    "bassa_word": "ngim jam i i gwé bé adhérent (e) 1-(n.) jô i ngim likoda 11-",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mangéda",
+    "bassa_word": "ngimjam iifiatbe",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adhésif",
+    "bassa_word": "(adj.) ngimjam iinatbe",
+    "category": "ive",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "boga niboga adhésion",
+    "bassa_word": "1- liyilga Ii ba nyiIajô i",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adage",
+    "bassa_word": "ngéni",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adaptabilité",
+    "bassa_word": "libak Ii Ii mbon le",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "gwom bikihga adipeux",
+    "bassa_word": "(adj.) ngim jam i i gwé",
+    "category": "euse",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adaptable",
+    "bassa_word": "ngimjam ibanIabon le",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ikihga lônni ngimjam ipe adjectif",
+    "bassa_word": "(nm et adj) libak Ii ngim",
+    "category": "ive",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adaptatif",
+    "bassa_word": "(adj.) ngim jam i i mbon",
+    "category": "ive",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "legwom bikihga ntôn adjectiver",
+    "bassa_word": "itingimjam ngim libak",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adaptation",
+    "bassa_word": "meia adjoindre (v.) i nôfihe ngim mut ngim",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adapter",
+    "bassa_word": "ibon legwom bikihga",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adjoint",
+    "bassa_word": "(n.) 'non mut nubisu",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adapter (s')",
+    "bassa_word": "i meia",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "additif",
+    "bassa_word": "(adj.) ngimjam iba 'nôbe i ngim mut ngim mut ipe",
+    "category": "ive",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adjuger",
+    "bassa_word": "ineebe ndamba iiyé ingii",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "addition",
+    "bassa_word": "ngônde",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "additionner",
+    "bassa_word": "ibon ngônde",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adepte",
+    "bassa_word": "mbôn",
+    "category": "n.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "administration",
+    "bassa_word": "énél",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "administrativement",
+    "bassa_word": "lôiini ngui i",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "baénél adopter",
+    "bassa_word": "1- i neebe ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "administré",
+    "bassa_word": "(n.)mut nu ba nénél",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "administrer",
+    "bassa_word": "iane",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "admirable",
+    "bassa_word": "ngim jam i ba nIa adoption (nf) l-likérnhegelibankémhe",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "admirateur",
+    "bassa_word": "(n.) 'memle bôt ibel",
+    "category": "trice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "admiratif(ive)",
+    "bassa_word": "ngimmutii'memle adorable (adj.) ngim jam i i kôli le ba",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "admiration",
+    "bassa_word": "mamemle adorablement (adv.) ni gwéha iloo",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "admirativement",
+    "bassa_word": "lôiinimamemle",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adorateur",
+    "bassa_word": "(n.) ngim mut i i",
+    "category": "trice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "admirer",
+    "bassa_word": "i memlengim mut tolengim ngwés ngim mut ipe tole ngim jam iloo",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "admissibilité",
+    "bassa_word": "lineebege Ii ba nIa ngim mut tale ngimjam iloo lihéga",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adorer",
+    "bassa_word": "i gwés ngim mut tale ngim",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "admissible",
+    "bassa_word": "ngim mut tale ngim jam iloo lihéga",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "admission",
+    "bassa_word": "lineebege Ii ba nsôk adossement (n.m.) libak Iingimjam iba",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "admonestation",
+    "bassa_word": "linyéiyak Ii ba adosser (v.)inigip lôftnimbus",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "nlélém bébajam adosser (s')",
+    "bassa_word": "inikbene imbus",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "admonester",
+    "bassa_word": "i nyéyéi ngim mut le i adoucir (v.)itômbôs ngimjam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "admonition",
+    "bassa_word": "sosonyayak umpôdôs bôt",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adonner (s')",
+    "bassa_word": "i tiba nkikip inyu ngim adoucissant (e) (adj.) ngim jam i i",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adoucissement",
+    "bassa_word": "Iibômbhak Ii ba aérateur (n.m.)juphene imbebi",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ntômbôs ngimjam aération",
+    "bassa_word": "Iijuphak Ii ba njubus",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adresse",
+    "bassa_word": "1-jôI Iihoma ba nyééne",
+    "category": "n.f",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "communique-nous l'adresse de ton aéré",
+    "bassa_word": "(adj.) ngim homa imbebi injôp",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aérer",
+    "bassa_word": "ijubus mbebi i ngim homa",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adresser",
+    "bassa_word": "i ômle mut ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aérodrome",
+    "bassa_word": "Iipuuene",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adroit",
+    "bassa_word": "(adj.) nIénéI IôfiniIinôyôi Iidinuni dibikei",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adroitement",
+    "bassa_word": "Iônniyi left aérophobie (ni) woni umbebi",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adulateur",
+    "bassa_word": "(n.) nlôphe bôt aéroport (n.m.) lipuuene",
+    "category": "trice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adulation",
+    "bassa_word": "Iilôphege Ii ba nlôphe",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "bôt aéroportuaire",
+    "bassa_word": "ngim jam i i",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adulte",
+    "bassa_word": "nhôlak mut dinuni dibikei",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adultération",
+    "bassa_word": "Iitambga Iiba ntamba affabilité (ni) minyaô",
+    "category": "n.f",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affable",
+    "bassa_word": "minyaô",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adultère",
+    "bassa_word": "matjanng",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affablement",
+    "bassa_word": "niminyaô",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adultère",
+    "bassa_word": "matjanng",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affadir",
+    "bassa_word": "itamba ngimjam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adultérer",
+    "bassa_word": "itjanngap",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affadissant",
+    "bassa_word": "(adj.)ngimjam iintamba",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adultérin",
+    "bassa_word": "(adj.) man 'matjafing mam",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "advenir",
+    "bassa_word": "ta kii ipam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affaiblir",
+    "bassa_word": "1-isuusngim muttolengim",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adverbe",
+    "bassa_word": "Ielaa",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adversaire",
+    "bassa_word": "nkolba",
+    "category": "n.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "adversité",
+    "bassa_word": "koIba",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "pémbsan affaiblissement",
+    "bassa_word": "Iisuuhak Ii ba",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affaire",
+    "bassa_word": "1-jam",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affairé",
+    "bassa_word": "(adj.) ngim mut i i pégi",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ngandak affectionner",
+    "bassa_word": "i gwés ngim mut tole",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affairement",
+    "bassa_word": "libak Iingim mut i i bail affectionne cette position: nunu",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affairer (s')",
+    "bassa_word": "ipagap",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affectueusement",
+    "bassa_word": "lôii.ni ngandak",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "gwoii, uôm nyuu itan affectueux",
+    "bassa_word": "(adj.) ngim mut i i",
+    "category": "se",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affairisme",
+    "bassa_word": "lipakbak Iiba mpagak",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "inyu mam ma minkus afférent",
+    "bassa_word": "(adj.) ngim jam i i nkiha",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affaissement",
+    "bassa_word": "mayumbup",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affaisser (s')",
+    "bassa_word": "iyumbup letoits'est",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affaler (s')",
+    "bassa_word": "ilebakalô ils'est affalé afféterie (nf) Iilââhaga Iibanlââha",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affichage",
+    "bassa_word": "1- libamblak Ii ba",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affamé",
+    "bassa_word": "(adj.) mut nu njal i gwé",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affamer",
+    "bassa_word": "iyis ngim mut njaI",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affameur",
+    "bassa_word": "(n.) nyis bât njaI",
+    "category": "euse",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affidé",
+    "bassa_word": "(adj.) ngim mut iunIakaImam",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affecter",
+    "bassa_word": "1- i nyo ngim mut",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affinité",
+    "bassa_word": "liada la mauvaise nouvelle qu'elle a reçue l'a",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affirmatif",
+    "bassa_word": "(adj.)ngim muttolengim woni ngandak",
+    "category": "ive",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affoler (s')",
+    "bassa_word": "ikon wofiingandak",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affirmation",
+    "bassa_word": "litiik Iiba ntiintiik",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affranchi",
+    "bassa_word": "(adj.) ngim mut i i ntémb",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affirmativement",
+    "bassa_word": "nI maliga kunde",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affranchir",
+    "bassa_word": "1- i timbis ngim mut",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affirmer",
+    "bassa_word": "i tii ntiil}",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affirmer",
+    "bassa_word": "i tiintiik",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affleurer",
+    "bassa_word": "ikôlha ngim gwom nwominsôna",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affliction",
+    "bassa_word": "soso ndutu 'fiem affranchissement (n.m.) 1- litimbhak Ii",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affligeant",
+    "bassa_word": "(adj.) ngim jam i i ntina",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "sosondutu ifiem affres",
+    "bassa_word": "ndéfinga",
+    "category": "nfpl",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affliger",
+    "bassa_word": "i ti ngim mut soso ndutu affreusement (adv.) lôfiningandak béba",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affluence",
+    "bassa_word": "lilok Iingandak bôt inlo affriander (v.)ilôphe bôt",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affriolant",
+    "bassa_word": "ngimjam iifiôtbôt",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affluer",
+    "bassa_word": "i 10ngandak ngélé yada",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affrioler",
+    "bassa_word": "iôtbôt",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "afflux",
+    "bassa_word": "lilok Ii ngandak bôt i nlo",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "kunda yada affront",
+    "bassa_word": "kolba",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affolant",
+    "bassa_word": "(adj.)ngimjam iinkundhana affrontement (n.m.)kolba",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affronter",
+    "bassa_word": "ikolbangimmut",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affolé",
+    "bassa_word": "(adj.) ngim mut i i mbofi mut i mbom",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affolement",
+    "bassa_word": "soso wofii affûter (vo)i hôI ngim jam",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "affoler",
+    "bassa_word": "i kônha mut wofii ngandak",
+    "category": "vo",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "afin que",
+    "bassa_word": "inyu ibon le je suis ôbôsmam",
+    "category": "locprep",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "africain",
+    "bassa_word": "1- (n.) man Africa 2- (adj.)",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "africaniser",
+    "bassa_word": "i yilha ngim jam jam Ii risques d'aggraver lasituation: pot ndék",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agaçant",
+    "bassa_word": "(adj.) ngimjam iinhomba agile (adj.) kwele",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agacer",
+    "bassa_word": "i yam ngim mut",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agilité",
+    "bassa_word": "makwasi",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agacerie",
+    "bassa_word": "homba",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agir",
+    "bassa_word": "i bon ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "âge",
+    "bassa_word": "nwii mimut tale mijam",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "âgé",
+    "bassa_word": "(adj.)nunuk",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agencement",
+    "bassa_word": "libogok Ii ba mbok agissements (nm pl) bibônôl bibe",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agencer",
+    "bassa_word": "ibok ngim mam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agitateur",
+    "bassa_word": "(n.) nyinngis bôt",
+    "category": "trice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agenouillement",
+    "bassa_word": "liômôk Iiba nôm",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mabon 'isi agitation",
+    "bassa_word": "linyinnghak Iibanyiftngis",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agenouiller (s')",
+    "bassa_word": "iômmabon 'isi",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "chrétiens s'agenouillent pour adorer leur agité",
+    "bassa_word": "(adj.) ngim mut tole ngimjam i",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agiter",
+    "bassa_word": "inyiftngisngimjam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agglomération",
+    "bassa_word": "libôk",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agglomérer (s')",
+    "bassa_word": "igwaftna agneau (n.m.) man ntômba",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agglutiner (s')",
+    "bassa_word": "iatba monde",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aggravant",
+    "bassa_word": "(adj.) ngimjam iinkônde kon bésngoo»",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agonie",
+    "bassa_word": "liyenbak Iimut anyenep s'est aguérri aux mauvaises choses",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agonir",
+    "bassa_word": "iyenep ngwégwét",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agonisant",
+    "bassa_word": "(adj.) ngim mut iinyenep",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aguicher",
+    "bassa_word": "isuubôt",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agoniser",
+    "bassa_word": "i yenep",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agrandir",
+    "bassa_word": "ikénbaha ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ahuri",
+    "bassa_word": "(adj.) ngim mut iinyilajôn",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agréable",
+    "bassa_word": "1- lonnge",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ngandak ahurir",
+    "bassa_word": "iyilha ngim mutjôfi",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agréablement",
+    "bassa_word": "lônni minyaô",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agréer",
+    "bassa_word": "i neebe ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "me bibat aider",
+    "bassa_word": "ihôla",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agrément",
+    "bassa_word": "kunde",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agrémenter",
+    "bassa_word": "ikônde lémés ngimjam aïeul",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agriculteur",
+    "bassa_word": "(n.)nsal nwom",
+    "category": "trice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aieux",
+    "bassa_word": "basôgôlsôgôl",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agriculture",
+    "bassa_word": "nson unwom",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aigre",
+    "bassa_word": "béiha",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "agripper (s')",
+    "bassa_word": "i kambbe",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aguerrir",
+    "bassa_word": "imeia gwét aigreur (ni) bai",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aguerrir (s')",
+    "bassa_word": "i yila ngwégwét",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aigrir (s')",
+    "bassa_word": "iyiIabéiha",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aisé",
+    "bassa_word": "ngim mut iiyôgi",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aigu (ë)",
+    "bassa_word": "iwén",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aiguille",
+    "bassa_word": "ndondok",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aisselle",
+    "bassa_word": "nyambékté",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aiguiller",
+    "bassa_word": "ihenel ngim njel",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "faire la maçonnerie, mais sonprofesseur ajourner",
+    "bassa_word": "ibupengimjam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ajuster",
+    "bassa_word": "i kôlha ngim gwom",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aiguillon",
+    "bassa_word": "nséhi menuisier ajuste les deuxplanches: nsal",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aiguiser",
+    "bassa_word": "i hôI",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ail",
+    "bassa_word": "ntén lilan Iinkana wada alanguissement (n.m.) liwééhak Ii ba",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aile",
+    "bassa_word": "papai",
+    "category": "n.f",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alcool",
+    "bassa_word": "liumb",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ailé",
+    "bassa_word": "(adj.) ngimjam iigwébipapai",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alcoolisé",
+    "bassa_word": "(adj.) ngimjami iliumb",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ailier",
+    "bassa_word": "ntuguI Iitam Ii ndamb i",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mapan alerter",
+    "bassa_word": "i ti ngim mut biyihne",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ailier",
+    "bassa_word": "ntugullitam Iindamb ingim sortir: bisônda bi nti bôt biyihne le ba",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ailleurs",
+    "bassa_word": "homanumpe",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aliénable",
+    "bassa_word": "ngim mut i ba nIa",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aimable",
+    "bassa_word": "mut 'gwéha",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aimablement",
+    "bassa_word": "Iônniminyaô aliénant (e) (adj.) ngim jam i i",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aimer",
+    "bassa_word": "igwés",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ngwés nye kikii kimangeni nlémba aliénation",
+    "bassa_word": "liyilhaga Ii ba nyiIha",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ainé",
+    "bassa_word": "(n.) mannuman ba ba bi kwojôn ni bomede : on parle",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ainsi",
+    "bassa_word": "hala",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aliéné",
+    "bassa_word": "(adj.)ngimmut ibabiyilhajôfi allécher (y.) i bond ngim mut",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aliéner",
+    "bassa_word": "i yilha ngim mut jôfi",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "colonisation a beaucoup contribué à allée",
+    "bassa_word": "njel",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "bôtbahikwés bôtbahogi hijôn allégation",
+    "bassa_word": "bitelbene",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alignement",
+    "bassa_word": "litééak Iiba ntééngim allégeance (ni) linyafilak Ii ba nyafial",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aligner",
+    "bassa_word": "itééngimbôttolengimgwom allègement (n.m.) lihôihak Iiba nhôyôs",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "nlôn inonnaga lônni mintel nwap alléger",
+    "bassa_word": "ihôyôs ngim jam",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aligner (s')",
+    "bassa_word": "itelep inlôfi ngwayé ma hihôyôs ndutuyé",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aliment",
+    "bassa_word": "bijek allégorie (n.f) yimbne",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alimentation",
+    "bassa_word": "bijek biba nje allégresse (n.f) mahak",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alimenter",
+    "bassa_word": "ijés ngim mut allemand (e) 1-(n.) a- man tole ngond i",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alimenter (s')",
+    "bassa_word": "ije bijek",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "bijek inya ikôli aller",
+    "bassa_word": "maké",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alitement",
+    "bassa_word": "linifiakIiba 'nifiinkokon aller (y.) i ke",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aliter",
+    "bassa_word": "inifiinkokon",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allergie",
+    "bassa_word": "ngi lahônba ngimjam",
+    "category": "n.f",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allaitement",
+    "bassa_word": "linyufthak Iiba nyufius",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mut allergique",
+    "bassa_word": "ngim mut inyuuyé inIa",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allaiter",
+    "bassa_word": "inyufiusngim mut",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allant",
+    "bassa_word": "(n.)nke",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allié",
+    "bassa_word": "(adj.) nhôla safi",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alléchant",
+    "bassa_word": "(adj.)ngimjam ibambôndôl",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "bôt, ngimjam ibanlôphene bôt allier",
+    "bassa_word": "iat",
+    "category": "y.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allocution",
+    "bassa_word": "hop u ngim baftnga mut alors que (loc con}) ndi ki",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allogène",
+    "bassa_word": "nyoyo encore là",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allongé",
+    "bassa_word": "(adj.) ngim jam i ba alourdir (v.)iyidisngimjam",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allongement",
+    "bassa_word": "Iibuiingbahaga Ii",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allonger",
+    "bassa_word": "1- i buiingbaha ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allouer",
+    "bassa_word": "itingim mut ngim moni",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alphabétiquement",
+    "bassa_word": "Iôiini mahôla",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allumage",
+    "bassa_word": "Iikwiyge Ii ba nkwiye ma alfabét",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allumé",
+    "bassa_word": "(adj.)nkwiyge",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allume-cigares",
+    "bassa_word": "kwiyne isiga alphabétiser (v.) i niiga bôt i tila ni i",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allume-feu",
+    "bassa_word": "kwiyne 'hiéé",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alphabétisme",
+    "bassa_word": "matila ma ma nlôI",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allumer",
+    "bassa_word": "i kwiye hiéé",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alter ego",
+    "bassa_word": "mut woiibotiiem",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allure",
+    "bassa_word": "makenek",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "altérabilité",
+    "bassa_word": "Iibak Ii ngim jam i i",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allusif",
+    "bassa_word": "(adj.)ngimjam iingwés kaI mpala ôbi",
+    "category": "ive",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "altérable",
+    "bassa_word": "ngimjam iinIapala ôbi",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "allusion",
+    "bassa_word": "Iiyéiiék Iiba nyéii kaI le",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alors",
+    "bassa_word": "jon 1- et alors? :jon kii? altération (ni) Iiôbak Ii ngim jam i",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "altérer",
+    "bassa_word": "iôbôs ngimjam ambassade (nj) ndap 'Ion i iyé i ngim",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alternant",
+    "bassa_word": "(adj.) ngim jam i i mbon France: ndap iNamibia iPulasi",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ambassadeur",
+    "bassa_word": "(n.) nôma nu ngim",
+    "category": "drice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alternativement",
+    "bassa_word": "Iôfinimabonok le IoniIonipe",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ambiance",
+    "bassa_word": "mayôkbe",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alterner",
+    "bassa_word": "ibon ngimjam wada imbus",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "nuu ambidextre",
+    "bassa_word": "ngim mut i i ngwéléI",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "altruisme",
+    "bassa_word": "IibakIimut 'bôt",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ambigu (ë)",
+    "bassa_word": "ngim jam ii 'nôôga bé",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "altruiste",
+    "bassa_word": "mut 'bôt Ionnge",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "altruiste",
+    "bassa_word": "ngwés bôtbape ambiguité (nj) ngi nôôga Ionnge",
+    "category": "n.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "alunir",
+    "bassa_word": "i téé kôô i sôn",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "lebabitéé makôô isôn ambitieux",
+    "bassa_word": "(adj.) ngim mut iinlen",
+    "category": "euse",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ambition",
+    "bassa_word": "Iilenek Iiba nlen 'nem",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amadouer",
+    "bassa_word": "i Iôphe ngim mut",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ngim mut ambitionner",
+    "bassa_word": "iIennem",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amaigri",
+    "bassa_word": "(adj.) nkôdôk",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amaigrir",
+    "bassa_word": "ikudus ngim muttolengim ambulance (nj) matôa ma ma mbegee",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amaigrissant",
+    "bassa_word": "(adj.) ngim jam i i ambulancier (ère) (n.) nluk matôa ma",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amaigrissement",
+    "bassa_word": "Iikôt",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amalgame",
+    "bassa_word": "mbôtna",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amant",
+    "bassa_word": "(n.) mbok",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amas",
+    "bassa_word": "Iingund",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amasser",
+    "bassa_word": "ingunda ngim gwom",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aménagement",
+    "bassa_word": "Iitiplak Ii ba amerrissage (n.m.) libetbak Iingim kiI i",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aménager",
+    "bassa_word": "itibiIbok mam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mam ameuter",
+    "bassa_word": "iboftliyaa Iingwo",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amendable",
+    "bassa_word": "ngimjam iba nIatibiI ami (e)(n.)Iiwanda",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amende",
+    "bassa_word": "fane",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amendement",
+    "bassa_word": "litiplak Ii ba ntibiI",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amidon",
+    "bassa_word": "tas",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amender",
+    "bassa_word": "itibiltéé ngimjam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amener",
+    "bassa_word": "1-i Iona ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amenuisement",
+    "bassa_word": "lisôhôk Iiba nsôs amincissant (e) (adj.) ngim jam i i",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amenuiser (s')",
+    "bassa_word": "isôsngui",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amer (ère)",
+    "bassa_word": "Iôla",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amèrement",
+    "bassa_word": "IÔÎiningandak Iilôli",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amnésique",
+    "bassa_word": "ngim mut i i nhôya",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "américain",
+    "bassa_word": "1-(n.) a-man tole ngond i ngandak",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amerrir",
+    "bassa_word": "i bedep i ngii malép lônni",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amoindrissement",
+    "bassa_word": "Iisiibahaga Ii ngond yem :sonfils est amoureux de ma",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amour-propre",
+    "bassa_word": "gwéha i ndik mut",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amollir",
+    "bassa_word": "itômbôs ngimjam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amovible",
+    "bassa_word": "ngimjam iinyifingha",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amollir (s')",
+    "bassa_word": "i tomb",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "feuilles de bananier s'amollissent sous amphibie",
+    "bassa_word": "ngim nuga i i nIa nin i",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ample",
+    "bassa_word": "ngim jam i i yé ikeni",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amollissant",
+    "bassa_word": "(adj.) ngim jam i i ngandak",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amollissement",
+    "bassa_word": "Iitômbhak Ii ba amplement (adv.)Iônnibikeni ngandak",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mbômbôs ngimjam ampleur",
+    "bassa_word": "bikeni bi ngimjam",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amonceler (s')",
+    "bassa_word": "ingundba amplifiant (e) (adj.) ngim jam i i",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amoncellement",
+    "bassa_word": "Iingund",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amplificateur",
+    "bassa_word": "(n.)nkéfibahamam",
+    "category": "trice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amont",
+    "bassa_word": "mabeda",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amplification",
+    "bassa_word": "likénbahaga Ii ba",
+    "category": "n.f.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amorçage",
+    "bassa_word": "Iihak Ii ba nha jeIe i nkénbaha ngimjam",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amplifier",
+    "bassa_word": "i kénbaha ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amorcer",
+    "bassa_word": "ihajéIe inIop on a beaucoup amplifié l'affaire de la",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amorphe",
+    "bassa_word": "ngimjam iinyifinghabé jam Iikon 'mbak",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amortir",
+    "bassa_word": "i téé ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ampoule",
+    "bassa_word": "bahus",
+    "category": "n.f.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amour",
+    "bassa_word": "ngwéha",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amouracher (s')",
+    "bassa_word": "igwés ngim mut",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amputation",
+    "bassa_word": "likidik Iiba nkit ngim",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amoureusement",
+    "bassa_word": "Iônni nigwéha mut kôô",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amoureux",
+    "bassa_word": "1-ngwés 2-bagwéhna",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amoureux",
+    "bassa_word": "(adj.) ngim mut i i",
+    "category": "euse",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amuissement",
+    "bassa_word": "likwok Ii ba nkwo analyser (v.) 1-iyén ngobol ingimjam",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amulette",
+    "bassa_word": "mbabi ananas (nom.)jannga",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anarchique",
+    "bassa_word": "ngim jam i i nlôl i",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amusement",
+    "bassa_word": "binôlha mbok 'ngoo",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "amuser",
+    "bassa_word": "inôlha bôt hiol",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "an",
+    "bassa_word": "nwii",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mina anarchiste",
+    "bassa_word": "mut 'mpufingu",
+    "category": "n.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anachronique",
+    "bassa_word": "ngim jam i i gwé",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "malukna ma mangéda ancestral",
+    "bassa_word": "(adj.) ngim jam i i nlôl i",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anachronisme",
+    "bassa_word": "Iiluknaga Ii ba",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "nlukna mangéda ancêtre",
+    "bassa_word": "isôgôlsôgôl",
+    "category": "n.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anal",
+    "bassa_word": "(adj.) ngimjam iiyé iisulul ancien (ne) (adj.) 1- nlômbi",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "analogie",
+    "bassa_word": "liada kwafi",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "analogue",
+    "bassa_word": "nglm Jam i i mpôôna",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "analphabète",
+    "bassa_word": "ngim mut i i nyi bé daires: behee",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ancienneté",
+    "bassa_word": "libak Iikwan",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "analphabétisme",
+    "bassa_word": "ngi yi sonngol to",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "itila âne",
+    "bassa_word": "jakas",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "analysable",
+    "bassa_word": "ngim jam iba nIa yén anéantir (v.)itjéngimbôttenten",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "analyse",
+    "bassa_word": "1- nyina u ngobol imam famille: babitjélihaijéjolisôna tjestjes",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anecdote",
+    "bassa_word": "imaana hifiafi angoissé (e) (adj.) ngim mut i i nkon",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anecdotier (ière)",
+    "bassa_word": "fiafial dibaaga di",
+    "category": "n.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mifiafi angoisser",
+    "bassa_word": "ikônha woni",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anecdotique",
+    "bassa_word": "ngim jam i i nlôl i angulaire (adj.) ngimjam iimbon likas",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anguleux",
+    "bassa_word": "(adj.) ngim jam ii gwé",
+    "category": "euse",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anecdotiquer",
+    "bassa_word": "ianal imaana hiflafi makas",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anémie",
+    "bassa_word": "lisôhôk IiIibim IimatjéIIi anhéler (v.)ihehel",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anicroche",
+    "bassa_word": "imaana hindutu",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anémié",
+    "bassa_word": "(n.) mut nu Iibim IimatjélIi",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "nsôs nye inyuu animal",
+    "bassa_word": "nuga 1-animaldomestique",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anémier",
+    "bassa_word": "i méIés ngim mut matjél i 'bikai",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "animaliser",
+    "bassa_word": "i yilha ngim mut kikii",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anémique",
+    "bassa_word": "ngim mut i matjéI ma nuga",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ânerie",
+    "bassa_word": "bijôfl",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "animateur",
+    "bassa_word": "(n.) nhônôs ngimjam",
+    "category": "trice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ânesse",
+    "bassa_word": "fiinujakas",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "animation",
+    "bassa_word": "mayôkbe",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ange",
+    "bassa_word": "anngel bakngandak ingand: ily avait unebonne",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "angélique",
+    "bassa_word": "ngim jam i i nlôl ni bi",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "afingel animé",
+    "bassa_word": "(adj.) ngimjam ii 'nin",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "angle",
+    "bassa_word": "jutga nkwelloiinge ngandak",
+    "category": "nom.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "angle",
+    "bassa_word": "likas animosité (nj) ôa",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "angliciser",
+    "bassa_word": "i yilha ngim jam jam Ii annal (e) (adj.) ngim jam i i 'nom nwii",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "angoissant",
+    "bassa_word": "(adj.) ngimjam iinkônha annaliste (adj.) mut 'minafi",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "année",
+    "bassa_word": "nwii",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anodin",
+    "bassa_word": "(adj.) ngim jam i i ta bé",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "annihilation",
+    "bassa_word": "liôphakIibafiôbôsmam bafinga",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "annihiler",
+    "bassa_word": "i ôbôs mam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "nôbôs nson wés wonsôna ânonner",
+    "bassa_word": "ngi tibil yipahal",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anniversaire",
+    "bassa_word": "(n.m.) ilo hi anonymat (n.m.) litakbege Ii ba ntakbe",
+    "category": "naissance",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "annoncer",
+    "bassa_word": "ilegelngimnwin",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anordir",
+    "bassa_word": "i nunus ngim jam i no",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "annonciateur",
+    "bassa_word": "(n.) mpot bindéé 'mbok",
+    "category": "trice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ngim biyimbne ingii nson won",
+    "bassa_word": "anormalement (adv.)nya iitéébé",
+    "category": "umbai",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "annoter",
+    "bassa_word": "ihangim biyimbne anormalité (ni) libak Iijam IiIitéé bé",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "annuel",
+    "bassa_word": "(adj.) ngim jam i i yé inyu antagonique (adj.) ngim jam i iyé kikii",
+    "category": "le",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "annuellement",
+    "bassa_word": "hikii nwii",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antagonisme",
+    "bassa_word": "malép bohiéé",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "annulable",
+    "bassa_word": "ngim jam iba mbon ha 'no bombom",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antan (d')",
+    "bassa_word": "kôba lônni kwan",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "annulaire",
+    "bassa_word": "inoo hiwoo hititigi ngéda",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antérieur",
+    "bassa_word": "(adj.) ngimjam iibé ibisu",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "annuler",
+    "bassa_word": "1- ngi bon ki",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antériorité",
+    "bassa_word": "bisu bingéda",
+    "category": "ni",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anoblir",
+    "bassa_word": "1- i hétbaha ngim mut 2- i",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "yilha ngim mut bafinga anthropophage",
+    "bassa_word": "nje bôt",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anthropophagie",
+    "bassa_word": "lijek Iiba nje bôt anxieux (euse) (adj.) ngim mut i i gwé",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anticipation",
+    "bassa_word": "lisékbaga Ii ba mbôk anxiogène (adj.)ngimjam iintina ndufta",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anticipé",
+    "bassa_word": "(adj.)ngimjam iiyénsékbaga août (n.) ikan",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anticiper",
+    "bassa_word": "i sékba ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antidémocratique",
+    "bassa_word": "ngim mut i i",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "nkolba ane 'makin apaisement",
+    "bassa_word": "lihôihak Iiba nhôyôs",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antillais",
+    "bassa_word": "1- (n.) a- man tole ngond i ngim mut",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apaiser",
+    "bassa_word": "ihôyôs ngim mut ngimjam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antilope",
+    "bassa_word": "ntén sô imômôs ngim mut",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antinomie",
+    "bassa_word": "utjok ulenbaga",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apaiser (s')",
+    "bassa_word": "i hoi",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antipathie",
+    "bassa_word": "ngiba minyaô hokbe",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antipathique",
+    "bassa_word": "ngim mut tole ngim",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "jam iigwé liada ningimjam ipe apartheid",
+    "bassa_word": "ôa u Bakana ba noo",
+    "category": "n.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antipatriotique",
+    "bassa_word": "ngim mutiingwés",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antipatriotisme",
+    "bassa_word": "ngi gwés loftyon",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apathique",
+    "bassa_word": "ngim mut iijamjo kikii",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antireligieux",
+    "bassa_word": "(adj.) ngim mut i i jo Iimpigil bé",
+    "category": "euse",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apatride",
+    "bassa_word": "ngim mut iigwé bé Ion",
+    "category": "n.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antituberculeux",
+    "bassa_word": "(adj.) ngimjam i",
+    "category": "euse",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "intibil kon umbak apatridie",
+    "bassa_word": "ngibana ngim Ion",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "antivol",
+    "bassa_word": "ngimjam iinsôna wip aperception (nf) libâtlak Ii ba mbâdâl",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anus",
+    "bassa_word": "isulul",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anxiété",
+    "bassa_word": "nduna ikeni apercevoir (v.) 1-ibâdâl tehe ngim jam",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "anxieusement",
+    "bassa_word": "lôfini nduna",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ngandak aperçu",
+    "bassa_word": "dinyo malép",
+    "category": "n.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apériodique",
+    "bassa_word": "ngim jam i i gwé bé apogée (n.m.) liben Iinsôk",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apolitique",
+    "bassa_word": "ngim mut i i ngwés bé",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apeuré",
+    "bassa_word": "(adj.) ngim mut i ba nkônha ibon mban",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apolitisme",
+    "bassa_word": "ngibon mban",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apeurer",
+    "bassa_word": "i kônha ngim mut woni",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apostolat",
+    "bassa_word": "nson ubaôma",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aphone",
+    "bassa_word": "ngim mutiigwénéfihakifi",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apostolique",
+    "bassa_word": "ngim jam i i nlôl ni",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aphorisme",
+    "bassa_word": "ngéni baôma",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aphrodisiaque",
+    "bassa_word": "ngim jam i i ntina apostoliquement (adv.) lônni baôma",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apostrophe",
+    "bassa_word": "ikep",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apitoiement",
+    "bassa_word": "kana 'ngoo",
+    "category": "n.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apostropher",
+    "bassa_word": "itangim mut inyuu",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apitoyer",
+    "bassa_word": "ikônôl ngim mutngoo",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "camarades s'apitoient sur le sort que le apôtre",
+    "bassa_word": "'nigil",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ma ndap 'sukluma nkônôl nye ngoo inyu apparaître",
+    "bassa_word": "ita",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aplanir",
+    "bassa_word": "ibamb ngimjam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apparemment",
+    "bassa_word": "i 'nene le",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aplanissement",
+    "bassa_word": "libambak Ii ba",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aplati",
+    "bassa_word": "(adj.) ntégak",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aplatir",
+    "bassa_word": "itégi ngimjam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "jam apparenté",
+    "bassa_word": "(adj.) ngim mut i i nhai",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aplatissement",
+    "bassa_word": "litégak Ii ba ntégi",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aplatissoir",
+    "bassa_word": "bémbél",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apocalypse",
+    "bassa_word": "masuk ma ngéda bôt bape",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apocalyptique",
+    "bassa_word": "ngim jam i masuk appartenir (v.)1-ibantôn Iôfinibôtbape",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "applaudisseur",
+    "bassa_word": "mbamb moo",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appât",
+    "bassa_word": "jéle",
+    "category": "n.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "applicabilité",
+    "bassa_word": "laiboftngimjam",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "applicable",
+    "bassa_word": "ngimjam iba nIaboft",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appauvrissement",
+    "bassa_word": "liyéphak Ii ba appliquer (s') (Y.)i ha ftem i boftngim",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mut leiyep appointement",
+    "bassa_word": "nsaa",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appel",
+    "bassa_word": "nsépla appointements (n.)nsaa",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appelé",
+    "bassa_word": "(adj.) 1-nséplak 2-nséplaga",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appellation",
+    "bassa_word": "Iiséplene",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appesantissement",
+    "bassa_word": "Iiyithak Ii ba document: baénél ba nkutle sane i ngii",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appétissant",
+    "bassa_word": "(adj.) ngimjam ii 'ne apposition (nj) likumuk Iibankum soft",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appétissant",
+    "bassa_word": "(adj.) ngim jam i i ntina",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ngôfije appréciabilité",
+    "bassa_word": "libak Iingim jam ii",
+    "category": "nj",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appétit",
+    "bassa_word": "line Iibijek",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appréciable",
+    "bassa_word": "ngimjam iinIaléméI",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "baudu bambamb moo ingéda numalét a appréciateur",
+    "bassa_word": "(n.) ngim mut i",
+    "category": "trice",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appréciatif",
+    "bassa_word": "(adj.) ngim jam i i approbativité (ni) Iineebege Iiu 'neebe",
+    "category": "ve",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apprécier",
+    "bassa_word": "1- i lémél",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appréhender",
+    "bassa_word": "ikon ngim jam woni",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "approcher (s')",
+    "bassa_word": "i tiige",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "appréhension",
+    "bassa_word": "woni sefinge",
+    "category": "nf",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apprendre",
+    "bassa_word": "i nigil ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apprenti",
+    "bassa_word": "(n.) 'nigil approfondissement (n.m.) lijôbôk Ii ba",
+    "category": "e",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apprentissage",
+    "bassa_word": "yigil",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "approprié",
+    "bassa_word": "ngim jam iikôli",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apprêt",
+    "bassa_word": "ngôôba",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apprêter",
+    "bassa_word": "ikôôba ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apprêter (s')",
+    "bassa_word": "i kôôba",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "approuver",
+    "bassa_word": "i kémhe ngim jam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apprivoiser",
+    "bassa_word": "i yilha ngim nuga neebe ngimjam",
+    "category": "v.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "approximativement",
+    "bassa_word": "bebee le",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "apprivoiseur",
+    "bassa_word": "(n.) nyiIha nglm",
+    "category": "euse",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "binuga nkôma appui",
+    "bassa_word": "ngam",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "approbateur",
+    "bassa_word": "nkémhe",
+    "category": "adj.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "approbatif",
+    "bassa_word": "(adj.)ngirnjam iinunda",
+    "category": "ive",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ieba nkémhe tole ba 'neebe après",
+    "bassa_word": "imbus",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "approbation",
+    "bassa_word": "ngémhe",
+    "category": "n.m.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "approbativement",
+    "bassa_word": "lônni nI après-guerre (n.m.) imbus gwét",
+    "category": "adv.",
+    "notes": "PDF Dictionnaire FR-Bassa (Harmattan 2007)"
+  }
+]

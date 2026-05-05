@@ -1,0 +1,624 @@
+[
+  {
+    "source_language": "fr",
+    "source_word": "bonjour",
+    "bassa_word": "mbolo",
+    "phonetic": "mbɔlɔ",
+    "category": "interjection",
+    "notes": "Salutation courante",
+    "examples": [
+      {"source_sentence": "Bonjour, comment vas-tu ?", "bassa_sentence": "Mbolo, wo yé lé ?"}
+    ]
+  },
+  {
+    "source_language": "fr",
+    "source_word": "merci",
+    "bassa_word": "nsômbi",
+    "phonetic": "nsɔ̂mbi",
+    "category": "interjection"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "eau",
+    "bassa_word": "mandap",
+    "phonetic": "mandap",
+    "category": "noun",
+    "gender": "class 6",
+    "examples": [
+      {"source_sentence": "Je bois de l'eau", "bassa_sentence": "Me nyo mandap"}
+    ]
+  },
+  {
+    "source_language": "fr",
+    "source_word": "homme",
+    "bassa_word": "mut",
+    "phonetic": "mut",
+    "category": "noun",
+    "gender": "class 1",
+    "plural_form": "bot"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "femme",
+    "bassa_word": "muda",
+    "phonetic": "muda",
+    "category": "noun",
+    "gender": "class 1",
+    "plural_form": "boda"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "enfant",
+    "bassa_word": "mwana",
+    "phonetic": "mwana",
+    "category": "noun",
+    "gender": "class 1",
+    "plural_form": "bana"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "maison",
+    "bassa_word": "ndap",
+    "phonetic": "ndap",
+    "category": "noun",
+    "gender": "class 9",
+    "plural_form": "mandap"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "manger",
+    "bassa_word": "je",
+    "phonetic": "dʒe",
+    "category": "verb",
+    "examples": [
+      {"source_sentence": "Je mange du riz", "bassa_sentence": "Me nje makala"}
+    ]
+  },
+  {
+    "source_language": "fr",
+    "source_word": "boire",
+    "bassa_word": "nyo",
+    "phonetic": "ɲɔ",
+    "category": "verb"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "dormir",
+    "bassa_word": "nôgôl",
+    "phonetic": "nɔ̂gɔ̂l",
+    "category": "verb"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aller",
+    "bassa_word": "ke",
+    "phonetic": "ke",
+    "category": "verb",
+    "examples": [
+      {"source_sentence": "Je vais au marché", "bassa_sentence": "Me ke i siga"}
+    ]
+  },
+  {
+    "source_language": "fr",
+    "source_word": "venir",
+    "bassa_word": "lo",
+    "phonetic": "lɔ",
+    "category": "verb"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "voir",
+    "bassa_word": "tehe",
+    "phonetic": "tehe",
+    "category": "verb"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "parler",
+    "bassa_word": "lobi",
+    "phonetic": "lɔbi",
+    "category": "verb"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aimer",
+    "bassa_word": "ñôñôl",
+    "phonetic": "ɲɔ̂ɲɔ̂l",
+    "category": "verb"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "soleil",
+    "bassa_word": "nanga",
+    "phonetic": "naŋga",
+    "category": "noun",
+    "gender": "class 9"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "lune",
+    "bassa_word": "sôñ",
+    "phonetic": "sɔ̂ɲ",
+    "category": "noun",
+    "gender": "class 9"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "terre",
+    "bassa_word": "si",
+    "phonetic": "si",
+    "category": "noun",
+    "gender": "class 7"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "père",
+    "bassa_word": "tata",
+    "phonetic": "tata",
+    "category": "noun",
+    "gender": "class 1",
+    "plural_form": "batata"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mère",
+    "bassa_word": "nyañ",
+    "phonetic": "ɲaɲ",
+    "category": "noun",
+    "gender": "class 1",
+    "plural_form": "banyañ"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "dieu",
+    "bassa_word": "Nyambe",
+    "phonetic": "ɲambe",
+    "category": "noun",
+    "gender": "class 1"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "nourriture",
+    "bassa_word": "bije",
+    "phonetic": "bidʒe",
+    "category": "noun",
+    "gender": "class 8"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "travail",
+    "bassa_word": "bôl",
+    "phonetic": "bɔ̂l",
+    "category": "noun",
+    "gender": "class 5"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "grand",
+    "bassa_word": "nene",
+    "phonetic": "nene",
+    "category": "adjective"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "petit",
+    "bassa_word": "toñol",
+    "phonetic": "tɔɲɔl",
+    "category": "adjective"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "bon",
+    "bassa_word": "bé",
+    "phonetic": "be",
+    "category": "adjective"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "mauvais",
+    "bassa_word": "bibe",
+    "phonetic": "bibe",
+    "category": "adjective"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "aujourd'hui",
+    "bassa_word": "lélé",
+    "phonetic": "lele",
+    "category": "adverb"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "demain",
+    "bassa_word": "kié",
+    "phonetic": "kie",
+    "category": "adverb"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "hier",
+    "bassa_word": "ikiyaga",
+    "phonetic": "ikijaɡa",
+    "category": "adverb"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "je",
+    "bassa_word": "me",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "tu",
+    "bassa_word": "wo",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "il",
+    "bassa_word": "a",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "elle",
+    "bassa_word": "a",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "nous",
+    "bassa_word": "bis",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "vous",
+    "bassa_word": "ni",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ils",
+    "bassa_word": "bo",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "oui",
+    "bassa_word": "eeh",
+    "category": "interjection"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "non",
+    "bassa_word": "aah",
+    "category": "interjection"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "au revoir",
+    "bassa_word": "biso bi mban",
+    "category": "interjection"
+  },
+  {
+    "source_language": "en",
+    "source_word": "hello",
+    "bassa_word": "mbolo",
+    "phonetic": "mbɔlɔ",
+    "category": "interjection"
+  },
+  {
+    "source_language": "en",
+    "source_word": "thank you",
+    "bassa_word": "nsômbi",
+    "phonetic": "nsɔ̂mbi",
+    "category": "interjection"
+  },
+  {
+    "source_language": "en",
+    "source_word": "water",
+    "bassa_word": "mandap",
+    "phonetic": "mandap",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "man",
+    "bassa_word": "mut",
+    "phonetic": "mut",
+    "category": "noun",
+    "plural_form": "bot"
+  },
+  {
+    "source_language": "en",
+    "source_word": "woman",
+    "bassa_word": "muda",
+    "phonetic": "muda",
+    "category": "noun",
+    "plural_form": "boda"
+  },
+  {
+    "source_language": "en",
+    "source_word": "child",
+    "bassa_word": "mwana",
+    "phonetic": "mwana",
+    "category": "noun",
+    "plural_form": "bana"
+  },
+  {
+    "source_language": "en",
+    "source_word": "house",
+    "bassa_word": "ndap",
+    "phonetic": "ndap",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "eat",
+    "bassa_word": "je",
+    "phonetic": "dʒe",
+    "category": "verb"
+  },
+  {
+    "source_language": "en",
+    "source_word": "drink",
+    "bassa_word": "nyo",
+    "phonetic": "ɲɔ",
+    "category": "verb"
+  },
+  {
+    "source_language": "en",
+    "source_word": "go",
+    "bassa_word": "ke",
+    "phonetic": "ke",
+    "category": "verb"
+  },
+  {
+    "source_language": "en",
+    "source_word": "come",
+    "bassa_word": "lo",
+    "phonetic": "lɔ",
+    "category": "verb"
+  },
+  {
+    "source_language": "en",
+    "source_word": "see",
+    "bassa_word": "tehe",
+    "phonetic": "tehe",
+    "category": "verb"
+  },
+  {
+    "source_language": "en",
+    "source_word": "speak",
+    "bassa_word": "lobi",
+    "phonetic": "lɔbi",
+    "category": "verb"
+  },
+  {
+    "source_language": "en",
+    "source_word": "love",
+    "bassa_word": "ñôñôl",
+    "phonetic": "ɲɔ̂ɲɔ̂l",
+    "category": "verb"
+  },
+  {
+    "source_language": "en",
+    "source_word": "sun",
+    "bassa_word": "nanga",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "moon",
+    "bassa_word": "sôñ",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "earth",
+    "bassa_word": "si",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "father",
+    "bassa_word": "tata",
+    "category": "noun",
+    "plural_form": "batata"
+  },
+  {
+    "source_language": "en",
+    "source_word": "mother",
+    "bassa_word": "nyañ",
+    "category": "noun",
+    "plural_form": "banyañ"
+  },
+  {
+    "source_language": "en",
+    "source_word": "god",
+    "bassa_word": "Nyambe",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "food",
+    "bassa_word": "bije",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "work",
+    "bassa_word": "bôl",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "big",
+    "bassa_word": "nene",
+    "category": "adjective"
+  },
+  {
+    "source_language": "en",
+    "source_word": "small",
+    "bassa_word": "toñol",
+    "category": "adjective"
+  },
+  {
+    "source_language": "en",
+    "source_word": "good",
+    "bassa_word": "bé",
+    "category": "adjective"
+  },
+  {
+    "source_language": "en",
+    "source_word": "bad",
+    "bassa_word": "bibe",
+    "category": "adjective"
+  },
+  {
+    "source_language": "en",
+    "source_word": "today",
+    "bassa_word": "lélé",
+    "category": "adverb"
+  },
+  {
+    "source_language": "en",
+    "source_word": "tomorrow",
+    "bassa_word": "kié",
+    "category": "adverb"
+  },
+  {
+    "source_language": "en",
+    "source_word": "yesterday",
+    "bassa_word": "ikiyaga",
+    "category": "adverb"
+  },
+  {
+    "source_language": "en",
+    "source_word": "I",
+    "bassa_word": "me",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "you",
+    "bassa_word": "wo",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "he",
+    "bassa_word": "a",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "she",
+    "bassa_word": "a",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "we",
+    "bassa_word": "bis",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "they",
+    "bassa_word": "bo",
+    "category": "pronoun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "yes",
+    "bassa_word": "eeh",
+    "category": "interjection"
+  },
+  {
+    "source_language": "en",
+    "source_word": "no",
+    "bassa_word": "aah",
+    "category": "interjection"
+  },
+  {
+    "source_language": "en",
+    "source_word": "goodbye",
+    "bassa_word": "biso bi mban",
+    "category": "interjection"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "ami",
+    "bassa_word": "ñañla",
+    "category": "noun",
+    "plural_form": "bañañla"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "frère",
+    "bassa_word": "nyañgal",
+    "category": "noun"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "village",
+    "bassa_word": "mbog",
+    "category": "noun"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "route",
+    "bassa_word": "njel",
+    "category": "noun"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "nuit",
+    "bassa_word": "bû",
+    "category": "noun"
+  },
+  {
+    "source_language": "fr",
+    "source_word": "jour",
+    "bassa_word": "heg",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "friend",
+    "bassa_word": "ñañla",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "brother",
+    "bassa_word": "nyañgal",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "village",
+    "bassa_word": "mbog",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "road",
+    "bassa_word": "njel",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "night",
+    "bassa_word": "bû",
+    "category": "noun"
+  },
+  {
+    "source_language": "en",
+    "source_word": "day",
+    "bassa_word": "heg",
+    "category": "noun"
+  }
+]

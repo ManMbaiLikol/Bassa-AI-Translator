@@ -1,0 +1,502 @@
+[
+  {
+    "num": 1,
+    "fr": "Maman",
+    "bassa": "Ínī"
+  },
+  {
+    "num": 2,
+    "fr": "Ma mère",
+    "bassa": "Ínī"
+  },
+  {
+    "num": 3,
+    "fr": "Oui",
+    "bassa": "Ŋ̀ŋ̂"
+  },
+  {
+    "num": 4,
+    "fr": "Non",
+    "bassa": "Tɔ̀"
+  },
+  {
+    "num": 5,
+    "fr": "Pourquoi",
+    "bassa": "Ínyùú kīī"
+  },
+  {
+    "num": 6,
+    "fr": "Parce que",
+    "bassa": "Inyùú lɛ̄"
+  },
+  {
+    "num": 7,
+    "fr": "Le sein",
+    "bassa": "Lìɓéè"
+  },
+  {
+    "num": 8,
+    "fr": "Les seins",
+    "bassa": "Méè"
+  },
+  {
+    "num": 9,
+    "fr": "Le lait",
+    "bassa": "Mànyûŋ"
+  },
+  {
+    "num": 10,
+    "fr": "La tête",
+    "bassa": "Ŋ̀ɔ́"
+  },
+  {
+    "num": 11,
+    "fr": "Les oreilles",
+    "bassa": "Màóó"
+  },
+  {
+    "num": 12,
+    "fr": "Les yeux",
+    "bassa": "Mǐs"
+  },
+  {
+    "num": 13,
+    "fr": "Les oreilles",
+    "bassa": "Màóó"
+  },
+  {
+    "num": 14,
+    "fr": "La main",
+    "bassa": "Wɔ̀ɔ́"
+  },
+  {
+    "num": 15,
+    "fr": "La bouche",
+    "bassa": "Nyɔ̀"
+  },
+  {
+    "num": 16,
+    "fr": "Les dents",
+    "bassa": "Màsɔ̌ŋ"
+  },
+  {
+    "num": 17,
+    "fr": "La langue",
+    "bassa": "Hìlémb"
+  },
+  {
+    "num": 18,
+    "fr": "Le pied",
+    "bassa": "Kòó"
+  },
+  {
+    "num": 19,
+    "fr": "Le ventre",
+    "bassa": "Lìɓùm"
+  },
+  {
+    "num": 20,
+    "fr": "Qui ?",
+    "bassa": "Ǹjɛ́ɛ́ ?"
+  },
+  {
+    "num": 21,
+    "fr": "C’est qui ?",
+    "bassa": "Ǹjɛ́ɛ́ nu?"
+  },
+  {
+    "num": 22,
+    "fr": "C’est moi",
+    "bassa": "Mɛ̀ nû"
+  },
+  {
+    "num": 23,
+    "fr": "C’est quoi ?",
+    "bassa": "Kíí î?"
+  },
+  {
+    "num": 24,
+    "fr": "Rien",
+    "bassa": "Tɔ̀ yɔ̌m"
+  },
+  {
+    "num": 25,
+    "fr": "Le nom",
+    "bassa": "Jǒl"
+  },
+  {
+    "num": 26,
+    "fr": "Voir",
+    "bassa": "Tɛ́hɛ̂"
+  },
+  {
+    "num": 27,
+    "fr": "L’habit",
+    "bassa": "Mbɔ́t"
+  },
+  {
+    "num": 28,
+    "fr": "L’eau",
+    "bassa": "Màlép"
+  },
+  {
+    "num": 29,
+    "fr": "Boire de l’eau",
+    "bassa": "Nyɔ́ màlép"
+  },
+  {
+    "num": 30,
+    "fr": "Le chien",
+    "bassa": "Ŋgwɔ́"
+  },
+  {
+    "num": 31,
+    "fr": "Viens",
+    "bassa": "Lɔ̀ɔ́ !"
+  },
+  {
+    "num": 32,
+    "fr": "Le serpent",
+    "bassa": "Nyɔ̀ɔ́"
+  },
+  {
+    "num": 33,
+    "fr": "Donne",
+    "bassa": "Tí"
+  },
+  {
+    "num": 34,
+    "fr": "Donne-moi",
+    "bassa": "Tí mɛ̀"
+  },
+  {
+    "num": 35,
+    "fr": "Quitte de là",
+    "bassa": "Nyɔ̀dí hâ !"
+  },
+  {
+    "num": 36,
+    "fr": "Ris",
+    "bassa": "Nɔ̌l !"
+  },
+  {
+    "num": 37,
+    "fr": "Pleure",
+    "bassa": "Ɛ̀ɛ́ !"
+  },
+  {
+    "num": 38,
+    "fr": "Tais-toi",
+    "bassa": "Mɔ́m ŋwɛ̀ɛ́ !"
+  },
+  {
+    "num": 39,
+    "fr": "La souris",
+    "bassa": "Tòlò"
+  },
+  {
+    "num": 40,
+    "fr": "Le chat",
+    "bassa": "Síŋgî"
+  },
+  {
+    "num": 41,
+    "fr": "Papa",
+    "bassa": "Tâ"
+  },
+  {
+    "num": 42,
+    "fr": "Mon père",
+    "bassa": "Tâ"
+  },
+  {
+    "num": 43,
+    "fr": "La mère",
+    "bassa": "Ínī"
+  },
+  {
+    "num": 44,
+    "fr": "Ma mère",
+    "bassa": "Ínī"
+  },
+  {
+    "num": 45,
+    "fr": "Mon frère",
+    "bassa": "Mǎnkéé nú mùnlóm"
+  },
+  {
+    "num": 46,
+    "fr": "Ma sœur",
+    "bassa": "Mǎnkéé nú mùdàá"
+  },
+  {
+    "num": 47,
+    "fr": "Un garçon",
+    "bassa": "Hìlɔ́gá"
+  },
+  {
+    "num": 48,
+    "fr": "Une fille",
+    "bassa": "Hìŋgɔ̀ndà"
+  },
+  {
+    "num": 49,
+    "fr": "Un homme",
+    "bassa": "Mùt (nû)"
+  },
+  {
+    "num": 50,
+    "fr": "Une femme",
+    "bassa": "Mùdàà (nû)"
+  },
+  {
+    "num": 51,
+    "fr": "Salue-moi",
+    "bassa": "Yègá mɛ̀"
+  },
+  {
+    "num": 52,
+    "fr": "Manger",
+    "bassa": "Jɛ́"
+  },
+  {
+    "num": 53,
+    "fr": "Mange",
+    "bassa": "Jɛ́!"
+  },
+  {
+    "num": 54,
+    "fr": "Bois",
+    "bassa": "Nyɔ́!"
+  },
+  {
+    "num": 55,
+    "fr": "Le verre, le gobelet",
+    "bassa": "Tômblò"
+  },
+  {
+    "num": 56,
+    "fr": "Les chaussures",
+    "bassa": "Bìtámb"
+  },
+  {
+    "num": 57,
+    "fr": "Le chapeau",
+    "bassa": "Hìkódó"
+  },
+  {
+    "num": 58,
+    "fr": "Tiens",
+    "bassa": "Yɔ̌ŋ!"
+  },
+  {
+    "num": 59,
+    "fr": "Lance",
+    "bassa": "Lɛ̀ŋ"
+  },
+  {
+    "num": 60,
+    "fr": "Jette",
+    "bassa": "Lɛ̌ŋ!"
+  },
+  {
+    "num": 61,
+    "fr": "Applaudis",
+    "bassa": "Ɓámb mɔ̀ɔ́"
+  },
+  {
+    "num": 62,
+    "fr": "Pousse",
+    "bassa": "Nyùgɛ́!"
+  },
+  {
+    "num": 63,
+    "fr": "Tire, ramène vers toi",
+    "bassa": "Nìmbíl!"
+  },
+  {
+    "num": 64,
+    "fr": "Viens prendre",
+    "bassa": "Lɔ̀ɔ́ yɔ̌ŋ!"
+  },
+  {
+    "num": 65,
+    "fr": "Allons",
+    "bassa": "Dí kɛ́nɛ̄k!"
+  },
+  {
+    "num": 66,
+    "fr": "Zéro",
+    "bassa": "Hyɛ́hyɛ̀s"
+  },
+  {
+    "num": 67,
+    "fr": "Un",
+    "bassa": "Yádá"
+  },
+  {
+    "num": 68,
+    "fr": "Deux",
+    "bassa": "Bíɓâ"
+  },
+  {
+    "num": 69,
+    "fr": "Trois",
+    "bassa": "Báâ"
+  },
+  {
+    "num": 70,
+    "fr": "Quatre",
+    "bassa": "Binâ"
+  },
+  {
+    "num": 71,
+    "fr": "Cinq",
+    "bassa": "Bítân"
+  },
+  {
+    "num": 72,
+    "fr": "Dors",
+    "bassa": "Kɛ̀ɛ́ í hìlɔ́!"
+  },
+  {
+    "num": 73,
+    "fr": "S’il te plaît",
+    "bassa": "Sɔ́hɔ́"
+  },
+  {
+    "num": 74,
+    "fr": "Sors",
+    "bassa": "Pám!"
+  },
+  {
+    "num": 75,
+    "fr": "Ferme",
+    "bassa": "Yìbí!"
+  },
+  {
+    "num": 76,
+    "fr": "Ouvre",
+    "bassa": "Yìbíl!"
+  },
+  {
+    "num": 77,
+    "fr": "Ferme la porte",
+    "bassa": "Yìbí lìkògá!"
+  },
+  {
+    "num": 78,
+    "fr": "Ouvre la porte",
+    "bassa": "Yìbíl lìkògá!"
+  },
+  {
+    "num": 79,
+    "fr": "Tais-toi",
+    "bassa": "Yìbí nyɔ̀ wɔ́ŋ!"
+  },
+  {
+    "num": 80,
+    "fr": "Ris",
+    "bassa": "Nɔ̌l !"
+  },
+  {
+    "num": 81,
+    "fr": "Assois-toi",
+    "bassa": "Yěn!"
+  },
+  {
+    "num": 82,
+    "fr": "Descends",
+    "bassa": "Sǒs!"
+  },
+  {
+    "num": 83,
+    "fr": "Monte",
+    "bassa": "Ɓɛ́t!"
+  },
+  {
+    "num": 84,
+    "fr": "Tu entends ?",
+    "bassa": "Ù ǹnɔ́k ɛ́?"
+  },
+  {
+    "num": 85,
+    "fr": "Je",
+    "bassa": "Mɛ̀"
+  },
+  {
+    "num": 86,
+    "fr": "Tu",
+    "bassa": "Ù"
+  },
+  {
+    "num": 87,
+    "fr": "Il, elle",
+    "bassa": "À"
+  },
+  {
+    "num": 88,
+    "fr": "Nous",
+    "bassa": "Dì"
+  },
+  {
+    "num": 89,
+    "fr": "Vous",
+    "bassa": "Nì"
+  },
+  {
+    "num": 90,
+    "fr": "Ils, elles",
+    "bassa": "Ɓá"
+  },
+  {
+    "num": 91,
+    "fr": "J’ai oublié",
+    "bassa": "Mɛ̀ ǹhóyâ"
+  },
+  {
+    "num": 92,
+    "fr": "C’est qui ?",
+    "bassa": "Ǹjɛ́ɛ́ nu?"
+  },
+  {
+    "num": 93,
+    "fr": "C’est quoi ?",
+    "bassa": "Kíí î?"
+  },
+  {
+    "num": 94,
+    "fr": "Pourquoi?",
+    "bassa": "Ínyùú kīī?"
+  },
+  {
+    "num": 95,
+    "fr": "Pour qui ?",
+    "bassa": "Ìyɛ́n?"
+  },
+  {
+    "num": 96,
+    "fr": "C’est pour qui ?",
+    "bassa": "Í njɛ́ɛ́?"
+  },
+  {
+    "num": 97,
+    "fr": "C’est pour moi",
+    "bassa": "Ìyɛ̂m!"
+  },
+  {
+    "num": 98,
+    "fr": "C’est pour toi",
+    "bassa": "Ì yɔ́ŋ!"
+  },
+  {
+    "num": 99,
+    "fr": "C’est pour lui",
+    "bassa": "Ì yéé!"
+  },
+  {
+    "num": 100,
+    "fr": "C’est pour nous",
+    "bassa": "Ì yés!"
+  }
+]

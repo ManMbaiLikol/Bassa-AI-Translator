@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - BassaAI Translator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <nav class="bassa-nav">
+        <a href="/" class="brand">BassaAI Translator</a>
+        <div class="nav-links">
+            <a href="/">Traduction</a>
+            <a href="/contribute.html">Contribuer</a>
+        </div>
+    </nav>
+
+    <div class="container" x-data="authForm()" x-init="init()">
+        <div class="card login-card">
+            <div class="tabs">
+                <button class="tab" :class="{ active: mode === 'login' }" @click="mode = 'login'">Connexion</button>
+                <button class="tab" :class="{ active: mode === 'register' }" @click="mode = 'register'">Inscription</button>
+            </div>
+
+            <!-- Google Sign-In -->
+            <div x-show="googleClientId" style="margin-bottom:1.25rem;">
+                <div id="google-signin-btn" style="display:flex;justify-content:center;"></div>
+                <div style="display:flex;align-items:center;gap:.75rem;margin-top:1.25rem;">
+                    <hr style="flex:1;border:none;border-top:1px solid #dee2e6;">
+                    <span style="color:#868e96;font-size:.85rem;">ou</span>
+                    <hr style="flex:1;border:none;border-top:1px solid #dee2e6;">
+                </div>
+            </div>
+
+            <!-- Login -->
+            <form x-show="mode === 'login'" @submit.prevent="doLogin()">
+                <div class="form-group">
+                    <label>Nom d'utilisateur</label>
+                    <input type="text" x-model="username" required>
+                </div>
+                <div class="form-group">
+                    <label>Mot de passe</label>
+                    <input type="password" x-model="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;" :disabled="loading">
+                    <span x-show="!loading">Se connecter</span>
+                    <span x-show="loading">Connexion...</span>
+                </button>
+            </form>
+
+            <!-- Register -->
+            <form x-show="mode === 'register'" @submit.prevent="doRegister()">
+                <div class="form-group">
+                    <label>Nom d'utilisateur</label>
+                    <input type="text" x-model="username" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" x-model="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Mot de passe</label>
+                    <input type="password" x-model="password" required minlength="4">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%;" :disabled="loading">
+                    <span x-show="!loading">S'inscrire</span>
+                    <span x-show="loading">Inscription...</span>
+                </button>
+            </form>
+
+            <p x-show="error" style="color:#dc3545;margin-top:1rem;font-size:0.9rem;" x-text="error"></p>
+        </div>
+    </div>
+
+    <script>
+    function authForm() {
+        return {
+            mode: 'login',
+            username: '',
+            email: '',
+            password: '',
+            error: '',
+            loading: false,
+            googleClientId: null,
+            async init() {
+                try {
+                    const resp = await fetch('/api/auth/config');
+                    const cfg = await resp.json();
+                    this.googleClientId = cfg.google_client_id || null;
+                    if (this.googleClientId) this._waitForGSI();
+                } catch { /* Google Sign-In non disponible */ }
+            },
+            _waitForGSI() {
+                if (window.google && window.google.accounts) {
+                    this._initGoogle();
+                } else {
+                    setTimeout(() => this._waitForGSI(), 150);
+                }
+            },
+            _initGoogle() {
+                const self = this;
+                window._googleAuthCallback = async (response) => {
+                    await self.doGoogleLogin(response.credential);
+                };
+                google.accounts.id.initialize({
+                    client_id: this.googleClientId,
+                    callback: window._googleAuthCallback,
+                });
+                google.accounts.id.renderButton(
+                    document.getElementById('google-signin-btn'),
+                    { theme: 'outline', size: 'large', width: 280, text: 'signin_with', locale: 'fr' }
+                );
+            },
+            async doGoogleLogin(credential) {
+                this.error = '';
+                this.loading = true;
+                try {
+                    const resp = await fetch('/api/auth/google', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ token: credential }),
+                    });
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        setToken(data.access_token);
+                        const meResp = await apiFetch('/api/auth/me');
+                        if (meResp.ok) setUser(await meResp.json());
+                        window.location.href = '/';
+                    } else {
+                        const err = await resp.json();
+                        this.error = err.detail || 'Erreur Google Sign-In';
+                    }
+                } catch {
+                    this.error = 'Erreur de connexion au serveur';
+                }
+                this.loading = false;
+            },
+            async doLogin() {
+                this.error = '';
+                this.loading = true;
+                try {
+                    const resp = await fetch('/api/auth/login', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ username: this.username, password: this.password })
+                    });
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        setToken(data.access_token);
+                        const meResp = await apiFetch('/api/auth/me');
+                        if (meResp.ok) setUser(await meResp.json());
+                        window.location.href = '/';
+                    } else {
+                        const err = await resp.json();
+                        this.error = err.detail || 'Erreur de connexion';
+                    }
+                } catch {
+                    this.error = 'Erreur de connexion au serveur';
+                }
+                this.loading = false;
+            },
+            async doRegister() {
+                this.error = '';
+                this.loading = true;
+                try {
+                    const resp = await fetch('/api/auth/register', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ username: this.username, email: this.email, password: this.password })
+                    });
+                    if (resp.ok) {
+                        showToast('Inscription r\u00e9ussie ! Connectez-vous.');
+                        this.mode = 'login';
+                    } else {
+                        const err = await resp.json();
+                        this.error = err.detail || "Erreur lors de l'inscription";
+                    }
+                } catch {
+                    this.error = 'Erreur de connexion au serveur';
+                }
+                this.loading = false;
+            }
+        };
+    }
+    </script>
+</body>
+</html>

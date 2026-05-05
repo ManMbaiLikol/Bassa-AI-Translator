@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BassaAI Translator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="/static/js/app.js"></script>
+</head>
+<body>
+    <nav class="bassa-nav">
+        <a href="/" class="brand">BassaAI Translator</a>
+        <div class="nav-links" x-data="{ user: getUser() }">
+            <a href="/" class="active">Traduction</a>
+            <a href="/contribute.html">Contribuer</a>
+            <template x-if="user && (user.role === 'admin' || user.role === 'reviewer')">
+                <a href="/admin.html">Admin</a>
+            </template>
+            <template x-if="user">
+                <span style="display:flex;align-items:center;gap:0.8rem;">
+                    <span style="color:#ccc;font-size:0.85rem;" x-text="user.username"></span>
+                    <a href="#" class="auth-btn" @click.prevent="logout()">Quitter</a>
+                </span>
+            </template>
+            <template x-if="!user">
+                <a href="/login.html" class="auth-btn">Connexion</a>
+            </template>
+        </div>
+    </nav>
+
+    <!-- Hero Bassagramme -->
+    <section class="bassa-hero">
+        <div class="bassa-hero-content">
+            <h1>Traducteur <span>ɓàsàa</span></h1>
+            <p>Préservons et transmettons la langue du peuple Bàsàa</p>
+            <div class="hero-divider">
+                <span>Langue &bull; Culture &bull; Identité</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frise défilante des Bassagrammes -->
+    <div class="bassagrammes-strip" title="Les Bassagrammes — symboles identitaires du peuple Bàsàa">
+        <div class="bassagrammes-strip-inner">
+            <div class="bassagramme-card"><span class="symbol">&#9651;</span><span class="name">Création</span><span class="meaning">Procréation &bull; Éducation</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#8413;</span><span class="name">DJEL</span><span class="meaning">Stratégie &bull; Persévérance</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#128065;</span><span class="name">HEKA</span><span class="meaning">Savoir &bull; Spiritualité</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#10022;</span><span class="name">IYOL</span><span class="meaning">Liaison avec le Très-Haut</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#129413;</span><span class="name">KÛMBA</span><span class="meaning">Pouvoir &bull; Chef de famille</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#9996;</span><span class="name">JAÏYE</span><span class="meaning">Pouvoir</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#127956;</span><span class="name">NGOG LITUBA</span><span class="meaning">Grotte sacrée &bull; Origine</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#9651;</span><span class="name">ELOLOMBISME</span><span class="meaning">Monothéisme</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#9878;</span><span class="name">MAAT</span><span class="meaning">Justice &bull; Vérité</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#127968;</span><span class="name">KUNDÉISME</span><span class="meaning">Politique &bull; Gouvernance</span></div>
+            <!-- Copie pour boucle infinie -->
+            <div class="bassagramme-card"><span class="symbol">&#9651;</span><span class="name">Création</span><span class="meaning">Procréation &bull; Éducation</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#8413;</span><span class="name">DJEL</span><span class="meaning">Stratégie &bull; Persévérance</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#128065;</span><span class="name">HEKA</span><span class="meaning">Savoir &bull; Spiritualité</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#10022;</span><span class="name">IYOL</span><span class="meaning">Liaison avec le Très-Haut</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#129413;</span><span class="name">KÛMBA</span><span class="meaning">Pouvoir &bull; Chef de famille</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#9996;</span><span class="name">JAÏYE</span><span class="meaning">Pouvoir</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#127956;</span><span class="name">NGOG LITUBA</span><span class="meaning">Grotte sacrée &bull; Origine</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#9651;</span><span class="name">ELOLOMBISME</span><span class="meaning">Monothéisme</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#9878;</span><span class="name">MAAT</span><span class="meaning">Justice &bull; Vérité</span></div>
+            <div class="bassagramme-card"><span class="symbol">&#127968;</span><span class="name">KUNDÉISME</span><span class="meaning">Politique &bull; Gouvernance</span></div>
+        </div>
+    </div>
+
+    <div class="container" x-data="translator()">
+        <div style="height:1.5rem;"></div>
+
+        <div class="lang-selector">
+            <div class="lang-pills">
+                <button class="pill" :class="sourceLang === 'fr' ? 'active' : ''" @click="sourceLang = 'fr'">Fran&ccedil;ais</button>
+                <button class="pill" :class="sourceLang === 'en' ? 'active' : ''" @click="sourceLang = 'en'">English</button>
+            </div>
+            <span class="arrow">&rarr;</span>
+            <span class="lang-target">ɓàsàa</span>
+        </div>
+
+        <!-- Sélecteur de moteur -->
+        <div class="engine-selector">
+            <span class="engine-label">Moteur :</span>
+            <div class="engine-pills">
+                <button class="engine-pill" :class="engineType === null ? 'active' : ''" @click="engineType = null" title="Meilleur moteur disponible (selon config serveur)">Auto</button>
+                <button class="engine-pill" :class="engineType === 'dictionary' ? 'active' : ''" @click="engineType = 'dictionary'" title="Dictionnaire + règles morphologiques">Dictionnaire</button>
+                <button class="engine-pill" :class="engineType === 'ml' ? 'active' : ''" @click="engineType = 'ml'" title="Recherche sémantique dans le corpus (IA)">ML / Corpus</button>
+                <button class="engine-pill" :class="engineType === 'nmt' ? 'active' : ''" @click="engineType = 'nmt'" title="Traduction neuronale — MarianMT entraîné sur le corpus Bassa">NMT Bassa</button>
+                <button class="engine-pill" :class="engineType === 'llm' ? 'active' : ''" @click="engineType = 'llm'" title="Traduction contextuelle par Claude (nécessite clé API)">Claude IA</button>
+            </div>
+            <template x-if="result">
+                <span class="engine-badge" x-text="'⚙ ' + result.engine"></span>
+            </template>
+        </div>
+
+        <div class="translate-grid">
+            <div class="translate-box">
+                <label x-text="sourceLang === 'fr' ? 'Texte en Fran\u00e7ais' : 'English Text'"></label>
+                <textarea
+                    x-model="inputText"
+                    :placeholder="sourceLang === 'fr' ? 'Entrez votre texte ici...' : 'Enter your text here...'"
+                    @keydown.ctrl.enter="doTranslate()"
+                ></textarea>
+            </div>
+            <div class="translate-box">
+                <label>Traduction en Bassa</label>
+                <div class="result-area" :class="{ 'empty': !result }" x-text="result ? result.translated_text : 'La traduction appara\u00eetra ici...'"></div>
+                <template x-if="result">
+                    <div class="confidence-bar">
+                        <span class="label" x-text="Math.round(result.confidence * 100) + '%'"></span>
+                        <div class="bar">
+                            <div class="fill" :style="{
+                                width: (result.confidence * 100) + '%',
+                                background: result.confidence > 0.7 ? 'linear-gradient(90deg,#16a34a,#22c55e)' : result.confidence > 0.4 ? 'linear-gradient(90deg,#d97706,#f59e0b)' : 'linear-gradient(90deg,#dc2626,#ef4444)'
+                            }"></div>
+                        </div>
+                        <span class="conf-text">Confiance</span>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+        <button class="btn-translate" @click="doTranslate()" :disabled="loading || !inputText.trim()">
+            <span x-show="!loading">Traduire</span>
+            <span x-show="loading">Traduction en cours...</span>
+        </button>
+
+        <template x-if="result && result.word_translations.length > 0">
+            <div class="word-detail">
+                <h3>Traduction mot &agrave; mot</h3>
+                <p class="word-detail-hint" x-show="result.word_translations.some(w => !w.found)">
+                    Cliquez sur un mot <span class="hint-chip">manquant</span> pour proposer sa traduction
+                </p>
+                <div class="word-chips">
+                    <template x-for="w in result.word_translations" :key="w.source">
+                        <span
+                            class="word-chip"
+                            :class="w.found ? 'found' : 'not-found clickable'"
+                            :title="!w.found ? 'Cliquer pour proposer une traduction' : ''"
+                            @click="!w.found && openContrib(w.source)"
+                        >
+                            <span x-text="w.source"></span>
+                            &rarr;
+                            <span x-text="w.translated"></span>
+                            <span x-show="!w.found" class="chip-add-icon">+</span>
+                        </span>
+                    </template>
+                </div>
+            </div>
+        </template>
+
+        <template x-if="result && result.warnings.length > 0">
+            <div class="warnings">
+                <template x-for="w in result.warnings" :key="w">
+                    <p x-text="w" style="margin:0.2rem 0;"></p>
+                </template>
+            </div>
+        </template>
+
+        <!-- Feedback traduction -->
+        <template x-if="result && result.history_id">
+            <div x-show="!feedbackSent" style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;margin-top:1rem;padding:0.75rem 1rem;background:#f8f9fa;border-radius:10px;font-size:0.9rem;">
+                <span style="color:var(--text-muted);">Cette traduction est-elle correcte ?</span>
+                <template x-if="getUser()">
+                    <span style="display:flex;gap:0.5rem;">
+                        <button class="btn btn-sm" style="background:#d1fae5;color:#065f46;border:1px solid #6ee7b7;" @click="sendFeedback(true)">👍 Correcte — ajouter au corpus</button>
+                        <button class="btn btn-sm" style="background:#fee2e2;color:#991b1b;border:1px solid #fca5a5;" @click="openFeedbackCorrection()">👎 Corriger</button>
+                    </span>
+                </template>
+                <template x-if="!getUser()">
+                    <a href="/login.html" style="font-size:0.82rem;color:var(--primary);">Connectez-vous pour évaluer</a>
+                </template>
+            </div>
+        </template>
+        <template x-if="result && result.history_id">
+            <div x-show="feedbackSent" style="padding:0.6rem 1rem;background:#d1fae5;border-radius:10px;font-size:0.875rem;color:#065f46;margin-top:0.5rem;">
+                Merci ! Ce retour enrichit le corpus Bassa.
+            </div>
+        </template>
+
+        <!-- Modal correction -->
+        <div x-show="correctionOpen" style="position:fixed;inset:0;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center;z-index:1000;" @click.self="correctionOpen=false">
+            <div style="background:#fff;border-radius:14px;padding:1.75rem;width:100%;max-width:480px;" @click.stop>
+                <h4 style="margin:0 0 0.5rem;">Corriger la traduction</h4>
+                <p style="font-size:0.85rem;color:#888;margin-bottom:1rem;">Entrez la traduction Bassa correcte — elle sera soumise pour validation.</p>
+                <div style="margin-bottom:0.75rem;">
+                    <label style="font-size:0.82rem;font-weight:600;color:#555;">Texte source</label>
+                    <div style="padding:0.4rem 0.7rem;background:#f8f9fa;border-radius:6px;margin-top:0.2rem;font-size:0.9rem;" x-text="result && result.source_text"></div>
+                </div>
+                <div style="margin-bottom:1rem;">
+                    <label style="font-size:0.82rem;font-weight:600;color:#555;">Traduction Bassa correcte <span style="color:#dc2626;">*</span></label>
+                    <textarea x-model="correctedText" rows="3" style="width:100%;margin-top:0.2rem;padding:0.5rem 0.7rem;border:1px solid #ddd;border-radius:6px;font-family:var(--font-bassa,serif);resize:vertical;" placeholder="Entrez la traduction correcte en Bassa..."></textarea>
+                </div>
+                <div style="display:flex;justify-content:flex-end;gap:0.5rem;">
+                    <button class="btn btn-secondary btn-sm" @click="correctionOpen=false">Annuler</button>
+                    <button class="btn btn-primary btn-sm" @click="sendFeedback(false)" :disabled="!correctedText.trim()">Soumettre la correction</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modale contribution -->
+        <div class="contrib-overlay" x-show="contrib.open" x-transition.opacity @click.self="contrib.open = false">
+            <div class="contrib-modal" x-show="contrib.open" x-transition>
+                <div class="contrib-modal-header">
+                    <div>
+                        <h4>Proposer une traduction</h4>
+                        <p>Ce mot sera soumis pour validation</p>
+                    </div>
+                    <button class="contrib-close" @click="contrib.open = false">&times;</button>
+                </div>
+                <div class="contrib-modal-body">
+                    <div class="contrib-word-row">
+                        <div class="contrib-field">
+                            <label>Mot source</label>
+                            <div class="contrib-word-display" x-text="contrib.sourceWord"></div>
+                        </div>
+                        <div class="contrib-arrow">&rarr;</div>
+                        <div class="contrib-field" style="flex:1">
+                            <label>Traduction en Bàsàa <span style="color:#dc2626">*</span></label>
+                            <input
+                                type="text"
+                                class="contrib-input"
+                                x-model="contrib.bassaWord"
+                                placeholder="Entrez la traduction Bàsàa..."
+                                @keydown.enter="submitContrib()"
+                                x-ref="contribInput"
+                            >
+                        </div>
+                    </div>
+                    <div class="contrib-meta">
+                        <div class="contrib-field">
+                            <label>Catégorie</label>
+                            <select class="contrib-select" x-model="contrib.category">
+                                <option value="">— optionnel —</option>
+                                <option value="v">Verbe</option>
+                                <option value="s">Substantif</option>
+                                <option value="adj">Adjectif</option>
+                                <option value="adv">Adverbe</option>
+                                <option value="prn">Pronom</option>
+                                <option value="prp">Préposition</option>
+                                <option value="conj">Conjonction</option>
+                            </select>
+                        </div>
+                        <div class="contrib-field" style="flex:1">
+                            <label>Note (optionnel)</label>
+                            <input type="text" class="contrib-input" x-model="contrib.notes" placeholder="Contexte, nuance...">
+                        </div>
+                    </div>
+                    <template x-if="!getUser()">
+                        <p class="contrib-login-warn">
+                            Vous devez être <a href="/login.html">connecté</a> pour soumettre une contribution.
+                        </p>
+                    </template>
+                </div>
+                <div class="contrib-modal-footer">
+                    <button class="btn btn-secondary" @click="contrib.open = false">Annuler</button>
+                    <button
+                        class="btn btn-primary"
+                        @click="submitContrib()"
+                        :disabled="contrib.submitting || !contrib.bassaWord.trim() || !getUser()"
+                    >
+                        <span x-show="!contrib.submitting">Soumettre</span>
+                        <span x-show="contrib.submitting">Envoi...</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function translator() {
+        return {
+            sourceLang: 'fr',
+            inputText: '',
+            result: null,
+            loading: false,
+            engineType: null,  // null = auto (moteur par défaut du serveur)
+            feedbackSent: false,
+            correctionOpen: false,
+            correctedText: '',
+
+            contrib: {
+                open: false,
+                sourceWord: '',
+                bassaWord: '',
+                category: '',
+                notes: '',
+                submitting: false,
+            },
+
+            async doTranslate() {
+                if (!this.inputText.trim()) return;
+                this.loading = true;
+                this.result = null;
+                try {
+                    const body = { text: this.inputText, source_language: this.sourceLang };
+                    if (this.engineType) body.engine_type = this.engineType;
+                    const resp = await fetch('/api/translate', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(body)
+                    });
+                    if (resp.ok) {
+                        this.result = await resp.json();
+                        this.feedbackSent = false;
+                        this.correctionOpen = false;
+                        this.correctedText = '';
+                    } else {
+                        const err = await resp.json();
+                        showToast(err.detail || 'Erreur de traduction', 'error');
+                    }
+                } catch (e) {
+                    showToast('Erreur de connexion', 'error');
+                }
+                this.loading = false;
+            },
+
+            openFeedbackCorrection() {
+                this.correctedText = this.result ? this.result.translated_text : '';
+                this.correctionOpen = true;
+            },
+
+            async sendFeedback(isGood) {
+                if (!getUser() || !this.result || !this.result.history_id) return;
+                const body = {
+                    history_id: this.result.history_id,
+                    add_to_corpus: true,
+                };
+                if (!isGood) {
+                    if (!this.correctedText.trim()) return;
+                    body.corrected_text = this.correctedText.trim();
+                }
+                try {
+                    const resp = await apiFetch('/api/translate/feedback', {
+                        method: 'POST',
+                        body: JSON.stringify(body),
+                    });
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        this.feedbackSent = true;
+                        this.correctionOpen = false;
+                        if (data.status === 'already_exists') showToast('D\u00e9j\u00e0 pr\u00e9sent dans le corpus.');
+                        else showToast('Ajout\u00e9 au corpus — merci\u00a0!');
+                    } else {
+                        const err = await resp.json();
+                        showToast(err.detail || 'Erreur', 'error');
+                    }
+                } catch {
+                    showToast('Erreur de connexion', 'error');
+                }
+            },
+
+            openContrib(word) {
+                if (!getUser()) {
+                    showToast('Connectez-vous pour contribuer', 'error');
+                    return;
+                }
+                this.contrib.sourceWord = word;
+                this.contrib.bassaWord = '';
+                this.contrib.category = '';
+                this.contrib.notes = '';
+                this.contrib.submitting = false;
+                this.contrib.open = true;
+                this.$nextTick(() => this.$refs.contribInput && this.$refs.contribInput.focus());
+            },
+
+            async submitContrib() {
+                if (!this.contrib.bassaWord.trim() || !getUser()) return;
+                this.contrib.submitting = true;
+                try {
+                    const resp = await apiFetch('/api/contributions', {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            type: 'dictionary',
+                            source_language: this.sourceLang,
+                            source_text: this.contrib.sourceWord,
+                            bassa_text: this.contrib.bassaWord.trim(),
+                            category: this.contrib.category || null,
+                            notes: this.contrib.notes || null,
+                        })
+                    });
+                    if (resp.ok) {
+                        this.contrib.open = false;
+                        showToast('Contribution soumise — merci !');
+                        // Marquer le chip comme en attente
+                        const w = this.result.word_translations.find(w => w.source === this.contrib.sourceWord);
+                        if (w) { w.found = true; w.translated = this.contrib.bassaWord.trim() + ' (?)'; }
+                    } else {
+                        const err = await resp.json();
+                        showToast(err.detail || 'Erreur', 'error');
+                    }
+                } catch {
+                    showToast('Erreur de connexion', 'error');
+                }
+                this.contrib.submitting = false;
+            }
+        };
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+services:
+
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: bassa_translator
+      MYSQL_USER: bassa
+      MYSQL_PASSWORD: bassapassword
+    volumes:
+      - mysql_data:/var/lib/mysql
+    # Port 3307 côté hôte pour éviter le conflit avec WAMP (3306)
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-ubassa", "-pbassapassword"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  app:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      # Pointe vers le service "db" du compose, pas localhost
+      DATABASE_URL: mysql+pymysql://bassa:bassapassword@db:3306/bassa_translator?charset=utf8mb4
+
+      # Secrets — lus depuis le .env de l'hôte (docker compose --env-file .env)
+      SECRET_KEY: ${SECRET_KEY}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+
+      # Config moteur
+      ENGINE_TYPE: ${ENGINE_TYPE:-auto}
+      CLAUDE_MODEL: ${CLAUDE_MODEL:-claude-sonnet-4-6}
+      ML_HIGH_THRESHOLD: ${ML_HIGH_THRESHOLD:-0.90}
+      ML_MED_THRESHOLD: ${ML_MED_THRESHOLD:-0.70}
+
+      # CORS — adapter au domaine de production si besoin
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-http://localhost:8000}
+
+      # Cache HuggingFace dans le volume (modèle MiniLM ~120 MB)
+      HF_HOME: /cache/huggingface
+      SENTENCE_TRANSFORMERS_HOME: /cache/sentence_transformers
+    volumes:
+      # Modèles ML persistés entre les redémarrages
+      - ml_cache:/cache
+      # Modèle NMT fine-tuné (optionnel — vide si non entraîné)
+      - nmt_models:/app/backend/models_cache
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  mysql_data:
+  ml_cache:
+  nmt_models:

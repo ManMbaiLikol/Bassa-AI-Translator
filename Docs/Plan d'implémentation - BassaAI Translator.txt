@@ -1,0 +1,145 @@
+ Plan d'implémentation - BassaAI Translator
+
+ Contexte
+
+ Développement d'une plateforme complète de traduction automatique FR/EN vers Bassa. Le projet part de zéro. L'approche initiale est dictionnaire + règles grammaticales, avec une
+ architecture extensible vers un modèle IA (fine-tuning) dans le futur.
+
+ Stack technologique
+
+ - Backend : Python FastAPI + SQLAlchemy + MySQL (via WAMP)
+ - Frontend : HTML/CSS/JS vanilla + Alpine.js (CDN) + Pico CSS (CDN)
+ - Auth : JWT (python-jose + passlib/bcrypt)
+ - DB : MySQL utf8mb4 (WAMP) / SQLite pour les tests
+
+ Architecture du projet
+
+ Bassa_AI_Translator/
+ ├── backend/
+ │   ├── main.py                    # Point d'entrée FastAPI
+ │   ├── config.py                  # Pydantic settings (.env)
+ │   ├── database.py                # SQLAlchemy engine + session
+ │   ├── models/                    # Modèles ORM (user, dictionary, corpus, contribution)
+ │   ├── schemas/                   # Schémas Pydantic (requêtes/réponses)
+ │   ├── api/                       # Routes (auth, translate, dictionary, corpus, contributions, admin)
+ │   ├── engine/                    # Moteur de traduction (abstraction Strategy Pattern)
+ │   │   ├── base.py                # Classe abstraite TranslationEngine
+ │   │   ├── dictionary_engine.py   # Phase 1 : dictionnaire + règles
+ │   │   ├── rule_transform.py      # Règles grammaticales Bassa
+ │   │   ├── tokenizer.py           # Tokenisation FR/EN
+ │   │   └── ml_engine.py           # Phase 2 (placeholder pour modèle IA)
+ │   ├── services/                  # Logique métier
+ │   └── seed/                      # Données initiales (dictionnaire JSON, corpus CSV)
+ ├── frontend/
+ │   ├── index.html                 # Page de traduction
+ │   ├── contribute.html            # Page de contribution
+ │   ├── admin.html                 # Tableau de bord admin
+ │   ├── login.html                 # Authentification
+ │   └── static/ (css/, js/, img/)
+ ├── tests/
+ ├── scripts/ (run_dev.py, init_db.py)
+ ├── requirements.txt
+ ├── .env
+ └── .gitignore
+
+ Base de données (6 tables)
+
+ 1. users : id, username, email, hashed_password, role (contributor/reviewer/admin)
+ 2. dictionary_entries : id, source_language, source_word, bassa_word, phonetic, category, gender, plural_form, notes, is_verified
+ 3. dictionary_examples : id, entry_id (FK), source_sentence, bassa_sentence
+ 4. corpus_pairs : id, source_language, source_text, bassa_text, domain, source_reference, is_verified
+ 5. contributions : id, contributor_id, type, status (submitted/under_review/approved/rejected), source/bassa texts, reviewer_id, reviewer_comment
+ 6. grammatical_rules : id, rule_name, source_language, pattern, transformation, priority, is_active
+
+ Moteur de traduction (Design Pattern Strategy)
+
+ Architecture clé du projet : une classe abstraite TranslationEngine avec méthode translate() retournant un TranslationResult riche (texte traduit, confiance, traduction mot-à-mot,
+ avertissements).
+
+ Phase 1 : DictionaryEngine - tokenisation, lookup multi-mots puis mot-à-mot, application de règles grammaticales, scoring de confiance.
+ Phase 2 (futur) : MLEngine - même interface, modèle fine-tuné. Le swap se fait par configuration.
+
+ Le dictionnaire est chargé en mémoire au démarrage avec méthode reload() pour les mises à jour sans redémarrage.
+
+ API REST (endpoints principaux)
+
+ - POST /api/auth/register|login - Authentification JWT
+ - POST /api/translate - Traduction (public, rate-limited)
+ - GET/POST/PUT/DELETE /api/dictionary - Gestion dictionnaire
+ - GET/POST/PUT/DELETE /api/corpus - Gestion corpus
+ - POST /api/contributions - Soumettre une contribution
+ - PUT /api/contributions/{id}/review - Approuver/rejeter (reviewer+)
+ - GET /api/admin/stats - Statistiques dashboard
+
+ Étapes d'implémentation (dans l'ordre)
+
+ Phase 0 : Bootstrap
+
+ - Créer la structure de répertoires
+ - requirements.txt, .env, .gitignore
+ - config.py, database.py
+
+ Phase 1 : Modèles et base de données
+
+ - Modèles SQLAlchemy (5 tables)
+ - Script init_db.py pour créer les tables
+
+ Phase 2 : Authentification
+
+ - Register, login, JWT, dépendances de rôle (contributor/reviewer/admin)
+
+ Phase 3 : Dictionnaire CRUD
+
+ - API CRUD + recherche + pagination
+ - Données seed (JSON initial)
+
+ Phase 4 : Moteur de traduction (COEUR)
+
+ - base.py (interface abstraite)
+ - tokenizer.py (FR/EN)
+ - dictionary_engine.py (lookup + règles)
+ - POST /api/translate
+
+ Phase 5 : Frontend traduction
+
+ - index.html : interface deux colonnes, sélecteur de langue, affichage résultat + confiance + détail mot-à-mot
+ - FastAPI sert les fichiers statiques directement (pas besoin d'Apache)
+
+ Phase 6 : Corpus CRUD
+
+ - API CRUD + export CSV + statistiques
+
+ Phase 7 : Système de contributions
+
+ - Soumission, workflow de validation, auto-création entrée dictionnaire/corpus sur approbation
+ - contribute.html + login.html
+
+ Phase 8 : Dashboard admin
+
+ - Statistiques, file d'attente de revue, gestion dictionnaire/corpus/règles/utilisateurs
+ - admin.html
+
+ Phase 9 : Tests et finitions
+
+ - Tests pytest (SQLite in-memory)
+ - Validation d'entrées, gestion d'erreurs, CORS
+
+ Vérification
+
+ Pour tester le MVP complet :
+ # 1. S'assurer que MySQL WAMP est démarré
+ # 2. Installer les dépendances
+ pip install -r requirements.txt
+ # 3. Initialiser la base et les données seed
+ python scripts/init_db.py
+ # 4. Lancer le serveur
+ python scripts/run_dev.py
+ # 5. Accéder à :
+ #    - http://localhost:8000/          (traduction)
+ #    - http://localhost:8000/contribute.html (contributions)
+ #    - http://localhost:8000/admin.html      (admin)
+ #    - http://localhost:8000/docs            (doc API Swagger)
+
+ Dépendances Python
+
+ fastapi, uvicorn, sqlalchemy, pymysql, alembic, python-jose, passlib[bcrypt], python-multipart, pydantic, pydantic-settings, python-dotenv, httpx (tests)
