@@ -1,0 +1,25 @@
+FROM python:3.13-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc \
+    pkg-config \
+    default-libmysqlclient-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Pas de PyTorch en production Railway — moteurs dictionary + LLM (Claude) uniquement
+COPY requirements-railway.txt .
+RUN pip install --no-cache-dir -r requirements-railway.txt
+
+COPY backend/ ./backend/
+COPY frontend/ ./frontend/
+COPY alembic/ ./alembic/
+COPY alembic.ini .
+
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
+
+EXPOSE 8000
+
+ENTRYPOINT ["/docker-entrypoint.sh"]

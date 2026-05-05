@@ -156,6 +156,11 @@ app.add_middleware(
     allow_headers=["Authorization", "Content-Type"],
 )
 
+# Health check (Railway / Docker)
+@app.get("/api/health", tags=["system"])
+def health():
+    return {"status": "ok"}
+
 # Routes API
 app.include_router(auth.router)
 app.include_router(translate.router)
