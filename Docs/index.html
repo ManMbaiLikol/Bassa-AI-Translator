@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BassaAI Translator — Traducteur Bàsàa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Gentium+Plus:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary:       #2d6a4f;
+      --primary-light: #40916c;
+      --primary-dark:  #1b4332;
+      --accent:        #d4a373;
+      --accent-light:  #e9c46a;
+      --bg:            #f4f7f4;
+      --text:          #1a2e1f;
+      --text-muted:    #6b7c6e;
+      --border:        #d8e8d8;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--primary-dark);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav .brand {
+      color: var(--accent-light);
+      font-weight: 800;
+      font-size: 1.2rem;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    nav a.gh {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: color 0.2s;
+    }
+    nav a.gh:hover { color: var(--accent-light); }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, var(--primary-light) 100%);
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .hero h1 span {
+      font-family: 'Gentium Plus', serif;
+      color: var(--accent-light);
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.85);
+      max-width: 560px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+      position: relative;
+    }
+    .hero-divider {
+      color: var(--accent);
+      font-size: 0.95rem;
+      letter-spacing: 0.15em;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+    .btn-hero {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--primary-dark);
+      font-weight: 700;
+      padding: 0.85rem 2.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+    }
+    .btn-hero:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    }
+
+    /* STRIP BASSAGRAMMES */
+    .strip-wrap {
+      background: var(--primary-dark);
+      overflow: hidden;
+      padding: 0.75rem 0;
+      border-top: 2px solid var(--accent);
+      border-bottom: 2px solid var(--accent);
+    }
+    .strip {
+      display: flex;
+      gap: 2rem;
+      animation: scroll 28s linear infinite;
+      width: max-content;
+    }
+    .strip-card {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: rgba(255,255,255,0.85);
+      white-space: nowrap;
+      font-size: 0.85rem;
+    }
+    .strip-card .sym { font-size: 1.3rem; }
+    .strip-card .lbl { color: var(--accent-light); font-weight: 600; }
+    @keyframes scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* FEATURES */
+    .features {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+    .features h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 2.5rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.8rem;
+      box-shadow: 0 2px 12px rgba(27,67,50,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(27,67,50,0.14);
+    }
+    .card-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* STATS */
+    .stats {
+      background: var(--primary-dark);
+      color: white;
+      text-align: center;
+      padding: 3.5rem 2rem;
+    }
+    .stats h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent-light);
+      margin-bottom: 2rem;
+    }
+    .stats-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+    .stat-item .number {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--accent-light);
+      display: block;
+    }
+    .stat-item .label {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+      margin-top: 0.3rem;
+    }
+
+    /* STACK */
+    .stack {
+      max-width: 860px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+      text-align: center;
+    }
+    .stack h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 1.8rem;
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+    .badge {
+      background: var(--primary-dark);
+      color: white;
+      border-radius: 50px;
+      padding: 0.45rem 1.1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .badge.accent { background: var(--accent); color: var(--primary-dark); }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      padding: 3.5rem 2rem 5rem;
+      background: linear-gradient(135deg, #f0f7f0, var(--bg));
+    }
+    .cta h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 0.8rem;
+    }
+    .cta p {
+      color: var(--text-muted);
+      margin-bottom: 1.8rem;
+    }
+    .btn-cta {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      font-weight: 700;
+      padding: 0.85rem 2.2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      margin: 0 0.5rem;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-cta:hover { background: var(--primary-dark); transform: translateY(-2px); }
+    .btn-cta.outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+    .btn-cta.outline:hover { background: var(--primary); color: white; }
+
+    /* FOOTER */
+    footer {
+      background: var(--primary-dark);
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--accent-light); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="brand">BassaAI Translator</a>
+  <a href="https://github.com/ManMbaiLikol/Bassa-AI-Translator" class="gh" target="_blank">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+    GitHub
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Traducteur <span>ɓàsàa</span></h1>
+  <p>Préservons et transmettons la langue du peuple Bàsàa du Cameroun grâce à l'intelligence artificielle.</p>
+  <div class="hero-divider">Langue &bull; Culture &bull; Identité</div>
+  <a href="https://github.com/ManMbaiLikol/Bassa-AI-Translator" class="btn-hero" target="_blank">
+    Voir le projet sur GitHub
+  </a>
+</section>
+
+<!-- BASSAGRAMMES STRIP -->
+<div class="strip-wrap">
+  <div class="strip">
+    <div class="strip-card"><span class="sym">△</span><span class="lbl">Création</span><span>Procréation · Éducation</span></div>
+    <div class="strip-card"><span class="sym">⌭</span><span class="lbl">DJEL</span><span>Stratégie · Persévérance</span></div>
+    <div class="strip-card"><span class="sym">👁</span><span class="lbl">HEKA</span><span>Savoir · Spiritualité</span></div>
+    <div class="strip-card"><span class="sym">✦</span><span class="lbl">IYOL</span><span>Liaison avec le Très-Haut</span></div>
+    <div class="strip-card"><span class="sym">🦁</span><span class="lbl">KÛMBA</span><span>Pouvoir · Chef de famille</span></div>
+    <div class="strip-card"><span class="sym">✌</span><span class="lbl">JAÏYE</span><span>Pouvoir</span></div>
+    <div class="strip-card"><span class="sym">⛺</span><span class="lbl">NGOG LITUBA</span><span>Grotte sacrée · Origine</span></div>
+    <div class="strip-card"><span class="sym">⚖</span><span class="lbl">MAAT</span><span>Justice · Vérité</span></div>
+    <!-- copie pour boucle infinie -->
+    <div class="strip-card"><span class="sym">△</span><span class="lbl">Création</span><span>Procréation · Éducation</span></div>
+    <div class="strip-card"><span class="sym">⌭</span><span class="lbl">DJEL</span><span>Stratégie · Persévérance</span></div>
+    <div class="strip-card"><span class="sym">👁</span><span class="lbl">HEKA</span><span>Savoir · Spiritualité</span></div>
+    <div class="strip-card"><span class="sym">✦</span><span class="lbl">IYOL</span><span>Liaison avec le Très-Haut</span></div>
+    <div class="strip-card"><span class="sym">🦁</span><span class="lbl">KÛMBA</span><span>Pouvoir · Chef de famille</span></div>
+    <div class="strip-card"><span class="sym">✌</span><span class="lbl">JAÏYE</span><span>Pouvoir</span></div>
+    <div class="strip-card"><span class="sym">⛺</span><span class="lbl">NGOG LITUBA</span><span>Grotte sacrée · Origine</span></div>
+    <div class="strip-card"><span class="sym">⚖</span><span class="lbl">MAAT</span><span>Justice · Vérité</span></div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="features">
+  <h2>Fonctionnalités</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="card-icon">📖</div>
+      <h3>Dictionnaire Bàsàa</h3>
+      <p>Plus de 41 357 entrées Français · Anglais · Allemand ↔ Bàsàa issues de multiples sources linguistiques.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🧠</div>
+      <h3>Moteur ML</h3>
+      <p>Modèle multilingue MiniLM entraîné sur le corpus Bàsàa pour des traductions contextuelles précises.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">✨</div>
+      <h3>IA Générative (Claude)</h3>
+      <p>Moteur LLM Claude d'Anthropic pour les phrases complexes et les nuances culturelles de la langue.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🤝</div>
+      <h3>Contributions communautaires</h3>
+      <p>Chaque locuteur peut proposer des corrections et enrichir le dictionnaire collaboratif.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔐</div>
+      <h3>Authentification</h3>
+      <p>Connexion sécurisée par JWT ou Google OAuth. Historique personnel des traductions.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🐳</div>
+      <h3>Prêt pour la production</h3>
+      <p>Déploiement Docker complet avec FastAPI, MySQL, et reverse proxy Nginx.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <h2>Le projet en chiffres</h2>
+  <div class="stats-grid">
+    <div class="stat-item">
+      <span class="number">41 357</span>
+      <span class="label">entrées de dictionnaire</span>
+    </div>
+    <div class="stat-item">
+      <span class="number">3</span>
+      <span class="label">langues sources (FR · EN · DE)</span>
+    </div>
+    <div class="stat-item">
+      <span class="number">3</span>
+      <span class="label">moteurs de traduction</span>
+    </div>
+    <div class="stat-item">
+      <span class="number">128</span>
+      <span class="label">fichiers source</span>
+    </div>
+  </div>
+</section>
+
+<!-- STACK -->
+<section class="stack">
+  <h2>Stack technique</h2>
+  <div class="badges">
+    <span class="badge">Python 3.13</span>
+    <span class="badge">FastAPI</span>
+    <span class="badge">SQLAlchemy</span>
+    <span class="badge">MySQL</span>
+    <span class="badge accent">Alpine.js</span>
+    <span class="badge">JWT Auth</span>
+    <span class="badge">Google OAuth</span>
+    <span class="badge accent">Claude (Anthropic)</span>
+    <span class="badge">MiniLM ML</span>
+    <span class="badge">Docker</span>
+    <span class="badge">Alembic</span>
+    <span class="badge">pytest</span>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Contribuez à préserver la langue Bàsàa</h2>
+  <p>Le projet est open source — chaque contribution compte pour la culture et l'identité du peuple Bàsàa.</p>
+  <a href="https://github.com/ManMbaiLikol/Bassa-AI-Translator" class="btn-cta" target="_blank">Voir le code source</a>
+  <a href="https://github.com/ManMbaiLikol/Bassa-AI-Translator/issues" class="btn-cta outline" target="_blank">Signaler un problème</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Fait avec ❤️ pour le peuple <strong style="color:var(--accent-light)">Bàsàa</strong> du Cameroun &nbsp;·&nbsp;
+  <a href="https://github.com/ManMbaiLikol/Bassa-AI-Translator" target="_blank">GitHub</a></p>
+</footer>
+
+</body>
+</html>
