@@ -2,13 +2,7 @@ FROM python:3.13-slim
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    pkg-config \
-    default-libmysqlclient-dev \
-    && rm -rf /var/lib/apt/lists/*
-
-# Pas de PyTorch en production Railway — moteurs dictionary + LLM (Claude) uniquement
+# pymysql est pur Python — aucune dépendance C nécessaire
 COPY requirements-railway.txt .
 RUN pip install --no-cache-dir -r requirements-railway.txt
 
