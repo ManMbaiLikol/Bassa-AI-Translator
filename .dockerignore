@@ -23,8 +23,15 @@ backend/seed/
 
 # Docs internes
 Docs/
-*.txt
 *.md
+
+# Fichiers texte génériques (sauf requirements)
+extracted_text_output.txt
+docs/lancer*.txt
+docs/Sources*.txt
+docs/Plan*.txt
+docs/Voila*.txt
+docs/AUTH*.txt
 
 # Fichiers temporaires
 tmp_*.html
