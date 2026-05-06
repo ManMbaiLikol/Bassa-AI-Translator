@@ -15,7 +15,6 @@ from backend.database import SessionLocal
 from backend.models.user import User, UserRole
 from backend.models.dictionary import DictionaryEntry, DictionaryExample
 from backend.models.corpus import CorpusPair
-from backend.models.grammar import GrammaticalRule
 
 SEED_DIR = Path(__file__).resolve().parent / "seed"
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -324,7 +323,7 @@ def seed_bible_dictionary(db, existing: set) -> int:
 
 
 # ---------------------------------------------------------------------------
-# 6. Admin user + grammar rules
+# 6. Admin user
 # ---------------------------------------------------------------------------
 def seed_admin(db) -> None:
     if db.query(User).filter(User.username == "admin").first():
@@ -338,23 +337,6 @@ def seed_admin(db) -> None:
     ))
     db.commit()
     print("  Admin user created (admin / admin123).")
-
-
-def seed_grammar_rules(db) -> None:
-    if db.query(GrammaticalRule).count() > 0:
-        print("  [SKIP] Grammar rules already exist")
-        return
-    rules = [
-        GrammaticalRule(rule_name="FR subject-verb order", source_language="fr",
-                        pattern="PRON VERB", transformation="PRON VERB", priority=10, is_active=True),
-        GrammaticalRule(rule_name="FR negation ne...pas removal", source_language="fr",
-                        pattern="ne VERB pas", transformation="VERB ga", priority=20, is_active=True),
-        GrammaticalRule(rule_name="EN subject-verb order", source_language="en",
-                        pattern="PRON VERB", transformation="PRON VERB", priority=10, is_active=True),
-    ]
-    db.add_all(rules)
-    db.commit()
-    print(f"  Added {len(rules)} grammar rules.")
 
 
 # ---------------------------------------------------------------------------
@@ -395,9 +377,8 @@ def main():
         n = seed_bible_dictionary(db, existing)
         print(f"  Added {n} entries")
 
-        print("\n[8/8] Admin user + grammar rules...")
+        print("\n[8/8] Admin user...")
         seed_admin(db)
-        seed_grammar_rules(db)
 
         final = db.query(DictionaryEntry).count()
         print(f"\n=== Done! Total dictionary entries: {final} ===")
