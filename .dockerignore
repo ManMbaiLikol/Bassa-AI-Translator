@@ -18,9 +18,6 @@ backend/models_cache/
 # Scripts de développement/scraping
 scripts/
 
-# Données de seed (déjà importées en base)
-backend/seed/
-
 # Docs internes
 Docs/
 *.md
