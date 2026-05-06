@@ -113,8 +113,22 @@ def upgrade() -> None:
     op.create_index('ix_translation_history_engine',          'translation_history', ['engine'],          unique=False)
     op.create_index('ix_translation_history_created_at',      'translation_history', ['created_at'],      unique=False)
 
+    op.create_table(
+        'grammatical_rules',
+        sa.Column('id',              sa.Integer(),    primary_key=True, autoincrement=True),
+        sa.Column('rule_name',       sa.String(255),  nullable=False),
+        sa.Column('source_language', sa.String(2),    nullable=False),
+        sa.Column('pattern',         sa.Text(),       nullable=False),
+        sa.Column('transformation',  sa.Text(),       nullable=False),
+        sa.Column('priority',        sa.Integer(),    nullable=True, server_default=sa.text('0')),
+        sa.Column('is_active',       sa.Boolean(),    nullable=True, server_default=sa.text('1')),
+        sa.Column('created_at',      sa.DateTime(),   server_default=sa.text('NOW()')),
+    )
+    op.create_index('ix_grammatical_rules_id', 'grammatical_rules', ['id'], unique=False)
+
 
 def downgrade() -> None:
+    op.drop_table('grammatical_rules')
     op.drop_table('translation_history')
     op.drop_table('contributions')
     op.drop_table('corpus_pairs')
