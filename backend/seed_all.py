@@ -30,6 +30,8 @@ def _load_existing(db) -> set:
     }
 
 
+MAX_WORD = 191  # VARCHAR(191) limit
+
 def _clean_bassa(text: str) -> str:
     return re.sub(r"\s+", " ", text.strip().rstrip(".,;:!?")).strip()
 
@@ -56,6 +58,7 @@ def seed_base_dictionary(db, existing: set) -> int:
         examples_data = item.pop("examples", [])
         lang = item["source_language"]
         word = item["source_word"]
+        word = word[:MAX_WORD]
         key = (lang, word.lower())
         if key in existing:
             continue
@@ -112,6 +115,7 @@ def seed_webonary(db, existing: set) -> int:
                 translation = sense.get(lang, "").strip()
                 if not translation:
                     continue
+                translation = translation[:MAX_WORD]
                 key = (lang, translation.lower())
                 if key in existing:
                     continue
@@ -155,7 +159,7 @@ def seed_expanded(db, existing: set) -> int:
     added = 0
     for e in entries:
         lang = e["source_language"]
-        word = e["source_word"].lower().strip()
+        word = e["source_word"].lower().strip()[:MAX_WORD]
         bassa = e["bassa_word"].strip()
         key = (lang, word)
         if key in existing or not word or not bassa:
@@ -192,7 +196,7 @@ def seed_resulam(db, existing: set) -> int:
         bassa = _clean_bassa(item["bassa"])
         fr = _clean_french(item["fr"])
         fr_stripped = re.sub(r"^(le |la |les |un |une |des |du |l'|mon |ma |mes )", "", fr).strip()
-        for word in set([fr, fr_stripped]):
+        for word in set([fr[:MAX_WORD], fr_stripped[:MAX_WORD]]):
             if not word or len(word) < 2:
                 continue
             key = ("fr", word)
@@ -225,7 +229,7 @@ def seed_pdf(db, existing: set) -> int:
 
     added = 0
     for item in items:
-        fr = _clean_french(item.get("source_word", ""))
+        fr = _clean_french(item.get("source_word", ""))[:MAX_WORD]
         bassa = _clean_bassa(item.get("bassa_word", ""))
         if not fr or not bassa or len(fr) < 2:
             continue
@@ -299,7 +303,7 @@ def seed_bible_dictionary(db, existing: set) -> int:
 
     added = 0
     for e in entries:
-        word = e["source_word"].lower().strip()
+        word = e["source_word"].lower().strip()[:MAX_WORD]
         bassa = e["bassa_word"].strip()
         key = ("fr", word)
         if key in existing or len(word) < 3 or len(bassa) < 2:
