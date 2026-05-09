@@ -130,11 +130,13 @@ def translate_feedback(
 ):
     """Feedback sur une traduction.
 
-    - Si add_to_corpus=True : ajoute la traduction (ou la correction) au corpus
-      en statut non-vérifié, pour relecture par un reviewer.
-    - corrected_text : texte Bassa corrigé par l'utilisateur (optionnel).
+    - 👍 add_to_corpus=True sans corrected_text : ajoute directement au corpus
+      (la traduction était correcte — faible risque).
+    - 👎 corrected_text fourni : crée une Contribution soumise pour relecture
+      par un reviewer avant intégration.
     """
     from backend.models.corpus import CorpusPair
+    from backend.models.contribution import Contribution, ContributionType
 
     history = db.query(TranslationHistory).filter(TranslationHistory.id == data.history_id).first()
     if not history:
@@ -146,7 +148,22 @@ def translate_feedback(
     if not user:
         raise HTTPException(status_code=401, detail="Connexion requise pour contribuer au corpus")
 
-    # Vérifier doublon
+    # Correction fournie par l'utilisateur → passe par la file de révision
+    if data.corrected_text and data.corrected_text.strip():
+        contrib = Contribution(
+            contributor_id=user.id,
+            type=ContributionType.corpus,
+            source_language=history.source_language,
+            source_text=history.source_text,
+            bassa_text=data.corrected_text.strip(),
+            notes=f"Correction de la traduction automatique (histoire #{history.id})",
+        )
+        db.add(contrib)
+        db.commit()
+        db.refresh(contrib)
+        return {"status": "pending_review", "contribution_id": contrib.id}
+
+    # Traduction jugée correcte → ajout direct au corpus
     exists = db.query(CorpusPair).filter(
         CorpusPair.source_language == history.source_language,
         CorpusPair.source_text == history.source_text,
@@ -154,11 +171,10 @@ def translate_feedback(
     if exists:
         return {"status": "already_exists", "pair_id": exists.id}
 
-    bassa_text = data.corrected_text.strip() if data.corrected_text else history.translated_text
     pair = CorpusPair(
         source_language=history.source_language,
         source_text=history.source_text,
-        bassa_text=bassa_text,
+        bassa_text=history.translated_text,
         is_verified=False,
     )
     db.add(pair)

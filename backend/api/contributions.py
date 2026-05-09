@@ -15,6 +15,24 @@ from backend.services.auth_service import get_current_user, require_role
 router = APIRouter(prefix="/api/contributions", tags=["contributions"])
 
 
+@router.get("/stats")
+def contribution_stats(
+    db: Session = Depends(get_db),
+    user: User = Depends(get_current_user),
+):
+    """Résumé des contributions de l'utilisateur connecté (ou de tous pour admin/reviewer)."""
+    q = db.query(Contribution)
+    if user.role == UserRole.contributor:
+        q = q.filter(Contribution.contributor_id == user.id)
+    rows = q.all()
+    counts = {"submitted": 0, "under_review": 0, "approved": 0, "rejected": 0, "total": len(rows)}
+    for r in rows:
+        status = r.status.value if hasattr(r.status, "value") else str(r.status)
+        if status in counts:
+            counts[status] += 1
+    return counts
+
+
 @router.get("", response_model=ContributionPage)
 def list_contributions(
     page: int = Query(1, ge=1),

@@ -1,0 +1,680 @@
+[
+  {
+    "source_word": "bonjour",
+    "bassa_word": "mbolo",
+    "category": "expression",
+    "notes": "Salutation du matin / générale"
+  },
+  {
+    "source_word": "bonsoir",
+    "bassa_word": "mbolo",
+    "category": "expression",
+    "notes": "Salutation du soir"
+  },
+  {
+    "source_word": "bonne nuit",
+    "bassa_word": "nyôl jôli",
+    "category": "expression",
+    "notes": "Souhait avant de dormir"
+  },
+  {
+    "source_word": "au revoir",
+    "bassa_word": "a dèm",
+    "category": "expression",
+    "notes": "Formule de départ"
+  },
+  {
+    "source_word": "à bientôt",
+    "bassa_word": "a dèm mahé",
+    "category": "expression",
+    "notes": "On se reverra bientôt"
+  },
+  {
+    "source_word": "à demain",
+    "bassa_word": "a dèm ma nyôl",
+    "category": "expression",
+    "notes": "Rendez-vous demain"
+  },
+  {
+    "source_word": "comment ça va",
+    "bassa_word": "ñjéé bè wè",
+    "category": "expression",
+    "notes": "Formule de politesse / comment vas-tu"
+  },
+  {
+    "source_word": "comment vas-tu",
+    "bassa_word": "ñjéé bè wè",
+    "category": "expression",
+    "notes": "Formule de politesse"
+  },
+  {
+    "source_word": "comment allez-vous",
+    "bassa_word": "ñjéé bè bìnwè",
+    "category": "expression",
+    "notes": "Formule de politesse (pluriel)"
+  },
+  {
+    "source_word": "ça va bien",
+    "bassa_word": "i bè jôli",
+    "category": "expression",
+    "notes": "Réponse positive à 'comment ça va'"
+  },
+  {
+    "source_word": "ça va",
+    "bassa_word": "i bè",
+    "category": "expression",
+    "notes": "Réponse neutre à 'comment ça va'"
+  },
+  {
+    "source_word": "merci",
+    "bassa_word": "sômbé",
+    "category": "expression",
+    "notes": "Remerciement"
+  },
+  {
+    "source_word": "merci beaucoup",
+    "bassa_word": "sômbé mingi",
+    "category": "expression",
+    "notes": "Remerciement fort"
+  },
+  {
+    "source_word": "s'il vous plaît",
+    "bassa_word": "likalabè",
+    "category": "expression",
+    "notes": "Formule de politesse pour demander"
+  },
+  {
+    "source_word": "s'il te plaît",
+    "bassa_word": "likalabè",
+    "category": "expression",
+    "notes": "Formule de politesse (singulier)"
+  },
+  {
+    "source_word": "je vous en prie",
+    "bassa_word": "i bòm wè bé",
+    "category": "expression",
+    "notes": "Réponse à 'merci'"
+  },
+  {
+    "source_word": "de rien",
+    "bassa_word": "i bòm wè bé",
+    "category": "expression",
+    "notes": "Réponse à 'merci'"
+  },
+  {
+    "source_word": "excusez-moi",
+    "bassa_word": "kôlôsô mè",
+    "category": "expression",
+    "notes": "Formule d'excuse"
+  },
+  {
+    "source_word": "pardon",
+    "bassa_word": "kôlôsô",
+    "category": "expression",
+    "notes": "Demande de pardon"
+  },
+  {
+    "source_word": "je suis désolé",
+    "bassa_word": "me bòm wè bé",
+    "category": "expression",
+    "notes": "Expression de regret"
+  },
+  {
+    "source_word": "oui",
+    "bassa_word": "hèè",
+    "category": "expression",
+    "notes": "Affirmation"
+  },
+  {
+    "source_word": "non",
+    "bassa_word": "bé",
+    "category": "expression",
+    "notes": "Négation"
+  },
+  {
+    "source_word": "peut-être",
+    "bassa_word": "kôk",
+    "category": "expression",
+    "notes": "Incertitude"
+  },
+  {
+    "source_word": "je ne sais pas",
+    "bassa_word": "me gamba bé",
+    "category": "expression",
+    "notes": "Ignorance / incertitude"
+  },
+  {
+    "source_word": "je comprends",
+    "bassa_word": "me sôm",
+    "category": "expression",
+    "notes": "Compréhension"
+  },
+  {
+    "source_word": "je ne comprends pas",
+    "bassa_word": "me sôm bé",
+    "category": "expression",
+    "notes": "Incompréhension"
+  },
+  {
+    "source_word": "répétez s'il vous plaît",
+    "bassa_word": "tôlô kiki likalabè",
+    "category": "expression",
+    "notes": "Demande de répétition"
+  },
+  {
+    "source_word": "parlez plus lentement",
+    "bassa_word": "wèl likalabè wòm",
+    "category": "expression",
+    "notes": "Demande de parler plus doucement"
+  },
+  {
+    "source_word": "comment dit-on",
+    "bassa_word": "minyèk i wèl",
+    "category": "expression",
+    "notes": "Demander la traduction d'un mot"
+  },
+  {
+    "source_word": "qu'est-ce que cela veut dire",
+    "bassa_word": "ñjéé i bè",
+    "category": "expression",
+    "notes": "Demander la signification"
+  },
+  {
+    "source_word": "j'ai faim",
+    "bassa_word": "njom i mbôl mè",
+    "category": "expression",
+    "notes": "Exprimer la faim"
+  },
+  {
+    "source_word": "j'ai soif",
+    "bassa_word": "ndam i mbôl mè",
+    "category": "expression",
+    "notes": "Exprimer la soif"
+  },
+  {
+    "source_word": "j'ai froid",
+    "bassa_word": "wùl i mbôl mè",
+    "category": "expression",
+    "notes": "Exprimer le froid"
+  },
+  {
+    "source_word": "j'ai chaud",
+    "bassa_word": "tii i mbôl mè",
+    "category": "expression",
+    "notes": "Exprimer la chaleur"
+  },
+  {
+    "source_word": "j'ai mal",
+    "bassa_word": "niñ i mbôl mè",
+    "category": "expression",
+    "notes": "Exprimer la douleur"
+  },
+  {
+    "source_word": "je suis fatigué",
+    "bassa_word": "me bè nyèl",
+    "category": "expression",
+    "notes": "Exprimer la fatigue"
+  },
+  {
+    "source_word": "je suis malade",
+    "bassa_word": "me bè wùl",
+    "category": "expression",
+    "notes": "Exprimer la maladie"
+  },
+  {
+    "source_word": "au secours",
+    "bassa_word": "sôngôl mè",
+    "category": "expression",
+    "notes": "Cri d'aide urgente"
+  },
+  {
+    "source_word": "à l'aide",
+    "bassa_word": "sôngôl mè",
+    "category": "expression",
+    "notes": "Demande d'aide"
+  },
+  {
+    "source_word": "attention",
+    "bassa_word": "tondè",
+    "category": "expression",
+    "notes": "Avertissement"
+  },
+  {
+    "source_word": "c'est bien",
+    "bassa_word": "i bè jôli",
+    "category": "expression",
+    "notes": "Approbation"
+  },
+  {
+    "source_word": "c'est beau",
+    "bassa_word": "i bè jôli",
+    "category": "expression",
+    "notes": "Appréciation esthétique"
+  },
+  {
+    "source_word": "c'est bon",
+    "bassa_word": "i bè jôli",
+    "category": "expression",
+    "notes": "Approbation générale"
+  },
+  {
+    "source_word": "c'est mauvais",
+    "bassa_word": "i bè njéhé",
+    "category": "expression",
+    "notes": "Désapprobation"
+  },
+  {
+    "source_word": "il fait beau",
+    "bassa_word": "ndèñ i bè jôli",
+    "category": "expression",
+    "notes": "Beau temps"
+  },
+  {
+    "source_word": "il fait chaud",
+    "bassa_word": "ndèñ i bè tii",
+    "category": "expression",
+    "notes": "Temps chaud"
+  },
+  {
+    "source_word": "il pleut",
+    "bassa_word": "mvúl i bóg",
+    "category": "expression",
+    "notes": "Il pleut"
+  },
+  {
+    "source_word": "il fait nuit",
+    "bassa_word": "ndèñ i nyôl",
+    "category": "expression",
+    "notes": "La nuit est tombée"
+  },
+  {
+    "source_word": "bienvenue",
+    "bassa_word": "tôgô jôli",
+    "category": "expression",
+    "notes": "Accueil d'un visiteur"
+  },
+  {
+    "source_word": "soyez le bienvenu",
+    "bassa_word": "tôgô jôli",
+    "category": "expression",
+    "notes": "Accueil formel"
+  },
+  {
+    "source_word": "bonne chance",
+    "bassa_word": "jôli i bè wè",
+    "category": "expression",
+    "notes": "Souhait de réussite"
+  },
+  {
+    "source_word": "bon courage",
+    "bassa_word": "nyòm i bè wè",
+    "category": "expression",
+    "notes": "Encouragement"
+  },
+  {
+    "source_word": "félicitations",
+    "bassa_word": "sômbé",
+    "category": "expression",
+    "notes": "Félicitations"
+  },
+  {
+    "source_word": "bon appétit",
+    "bassa_word": "jé jôli",
+    "category": "expression",
+    "notes": "Souhait avant le repas"
+  },
+  {
+    "source_word": "à vos souhaits",
+    "bassa_word": "nyôl jôli",
+    "category": "expression",
+    "notes": "Réponse à un éternuement"
+  },
+  {
+    "source_word": "silence",
+    "bassa_word": "lïìmóma",
+    "category": "expression",
+    "notes": "Ordre de se taire"
+  },
+  {
+    "source_word": "tais-toi",
+    "bassa_word": "lïìm",
+    "category": "expression",
+    "notes": "Ordre de se taire (singulier)"
+  },
+  {
+    "source_word": "viens ici",
+    "bassa_word": "tôgô wé",
+    "category": "expression",
+    "notes": "Appel (singulier)"
+  },
+  {
+    "source_word": "venez ici",
+    "bassa_word": "tôgô bìnwè",
+    "category": "expression",
+    "notes": "Appel (pluriel)"
+  },
+  {
+    "source_word": "dépêche-toi",
+    "bassa_word": "kéñ",
+    "category": "expression",
+    "notes": "Ordre de se presser"
+  },
+  {
+    "source_word": "va-t'en",
+    "bassa_word": "dèm",
+    "category": "expression",
+    "notes": "Ordre de partir"
+  },
+  {
+    "source_word": "laisse-moi tranquille",
+    "bassa_word": "jôm mè bé",
+    "category": "expression",
+    "notes": "Demande d'être laissé seul"
+  },
+  {
+    "source_word": "je t'aime",
+    "bassa_word": "me gwes wè",
+    "category": "expression",
+    "notes": "Déclaration d'amour"
+  },
+  {
+    "source_word": "je vous aime",
+    "bassa_word": "me gwes bìnwè",
+    "category": "expression",
+    "notes": "Déclaration d'amour (pluriel)"
+  },
+  {
+    "source_word": "je t'aime bien",
+    "bassa_word": "me gwes wè jôli",
+    "category": "expression",
+    "notes": "Affection"
+  },
+  {
+    "source_word": "tu me manques",
+    "bassa_word": "me nyôl wè",
+    "category": "expression",
+    "notes": "Expression du manque"
+  },
+  {
+    "source_word": "bonne fête",
+    "bassa_word": "jôli ma fête",
+    "category": "expression",
+    "notes": "Souhait lors d'une fête"
+  },
+  {
+    "source_word": "joyeux anniversaire",
+    "bassa_word": "jôli ma nyôl wè",
+    "category": "expression",
+    "notes": "Souhait d'anniversaire"
+  },
+  {
+    "source_word": "bonne année",
+    "bassa_word": "jôli ma yôk",
+    "category": "expression",
+    "notes": "Voeu de nouvel an"
+  },
+  {
+    "source_word": "joyeux noël",
+    "bassa_word": "jôli ma Krismas",
+    "category": "expression",
+    "notes": "Voeu de Noël"
+  },
+  {
+    "source_word": "où est la toilette",
+    "bassa_word": "bisu ba bè ñín",
+    "category": "expression",
+    "notes": "Question pratique"
+  },
+  {
+    "source_word": "combien ça coûte",
+    "bassa_word": "njambo i bè ñín",
+    "category": "expression",
+    "notes": "Question de prix"
+  },
+  {
+    "source_word": "c'est trop cher",
+    "bassa_word": "i bè njambo mingi",
+    "category": "expression",
+    "notes": "Marchandage"
+  },
+  {
+    "source_word": "je voudrais acheter",
+    "bassa_word": "me bé ndèm nkôl",
+    "category": "expression",
+    "notes": "Intention d'achat"
+  },
+  {
+    "source_word": "où habitez-vous",
+    "bassa_word": "wè i ñwèl ñín",
+    "category": "expression",
+    "notes": "Question d'adresse"
+  },
+  {
+    "source_word": "comment vous appelez-vous",
+    "bassa_word": "nyin wè i bè ñín",
+    "category": "expression",
+    "notes": "Question de nom"
+  },
+  {
+    "source_word": "comment tu t'appelles",
+    "bassa_word": "nyin wè i bè ñín",
+    "category": "expression",
+    "notes": "Question de nom (informel)"
+  },
+  {
+    "source_word": "je m'appelle",
+    "bassa_word": "nyin mè i bè",
+    "category": "expression",
+    "notes": "Se présenter"
+  },
+  {
+    "source_word": "enchanté",
+    "bassa_word": "me bè jôli",
+    "category": "expression",
+    "notes": "Formule de présentation"
+  },
+  {
+    "source_word": "quel âge as-tu",
+    "bassa_word": "yôk wè i bè ñín",
+    "category": "expression",
+    "notes": "Question d'âge"
+  },
+  {
+    "source_word": "d'où viens-tu",
+    "bassa_word": "wè i tôgô ñín",
+    "category": "expression",
+    "notes": "Question d'origine"
+  },
+  {
+    "source_word": "je viens de",
+    "bassa_word": "me tôgô",
+    "category": "expression",
+    "notes": "Indiquer son origine"
+  },
+  {
+    "source_word": "dieu vous bénisse",
+    "bassa_word": "Nyambè i sômbé wè",
+    "category": "expression",
+    "notes": "Bénédiction religieuse"
+  },
+  {
+    "source_word": "que dieu te bénisse",
+    "bassa_word": "Nyambè i sômbé wè",
+    "category": "expression",
+    "notes": "Bénédiction"
+  },
+  {
+    "source_word": "que la paix soit avec toi",
+    "bassa_word": "kimô i bè wè",
+    "category": "expression",
+    "notes": "Salutation religieuse / paix"
+  },
+  {
+    "source_word": "gloire à dieu",
+    "bassa_word": "nkemé ma Nyambè",
+    "category": "expression",
+    "notes": "Louange religieuse"
+  },
+  {
+    "source_word": "dieu merci",
+    "bassa_word": "sômbé Nyambè",
+    "category": "expression",
+    "notes": "Gratitude envers Dieu"
+  },
+  {
+    "source_word": "si dieu le veut",
+    "bassa_word": "Nyambè i bé ndèm",
+    "category": "expression",
+    "notes": "Condition divine"
+  },
+  {
+    "source_word": "avoir faim",
+    "bassa_word": "njom i mbôl",
+    "category": "expression",
+    "notes": "Exprimer la faim (infinitif)"
+  },
+  {
+    "source_word": "avoir soif",
+    "bassa_word": "ndam i mbôl",
+    "category": "expression",
+    "notes": "Exprimer la soif (infinitif)"
+  },
+  {
+    "source_word": "avoir peur",
+    "bassa_word": "mbyèm i mbôl",
+    "category": "expression",
+    "notes": "Exprimer la peur (infinitif)"
+  },
+  {
+    "source_word": "j'ai peur",
+    "bassa_word": "mbyèm i mbôl mè",
+    "category": "expression",
+    "notes": "Exprimer la peur"
+  },
+  {
+    "source_word": "avoir honte",
+    "bassa_word": "sôm i mbôl",
+    "category": "expression",
+    "notes": "Exprimer la honte (infinitif)"
+  },
+  {
+    "source_word": "faire confiance",
+    "bassa_word": "sôm kônde",
+    "category": "expression",
+    "notes": "Faire confiance à quelqu'un"
+  },
+  {
+    "source_word": "prendre soin",
+    "bassa_word": "tondè",
+    "category": "expression",
+    "notes": "Prendre soin de quelqu'un"
+  },
+  {
+    "source_word": "c'est la vie",
+    "bassa_word": "i bè wôl",
+    "category": "expression",
+    "notes": "Résignation / acceptation"
+  },
+  {
+    "source_word": "tout va bien",
+    "bassa_word": "bipèh bi bè jôli",
+    "category": "expression",
+    "notes": "Tout est en ordre"
+  },
+  {
+    "source_word": "pas de problème",
+    "bassa_word": "ñjéé bé",
+    "category": "expression",
+    "notes": "Rassurance"
+  },
+  {
+    "source_word": "il n'y a pas de problème",
+    "bassa_word": "ñjéé bé",
+    "category": "expression",
+    "notes": "Rassurance"
+  },
+  {
+    "source_word": "c'est normal",
+    "bassa_word": "i bè wôl",
+    "category": "expression",
+    "notes": "Normalité"
+  },
+  {
+    "source_word": "c'est vrai",
+    "bassa_word": "i bè tôt",
+    "category": "expression",
+    "notes": "Confirmation de vérité"
+  },
+  {
+    "source_word": "c'est faux",
+    "bassa_word": "i bè bé tôt",
+    "category": "expression",
+    "notes": "Infirmation"
+  },
+  {
+    "source_word": "bien sûr",
+    "bassa_word": "tôt",
+    "category": "expression",
+    "notes": "Affirmation forte"
+  },
+  {
+    "source_word": "absolument",
+    "bassa_word": "tôt mingi",
+    "category": "expression",
+    "notes": "Accord total"
+  },
+  {
+    "source_word": "jamais",
+    "bassa_word": "mbanda",
+    "category": "expression",
+    "notes": "Négation temporelle absolue"
+  },
+  {
+    "source_word": "toujours",
+    "bassa_word": "ntémé",
+    "category": "expression",
+    "notes": "Continuité temporelle"
+  },
+  {
+    "source_word": "maintenant",
+    "bassa_word": "wòi",
+    "category": "expression",
+    "notes": "Moment présent"
+  },
+  {
+    "source_word": "tout de suite",
+    "bassa_word": "kéñ",
+    "category": "expression",
+    "notes": "Immédiateté"
+  },
+  {
+    "source_word": "bientôt",
+    "bassa_word": "mahé",
+    "category": "expression",
+    "notes": "Dans un proche avenir"
+  },
+  {
+    "source_word": "plus tard",
+    "bassa_word": "nyôl ma yôk",
+    "category": "expression",
+    "notes": "Futur proche"
+  },
+  {
+    "source_word": "hier",
+    "bassa_word": "nyôl ma yôk",
+    "category": "expression",
+    "notes": "Jour précédent"
+  },
+  {
+    "source_word": "aujourd'hui",
+    "bassa_word": "nyôl wòi",
+    "category": "expression",
+    "notes": "Jour actuel"
+  },
+  {
+    "source_word": "demain",
+    "bassa_word": "nyôl ma yôk",
+    "category": "expression",
+    "notes": "Jour suivant"
+  }
+]

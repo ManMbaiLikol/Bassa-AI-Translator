@@ -341,6 +341,7 @@
                         this.feedbackSent = true;
                         this.correctionOpen = false;
                         if (data.status === 'already_exists') showToast('D\u00e9j\u00e0 pr\u00e9sent dans le corpus.');
+                        else if (data.status === 'pending_review') showToast('Correction soumise — merci ! Elle sera vérifiée avant intégration.');
                         else showToast('Ajout\u00e9 au corpus — merci\u00a0!');
                     } else {
                         const err = await resp.json();
