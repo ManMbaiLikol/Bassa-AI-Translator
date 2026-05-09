@@ -1,9 +1,9 @@
 [
   {
     "source_word": "bonjour",
-    "bassa_word": "mbolo",
+    "bassa_word": "Me Yega",
     "category": "expression",
-    "notes": "Salutation du matin / générale"
+    "notes": "Salutation du matin / générale (corrigé locuteur natif)"
   },
   {
     "source_word": "bonsoir",
@@ -13,9 +13,9 @@
   },
   {
     "source_word": "bonne nuit",
-    "bassa_word": "nyôl jôli",
+    "bassa_word": "Nân Lâm",
     "category": "expression",
-    "notes": "Souhait avant de dormir"
+    "notes": "Souhait avant de dormir (corrigé locuteur natif)"
   },
   {
     "source_word": "au revoir",
@@ -37,15 +37,15 @@
   },
   {
     "source_word": "comment ça va",
-    "bassa_word": "ñjéé bè wè",
+    "bassa_word": "i nke lâ ?",
     "category": "expression",
-    "notes": "Formule de politesse / comment vas-tu"
+    "notes": "Formule de politesse / comment vas-tu (corrigé locuteur natif)"
   },
   {
     "source_word": "comment vas-tu",
-    "bassa_word": "ñjéé bè wè",
+    "bassa_word": "i nke lâ ?",
     "category": "expression",
-    "notes": "Formule de politesse"
+    "notes": "Formule de politesse (corrigé locuteur natif)"
   },
   {
     "source_word": "comment allez-vous",
@@ -73,9 +73,9 @@
   },
   {
     "source_word": "merci beaucoup",
-    "bassa_word": "sômbé mingi",
+    "bassa_word": "Mi Yega ngadak",
     "category": "expression",
-    "notes": "Remerciement fort"
+    "notes": "Remerciement fort (corrigé locuteur natif)"
   },
   {
     "source_word": "s'il vous plaît",
@@ -151,9 +151,9 @@
   },
   {
     "source_word": "je ne comprends pas",
-    "bassa_word": "me sôm bé",
+    "bassa_word": "me nok bé",
     "category": "expression",
-    "notes": "Incompréhension"
+    "notes": "Incompréhension (corrigé locuteur natif)"
   },
   {
     "source_word": "répétez s'il vous plaît",
@@ -181,9 +181,9 @@
   },
   {
     "source_word": "j'ai faim",
-    "bassa_word": "njom i mbôl mè",
+    "bassa_word": "Djal I Gwé me",
     "category": "expression",
-    "notes": "Exprimer la faim"
+    "notes": "Exprimer la faim (corrigé locuteur natif)"
   },
   {
     "source_word": "j'ai soif",
@@ -265,9 +265,9 @@
   },
   {
     "source_word": "il fait beau",
-    "bassa_word": "ndèñ i bè jôli",
+    "bassa_word": "ndèñ i Ye lâm",
     "category": "expression",
-    "notes": "Beau temps"
+    "notes": "Beau temps (corrigé locuteur natif)"
   },
   {
     "source_word": "il fait chaud",
@@ -331,15 +331,15 @@
   },
   {
     "source_word": "silence",
-    "bassa_word": "lïìmóma",
+    "bassa_word": "Môm Wê",
     "category": "expression",
-    "notes": "Ordre de se taire"
+    "notes": "Ordre de se taire (corrigé locuteur natif)"
   },
   {
     "source_word": "tais-toi",
-    "bassa_word": "lïìm",
+    "bassa_word": "Môm Wê",
     "category": "expression",
-    "notes": "Ordre de se taire (singulier)"
+    "notes": "Ordre de se taire (singulier) (corrigé locuteur natif)"
   },
   {
     "source_word": "viens ici",
@@ -403,9 +403,9 @@
   },
   {
     "source_word": "joyeux anniversaire",
-    "bassa_word": "jôli ma nyôl wè",
+    "bassa_word": "Ngand Ligwé Li Massé",
     "category": "expression",
-    "notes": "Souhait d'anniversaire"
+    "notes": "Souhait d'anniversaire (corrigé locuteur natif)"
   },
   {
     "source_word": "bonne année",
@@ -493,15 +493,15 @@
   },
   {
     "source_word": "dieu vous bénisse",
-    "bassa_word": "Nyambè i sômbé wè",
+    "bassa_word": "Nyambè a sayap bé",
     "category": "expression",
-    "notes": "Bénédiction religieuse"
+    "notes": "Bénédiction religieuse (corrigé locuteur natif)"
   },
   {
     "source_word": "que dieu te bénisse",
-    "bassa_word": "Nyambè i sômbé wè",
+    "bassa_word": "Nyambè a sayap bé",
     "category": "expression",
-    "notes": "Bénédiction"
+    "notes": "Bénédiction (corrigé locuteur natif)"
   },
   {
     "source_word": "que la paix soit avec toi",
@@ -577,9 +577,9 @@
   },
   {
     "source_word": "tout va bien",
-    "bassa_word": "bipèh bi bè jôli",
+    "bassa_word": "Mâm Ma Nke Longue",
     "category": "expression",
-    "notes": "Tout est en ordre"
+    "notes": "Tout est en ordre (corrigé locuteur natif)"
   },
   {
     "source_word": "pas de problème",
@@ -676,5 +676,29 @@
     "bassa_word": "nyôl ma yôk",
     "category": "expression",
     "notes": "Jour suivant"
+  },
+  {
+    "source_word": "nous allons au marché",
+    "bassa_word": "Di nke i Mbôm",
+    "category": "expression",
+    "notes": "Aller au marché (corrigé locuteur natif)"
+  },
+  {
+    "source_word": "ils vont à l eglise",
+    "bassa_word": "Ba nke i bassé",
+    "category": "expression",
+    "notes": "Aller à l eglise (corrigé locuteur natif)"
+  },
+  {
+    "source_word": "je parle bassa",
+    "bassa_word": "Me mpot bassa",
+    "category": "expression",
+    "notes": "Parler le Bassa (corrigé locuteur natif)"
+  },
+  {
+    "source_word": "comment ca va",
+    "bassa_word": "i nke lâ ?",
+    "category": "expression",
+    "notes": "Variante sans cédille"
   }
 ]
