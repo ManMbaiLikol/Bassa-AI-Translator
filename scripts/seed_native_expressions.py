@@ -221,6 +221,13 @@ EXPRESSIONS = [
     ("comment t appelles-tu vraiment", "Joy jon le ndje mbanga?"),
     ("je t en supplie vraiment", "Me nsohe we mbanga"),
     ("s il te plait", "soho"),
+    # variantes sans trait d'union (pour le tokeniseur du moteur dictionary)
+    ("assieds toi", "Yen"),
+    ("leve toi", "Telep"),
+    ("assieds toi bien", "Tibil yen"),
+    ("ne t arrete pas", "U telep ban!"),
+    ("retrouves moi dehors", "Koba me i mbegre"),
+    ("retrouves moi dedans", "Koba me i kere"),
 ]
 
 
