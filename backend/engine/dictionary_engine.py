@@ -2,6 +2,7 @@
 import re
 import unicodedata
 
+from sqlalchemy import case as sa_case
 from sqlalchemy.orm import Session
 
 from backend.database import SessionLocal
@@ -407,7 +408,14 @@ class DictionaryEngine(TranslationEngine):
         if own_session:
             db = SessionLocal()
         try:
-            entries = db.query(DictionaryEntry).order_by(DictionaryEntry.is_verified.asc()).all()
+            entries = (
+                db.query(DictionaryEntry)
+                .order_by(
+                    DictionaryEntry.is_verified.asc(),
+                    sa_case((DictionaryEntry.category == "expression", 1), else_=0).asc(),
+                )
+                .all()
+            )
             for entry in entries:
                 lang = entry.source_language
                 word = entry.source_word.lower()
