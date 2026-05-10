@@ -407,7 +407,7 @@ class DictionaryEngine(TranslationEngine):
         if own_session:
             db = SessionLocal()
         try:
-            entries = db.query(DictionaryEntry).all()
+            entries = db.query(DictionaryEntry).order_by(DictionaryEntry.is_verified.asc()).all()
             for entry in entries:
                 lang = entry.source_language
                 word = entry.source_word.lower()
