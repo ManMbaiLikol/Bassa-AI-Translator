@@ -412,7 +412,12 @@ class DictionaryEngine(TranslationEngine):
                 db.query(DictionaryEntry)
                 .order_by(
                     DictionaryEntry.is_verified.asc(),
-                    sa_case((DictionaryEntry.category == "expression", 1), else_=0).asc(),
+                    # SIL/Webonary loaded first; human-curated entries overwrite them
+                    sa_case(
+                        (DictionaryEntry.notes.like("SIL%"), 0),
+                        (DictionaryEntry.notes.like("Webonary%"), 1),
+                        else_=2,
+                    ).asc(),
                 )
                 .all()
             )
