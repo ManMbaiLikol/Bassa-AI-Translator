@@ -82,8 +82,8 @@ def seed_webonary(clear_existing=False):
 
                     entry = DictionaryEntry(
                         source_language=lang,
-                        source_word=translation,
-                        bassa_word=bassa_word,
+                        source_word=translation[:191],
+                        bassa_word=bassa_word[:500],
                         category=category,
                         plural_form=plural if lang == "fr" else "",
                         notes=sense_note,
