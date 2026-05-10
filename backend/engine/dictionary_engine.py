@@ -392,6 +392,8 @@ class DictionaryEngine(TranslationEngine):
     def __init__(self):
         self._cache: dict[str, dict[str, str]] = {}  # {lang: {word: bassa_word}}
         self._multi_word: dict[str, dict[str, str]] = {}  # {lang: {multi_word: bassa}}
+        self._reverse: dict[str, str] = {}       # {bassa_lower: fr_source_word}
+        self._reverse_multi: dict[str, str] = {} # {bassa_phrase_lower: fr_source_word}
         self._db_rules: list[dict] = []  # règles GrammaticalRule actives depuis la DB
         self.reload()
 
@@ -404,6 +406,8 @@ class DictionaryEngine(TranslationEngine):
         """
         self._cache = {"fr": {}, "en": {}}
         self._multi_word = {"fr": {}, "en": {}}
+        self._reverse = {}
+        self._reverse_multi = {}
         own_session = db is None
         if own_session:
             db = SessionLocal()
@@ -432,6 +436,17 @@ class DictionaryEngine(TranslationEngine):
                     self._multi_word[lang][word] = bassa
                 else:
                     self._cache[lang][word] = bassa
+                # Build reverse cache (Bassa→FR) from French entries only
+                if lang == "fr":
+                    bassa_key = bassa.lower().strip()
+                    bassa_key_plain = unicodedata.normalize("NFD", bassa_key)
+                    bassa_key_plain = "".join(c for c in bassa_key_plain if unicodedata.category(c) != "Mn")
+                    if " " in bassa_key:
+                        self._reverse_multi[bassa_key] = entry.source_word
+                        self._reverse_multi[bassa_key_plain] = entry.source_word
+                    else:
+                        self._reverse[bassa_key] = entry.source_word
+                        self._reverse[bassa_key_plain] = entry.source_word
             self._db_rules = [
                 {
                     "source_language": r.source_language,
@@ -504,7 +519,65 @@ class DictionaryEngine(TranslationEngine):
                 candidates.append(word[:-2])  # quickly -> quick
         return candidates
 
+    def _translate_bassa_to_fr(self, text: str) -> TranslationResult:
+        """Reverse lookup: Bassa → French using the pre-built reverse cache."""
+        text = text.strip()
+        key = normalize_bassa(text).lower()
+        key_plain = unicodedata.normalize("NFD", key)
+        key_plain = "".join(c for c in key_plain if unicodedata.category(c) != "Mn")
+
+        # Full-phrase match first
+        fr = self._reverse_multi.get(key) or self._reverse_multi.get(key_plain)
+        if not fr:
+            fr = self._reverse.get(key) or self._reverse.get(key_plain)
+        if fr:
+            return TranslationResult(
+                source_text=text, translated_text=fr,
+                source_language="bas", confidence=1.0,
+                word_translations=[WordTranslation(source=text, translated=fr, found=True)],
+                engine="dictionary",
+            )
+
+        # Token-by-token fallback
+        tokens = re.findall(r"[a-zA-ZÀ-öø-ÿ']+", text)
+        word_results = []
+        i = 0
+        while i < len(tokens):
+            matched = False
+            for length in range(min(4, len(tokens) - i), 1, -1):
+                phrase = " ".join(tokens[i:i + length]).lower()
+                phrase_plain = unicodedata.normalize("NFD", phrase)
+                phrase_plain = "".join(c for c in phrase_plain if unicodedata.category(c) != "Mn")
+                hit = self._reverse_multi.get(phrase) or self._reverse_multi.get(phrase_plain)
+                if hit:
+                    word_results.append({"source": phrase, "translated": hit, "found": True})
+                    i += length
+                    matched = True
+                    break
+            if not matched:
+                tok = tokens[i].lower()
+                tok_plain = unicodedata.normalize("NFD", tok)
+                tok_plain = "".join(c for c in tok_plain if unicodedata.category(c) != "Mn")
+                hit = self._reverse.get(tok) or self._reverse.get(tok_plain)
+                word_results.append({"source": tokens[i], "translated": hit or tokens[i], "found": hit is not None})
+                i += 1
+
+        translated = " ".join(w["translated"] for w in word_results)
+        total = len(word_results)
+        found = sum(1 for w in word_results if w["found"])
+        confidence = round(found / total, 2) if total else 0.0
+        not_found = [w["source"] for w in word_results if not w["found"]]
+        warnings = [f"Mots non trouvés: {', '.join(not_found)}"] if not_found else []
+        return TranslationResult(
+            source_text=text, translated_text=translated,
+            source_language="bas", confidence=confidence,
+            word_translations=[WordTranslation(source=w["source"], translated=w["translated"], found=w["found"]) for w in word_results],
+            warnings=warnings, engine="dictionary",
+        )
+
     def translate(self, text: str, source_language: str) -> TranslationResult:
+        if source_language == "bas":
+            return self._translate_bassa_to_fr(text)
         if not text.strip():
             return TranslationResult(
                 source_text=text, translated_text="", source_language=source_language,

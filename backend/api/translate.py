@@ -51,8 +51,8 @@ def translate(
 ):
     if not _engines:
         raise HTTPException(status_code=503, detail="Aucun moteur de traduction initialisé")
-    if data.source_language not in ("fr", "en"):
-        raise HTTPException(status_code=400, detail="source_language doit être 'fr' ou 'en'")
+    if data.source_language not in ("fr", "en", "bas"):
+        raise HTTPException(status_code=400, detail="source_language doit être 'fr', 'en' ou 'bas'")
     if not data.text.strip():
         raise HTTPException(status_code=400, detail="Le texte ne peut pas être vide")
     if len(data.text) > 5000:
