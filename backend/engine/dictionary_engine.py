@@ -1,11 +1,13 @@
 """Phase 1 translation engine: dictionary lookup + grammatical rules."""
 import re
 import unicodedata
+from collections import Counter, defaultdict
 
 from sqlalchemy import case as sa_case
 from sqlalchemy.orm import Session
 
 from backend.database import SessionLocal
+from backend.models.corpus import CorpusPair
 from backend.models.dictionary import DictionaryEntry
 from backend.models.grammar import GrammaticalRule
 from backend.engine.base import TranslationEngine, TranslationResult, WordTranslation
@@ -388,13 +390,30 @@ EN_LEMMAS = {
 }
 
 
+_BAS_TOKEN_RE = re.compile(r"[a-zA-ZÀ-öø-ÿƀ-ɏḀ-ỿ']+")
+_MN_CATEGORY = "Mn"
+
+
+def _bas_tokens(text: str) -> list[str]:
+    """Tokenize Bassa text into diacritic-stripped lowercase tokens (≥2 chars)."""
+    # NFD the whole text once, strip combining marks, then extract words
+    plain = "".join(
+        c for c in unicodedata.normalize("NFD", text.lower())
+        if unicodedata.category(c) != _MN_CATEGORY
+    )
+    return [w for w in _BAS_TOKEN_RE.findall(plain) if len(w) >= 2]
+
+
 class DictionaryEngine(TranslationEngine):
     def __init__(self):
         self._cache: dict[str, dict[str, str]] = {}  # {lang: {word: bassa_word}}
         self._multi_word: dict[str, dict[str, str]] = {}  # {lang: {multi_word: bassa}}
         self._reverse: dict[str, str] = {}       # {bassa_lower: fr_source_word}
         self._reverse_multi: dict[str, str] = {} # {bassa_phrase_lower: fr_source_word}
-        self._db_rules: list[dict] = []  # règles GrammaticalRule actives depuis la DB
+        self._db_rules: list[dict] = []
+        # Corpus index for Bassa→FR phrase matching
+        self._corpus_pairs: list[tuple[frozenset, str, str]] = []  # (bassa_token_set, bassa_text, fr_text)
+        self._corpus_bassa_index: dict[str, list[int]] = {}  # token -> [pair_indices]
         self.reload()
 
     def reload(self, db: Session = None) -> None:
@@ -408,6 +427,8 @@ class DictionaryEngine(TranslationEngine):
         self._multi_word = {"fr": {}, "en": {}}
         self._reverse = {}
         self._reverse_multi = {}
+        self._corpus_pairs = []
+        self._corpus_bassa_index = {}
         own_session = db is None
         if own_session:
             db = SessionLocal()
@@ -459,6 +480,24 @@ class DictionaryEngine(TranslationEngine):
                 .order_by(GrammaticalRule.priority)
                 .all()
             ]
+            # Build corpus inverted index for Bassa→FR phrase matching
+            corpus_entries = (
+                db.query(CorpusPair.bassa_text, CorpusPair.source_text)
+                .filter(CorpusPair.source_language == "fr")
+                .all()
+            )
+            bassa_index: dict[str, list[int]] = defaultdict(list)
+            corpus_pairs: list[tuple[frozenset, str, str]] = []
+            for bas_text, fr_text in corpus_entries:
+                tokens = _bas_tokens(bas_text)
+                if not tokens:
+                    continue
+                pair_idx = len(corpus_pairs)
+                corpus_pairs.append((frozenset(tokens), bas_text.strip(), fr_text.strip()))
+                for tok in set(tokens):
+                    bassa_index[tok].append(pair_idx)
+            self._corpus_pairs = corpus_pairs
+            self._corpus_bassa_index = dict(bassa_index)
         finally:
             if own_session:
                 db.close()
@@ -519,6 +558,46 @@ class DictionaryEngine(TranslationEngine):
                 candidates.append(word[:-2])  # quickly -> quick
         return candidates
 
+    def _corpus_search_bassa(self, text: str) -> tuple[str, float] | None:
+        """Find the best-matching corpus entry for a Bassa input.
+
+        Scores each candidate as F1 × length-ratio penalty, where the
+        penalty is min(k,n)/max(k,n) on unique-token counts. This stops
+        short corpus entries that happen to share 2 common particles
+        from outranking a real verse match. Returns (fr_text, score)
+        when score >= 0.65 and at least 2 unique input tokens matched.
+        """
+        input_tokens = _bas_tokens(text)
+        if len(input_tokens) < 2:
+            return None
+
+        input_set = set(input_tokens)
+        k = len(input_set)
+
+        candidate_counts: Counter = Counter()
+        for tok in input_set:
+            for idx in self._corpus_bassa_index.get(tok, []):
+                candidate_counts[idx] += 1
+
+        if not candidate_counts:
+            return None
+
+        best_score = 0.0
+        best_fr = None
+        for idx, hit_count in candidate_counts.most_common(100):
+            tok_set, _bas, fr = self._corpus_pairs[idx]
+            n = len(tok_set)
+            f1 = (2 * hit_count) / (k + n)
+            length_ratio = min(k, n) / max(k, n)
+            score = f1 * length_ratio
+            if score > best_score:
+                best_score = score
+                best_fr = fr
+
+        if best_score >= 0.65 and best_fr:
+            return best_fr, round(best_score, 2)
+        return None
+
     def _translate_bassa_to_fr(self, text: str) -> TranslationResult:
         """Reverse lookup: Bassa → French using the pre-built reverse cache."""
         text = text.strip()
@@ -526,7 +605,7 @@ class DictionaryEngine(TranslationEngine):
         key_plain = unicodedata.normalize("NFD", key)
         key_plain = "".join(c for c in key_plain if unicodedata.category(c) != "Mn")
 
-        # Full-phrase match first
+        # 1. Full-phrase match in dictionary reverse cache
         fr = self._reverse_multi.get(key) or self._reverse_multi.get(key_plain)
         if not fr:
             fr = self._reverse.get(key) or self._reverse.get(key_plain)
@@ -538,7 +617,19 @@ class DictionaryEngine(TranslationEngine):
                 engine="dictionary",
             )
 
-        # Token-by-token fallback
+        # 2. Corpus phrase search (best-matching Bible verse)
+        corpus_match = self._corpus_search_bassa(text)
+        if corpus_match:
+            fr_text, recall = corpus_match
+            return TranslationResult(
+                source_text=text, translated_text=fr_text,
+                source_language="bas", confidence=recall,
+                word_translations=[WordTranslation(source=text, translated=fr_text, found=True)],
+                warnings=["Traduction approchée depuis le corpus — vérifiez le contexte."] if recall < 0.9 else [],
+                engine="dictionary+corpus",
+            )
+
+        # 3. Token-by-token fallback
         tokens = re.findall(r"[a-zA-ZÀ-öø-ÿ']+", text)
         word_results = []
         i = 0

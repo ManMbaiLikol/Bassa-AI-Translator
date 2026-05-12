@@ -11,6 +11,9 @@ venv/
 tmp_*.html
 extracted_text_output.txt
 
+# Logs de scraping / runtime
+logs/
+
 # Artefacts pip cassés
 =*
 

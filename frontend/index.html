@@ -72,15 +72,16 @@
 
         <div class="lang-selector">
             <div class="lang-pills">
-                <button class="pill" :class="sourceLang === 'fr' ? 'active' : ''" @click="sourceLang = 'fr'">Fran&ccedil;ais</button>
-                <button class="pill" :class="sourceLang === 'en' ? 'active' : ''" @click="sourceLang = 'en'">English</button>
+                <button class="pill" :class="sourceLang === 'fr' ? 'active' : ''" @click="setSourceLang('fr')">Fran&ccedil;ais</button>
+                <button class="pill" :class="sourceLang === 'en' ? 'active' : ''" @click="setSourceLang('en')">English</button>
+                <button class="pill" :class="sourceLang === 'bas' ? 'active' : ''" @click="setSourceLang('bas')">&#623;&#224;s&#224;a</button>
             </div>
             <span class="arrow">&rarr;</span>
-            <span class="lang-target">ɓàsàa</span>
+            <span class="lang-target" x-text="sourceLang === 'bas' ? 'Français' : 'ɓàsàa'"></span>
         </div>
 
         <!-- Sélecteur de moteur -->
-        <div class="engine-selector">
+        <div class="engine-selector" x-show="sourceLang !== 'bas'">
             <span class="engine-label">Moteur :</span>
             <div class="engine-pills">
                 <button class="engine-pill" :class="engineType === null ? 'active' : ''" @click="engineType = null" title="Meilleur moteur disponible (selon config serveur)">Auto</button>
@@ -96,15 +97,15 @@
 
         <div class="translate-grid">
             <div class="translate-box">
-                <label x-text="sourceLang === 'fr' ? 'Texte en Fran\u00e7ais' : 'English Text'"></label>
+                <label x-text="sourceLang === 'fr' ? 'Texte en Fran\u00e7ais' : sourceLang === 'en' ? 'English Text' : 'Texte en B\u00e0s\u00e0a'"></label>
                 <textarea
                     x-model="inputText"
-                    :placeholder="sourceLang === 'fr' ? 'Entrez votre texte ici...' : 'Enter your text here...'"
+                    :placeholder="sourceLang === 'fr' ? 'Entrez votre texte ici...' : sourceLang === 'en' ? 'Enter your text here...' : 'Entrez le texte B\u00e0s\u00e0a \u00e0 traduire...'"
                     @keydown.ctrl.enter="doTranslate()"
                 ></textarea>
             </div>
             <div class="translate-box">
-                <label>Traduction en Bassa</label>
+                <label x-text="sourceLang === 'bas' ? 'Traduction en Fran\u00e7ais' : 'Traduction en Bassa'"></label>
                 <div class="result-area" :class="{ 'empty': !result }" x-text="result ? result.translated_text : 'La traduction appara\u00eetra ici...'"></div>
                 <template x-if="result">
                     <div class="confidence-bar">
@@ -183,14 +184,14 @@
         <div x-show="correctionOpen" style="position:fixed;inset:0;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center;z-index:1000;" @click.self="correctionOpen=false">
             <div style="background:#fff;border-radius:14px;padding:1.75rem;width:100%;max-width:480px;" @click.stop>
                 <h4 style="margin:0 0 0.5rem;">Corriger la traduction</h4>
-                <p style="font-size:0.85rem;color:#888;margin-bottom:1rem;">Entrez la traduction Bassa correcte — elle sera soumise pour validation.</p>
+                <p style="font-size:0.85rem;color:#888;margin-bottom:1rem;" x-text="sourceLang === 'bas' ? 'Entrez la traduction française correcte — elle sera soumise pour validation.' : 'Entrez la traduction Bassa correcte — elle sera soumise pour validation.'"></p>
                 <div style="margin-bottom:0.75rem;">
                     <label style="font-size:0.82rem;font-weight:600;color:#555;">Texte source</label>
                     <div style="padding:0.4rem 0.7rem;background:#f8f9fa;border-radius:6px;margin-top:0.2rem;font-size:0.9rem;" x-text="result && result.source_text"></div>
                 </div>
                 <div style="margin-bottom:1rem;">
-                    <label style="font-size:0.82rem;font-weight:600;color:#555;">Traduction Bassa correcte <span style="color:#dc2626;">*</span></label>
-                    <textarea x-model="correctedText" rows="3" style="width:100%;margin-top:0.2rem;padding:0.5rem 0.7rem;border:1px solid #ddd;border-radius:6px;font-family:var(--font-bassa,serif);resize:vertical;" placeholder="Entrez la traduction correcte en Bassa..."></textarea>
+                    <label style="font-size:0.82rem;font-weight:600;color:#555;" x-text="sourceLang === 'bas' ? 'Traduction française correcte *' : 'Traduction Bassa correcte *'"></label>
+                    <textarea x-model="correctedText" rows="3" style="width:100%;margin-top:0.2rem;padding:0.5rem 0.7rem;border:1px solid #ddd;border-radius:6px;font-family:var(--font-bassa,serif);resize:vertical;" :placeholder="sourceLang === 'bas' ? 'Entrez la traduction correcte en français...' : 'Entrez la traduction correcte en Bassa...'"></textarea>
                 </div>
                 <div style="display:flex;justify-content:flex-end;gap:0.5rem;">
                     <button class="btn btn-secondary btn-sm" @click="correctionOpen=false">Annuler</button>
@@ -212,17 +213,17 @@
                 <div class="contrib-modal-body">
                     <div class="contrib-word-row">
                         <div class="contrib-field">
-                            <label>Mot source</label>
+                            <label x-text="sourceLang === 'bas' ? 'Mot en Bàsàa' : 'Mot source'"></label>
                             <div class="contrib-word-display" x-text="contrib.sourceWord"></div>
                         </div>
                         <div class="contrib-arrow">&rarr;</div>
                         <div class="contrib-field" style="flex:1">
-                            <label>Traduction en Bàsàa <span style="color:#dc2626">*</span></label>
+                            <label><span x-text="sourceLang === 'bas' ? 'Traduction en Français' : 'Traduction en Bàsàa'"></span> <span style="color:#dc2626">*</span></label>
                             <input
                                 type="text"
                                 class="contrib-input"
                                 x-model="contrib.bassaWord"
-                                placeholder="Entrez la traduction Bàsàa..."
+                                :placeholder="sourceLang === 'bas' ? 'Entrez la traduction française...' : 'Entrez la traduction Bàsàa...'"
                                 @keydown.enter="submitContrib()"
                                 x-ref="contribInput"
                             >
@@ -287,6 +288,13 @@
                 category: '',
                 notes: '',
                 submitting: false,
+            },
+
+            setSourceLang(lang) {
+                this.sourceLang = lang;
+                this.result = null;
+                this.inputText = '';
+                if (lang === 'bas') this.engineType = null;
             },
 
             async doTranslate() {
@@ -370,13 +378,14 @@
                 if (!this.contrib.bassaWord.trim() || !getUser()) return;
                 this.contrib.submitting = true;
                 try {
+                    const isBassaSource = this.sourceLang === 'bas';
                     const resp = await apiFetch('/api/contributions', {
                         method: 'POST',
                         body: JSON.stringify({
                             type: 'dictionary',
-                            source_language: this.sourceLang,
-                            source_text: this.contrib.sourceWord,
-                            bassa_text: this.contrib.bassaWord.trim(),
+                            source_language: isBassaSource ? 'fr' : this.sourceLang,
+                            source_text: isBassaSource ? this.contrib.bassaWord.trim() : this.contrib.sourceWord,
+                            bassa_text: isBassaSource ? this.contrib.sourceWord : this.contrib.bassaWord.trim(),
                             category: this.contrib.category || null,
                             notes: this.contrib.notes || null,
                         })
