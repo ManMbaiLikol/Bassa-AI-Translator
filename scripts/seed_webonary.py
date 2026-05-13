@@ -49,10 +49,16 @@ def seed_webonary(clear_existing=False):
             db.commit()
             print(f"Cleared {deleted} existing Webonary entries.")
 
-        # Build set of existing (lang, source_word) to skip duplicates
+        # Build set of existing (lang, source_word, bassa_word) to skip duplicates.
+        # Keying by bassa_word too preserves multiple Basaa variants for the same
+        # source word (e.g. "boire → nyo" AND "boire → nyó").
         existing = set()
-        for e in db.query(DictionaryEntry.source_language, DictionaryEntry.source_word).all():
-            existing.add((e.source_language, e.source_word.lower()))
+        for e in db.query(
+            DictionaryEntry.source_language,
+            DictionaryEntry.source_word,
+            DictionaryEntry.bassa_word,
+        ).all():
+            existing.add((e.source_language, e.source_word.lower(), e.bassa_word.lower()))
 
         added_entries = 0
         added_examples = 0
@@ -75,7 +81,7 @@ def seed_webonary(clear_existing=False):
                     if not translation:
                         continue
                     # Some definitions start with grammatical markers like "v " or "s " — keep as-is
-                    key = (lang, translation.lower())
+                    key = (lang, translation.lower(), bassa_word.lower())
                     if key in existing:
                         skipped += 1
                         continue

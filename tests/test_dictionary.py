@@ -76,3 +76,40 @@ def test_search_dictionary(client, db):
 
     resp = client.get("/api/dictionary?lang=en")
     assert resp.json()["total"] == 1
+
+
+def test_search_is_tonal_tolerant(client, db):
+    token = _create_admin(db)
+    headers = {"Authorization": f"Bearer {token}"}
+
+    # Insert a Basaa word with tonal marks
+    client.post("/api/dictionary", json={
+        "source_word": "boire", "bassa_word": "nyó", "source_language": "fr"
+    }, headers=headers)
+
+    # User searches without the accent → should still find the entry
+    resp = client.get("/api/dictionary?search=nyo")
+    data = resp.json()
+    assert data["total"] >= 1
+    assert any(item["bassa_word"] == "nyó" for item in data["items"])
+
+    # User searches WITH the accent → still finds it
+    resp = client.get("/api/dictionary?search=nyó")
+    assert resp.json()["total"] >= 1
+
+
+def test_create_entry_populates_normalized(client, db):
+    from backend.models.dictionary import DictionaryEntry
+
+    token = _create_admin(db)
+    headers = {"Authorization": f"Bearer {token}"}
+
+    resp = client.post("/api/dictionary", json={
+        "source_word": "lune", "bassa_word": "sôñ", "source_language": "fr"
+    }, headers=headers)
+    assert resp.status_code == 201
+    entry_id = resp.json()["id"]
+
+    # The before_insert listener should have populated bassa_word_normalized
+    entry = db.query(DictionaryEntry).filter(DictionaryEntry.id == entry_id).first()
+    assert entry.bassa_word_normalized == "soñ"

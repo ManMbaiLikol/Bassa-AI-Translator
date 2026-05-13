@@ -10,6 +10,7 @@ from backend.schemas.dictionary import (
     DictionaryEntryCreate, DictionaryEntryUpdate, DictionaryEntryOut, DictionaryPage, ExampleBase,
 )
 from backend.services.auth_service import require_role, get_optional_user
+from backend.services.tonal import strip_tones
 
 router = APIRouter(prefix="/api/dictionary", tags=["dictionary"])
 
@@ -25,9 +26,13 @@ def list_entries(
 ):
     q = db.query(DictionaryEntry).options(joinedload(DictionaryEntry.examples))
     if search:
+        # Match against source_word, bassa_word, AND the tonal-stripped
+        # bassa_word_normalized so users can search "nyo" and find "nyó".
+        search_norm = strip_tones(search).lower()
         q = q.filter(
             DictionaryEntry.source_word.ilike(f"%{search}%")
             | DictionaryEntry.bassa_word.ilike(f"%{search}%")
+            | DictionaryEntry.bassa_word_normalized.ilike(f"%{search_norm}%")
         )
     if lang:
         q = q.filter(DictionaryEntry.source_language == lang)
